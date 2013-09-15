@@ -2,18 +2,15 @@
 layout: default
 title:
 ---
-<section id="home">
-{% for category in site.categories %}
-  <article>
-    <h1>{{ category | first | capitalize }}</h1>
-    <ul>
-    {% for post in category[1] %}
-      <li><a href="#">
+<main>
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">
         <time>{{ post.date | date_format }}</time>
         <span>{{ post.title }}</span>
-      </a></li>
-    {% endfor %}
-    </ul>
-  </article>
-{% endfor %}
-</section>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</main>
