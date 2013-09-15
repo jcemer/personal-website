@@ -1,11 +1,13 @@
 task default: [:watch]
 
 task :build do
-  build
+  build_sass
+  build_jekyll
 end
 
 task :watch do
-  # build
+  build_sass
+
   pids = [
     spawn('sass --watch assets/stylesheets'),
     spawn('jekyll serve --watch')
@@ -21,7 +23,10 @@ task :watch do
   end
 end
 
-def build
+def build_sass
   system('sass --update assets/stylesheets')
+end
+
+def build_jekyll
   system('jekyll build')
 end
