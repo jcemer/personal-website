@@ -10,7 +10,7 @@ a {
   color: $orange-color;
   text-decoration: none;
   &:hover {
-    color: darken($orange-color, 10);
+    color: lighten($orange-color, 5);
     text-decoration: underline;
   }
 }
