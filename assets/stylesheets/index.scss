@@ -6,6 +6,15 @@ body {
   color: $dark-grey-color;
 }
 
+a {
+  color: $orange-color;
+  text-decoration: none;
+  &:hover {
+    color: darken($orange-color, 10);
+    text-decoration: underline;
+  }
+}
+
 .wrapper {
   max-width: 600px;
   padding: 0 10px;
@@ -35,13 +44,11 @@ body {
   @media screen and (min-width: 500px) {
     font-size: 2.2em;
   }
-  text-transform: uppercase;
   letter-spacing: -0.05em;
-  color: $orange-color;
-  text-decoration: none;
   text-shadow: 2px 2px 0 rgba(black, .06);
+  text-transform: uppercase;
   &:hover {
-    color: darken($orange-color, 10);
+    text-decoration: none;
   }
 }
 
@@ -69,6 +76,7 @@ nav {
     color: $dark-grey-color;
     &:hover {
       color: black;
+      text-decoration: none;
     }
   }
 }
