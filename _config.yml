@@ -1,2 +1,4 @@
+url: http://jcemer.com
+permalink: :title
 pygments: true
 exclude: ['vendor']

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Use Jekyll, SCSS, and CoffeeScript without plugins
 tags: without-plugins
 ---
