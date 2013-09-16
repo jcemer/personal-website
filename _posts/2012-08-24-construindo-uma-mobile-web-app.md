@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Construíndo uma Mobile Web App
-tags: mobile webapp
+tags:
+  - mobile
+  - webapp
 ---
 
 Esta é uma série de quatro posts que relatam todos os desafios enfrentados durante a codificação em HTML5 de um aplicativo.
