@@ -1,18 +1,4 @@
-$dark-grey-color: #666;
-$grey-color: #EAEAEA;
-$light-grey-color: #F9F9F9;
-$blue-color: #404356;
-$orange-color: darken(#f1614b, 5);
-
-@mixin before-slash($gap) {
-  &:before {
-    content: '/ ';
-    display: inline-block;
-    margin-right: $gap;
-    font-size: .8em;
-    color: $grey-color;
-  }
-}
+@import "helpers";
 
 body {
   margin: 0;
