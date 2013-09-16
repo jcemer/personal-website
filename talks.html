@@ -52,21 +52,19 @@ talks:
     url: https://speakerdeck.com/jcemer/eventos-do-simples-ao-objeto
     event: RSJS
 ---
-<main>
-  <ul class="talks-list">
-  {% for talk in page.talks %}
-    <li class="list-item">
-      <time class="item-date">
-        <span class="item-date-year">{{ talk.date | date_year }}
-        <span class="item-date-month">{{ talk.date | date_month }}
-      </time>
-      <a class="talk-link" href="{{ talk.url }}">
-        <span class="talk-title">{{ talk.title }}</span>
-      </a>
-      {% if talk.event %}
-      <span class="talk-event">@ {{ talk.event }}</span>
-      {% endif %}
-    </li>
-  {% endfor %}
-  </ul>
-</main>
+<ul class="talks-list">
+{% for talk in page.talks %}
+  <li class="list-item">
+    <time class="item-date">
+      <span class="item-date-year">{{ talk.date | date_year }}
+      <span class="item-date-month">{{ talk.date | date_month }}
+    </time>
+    <a class="talk-link" href="{{ talk.url }}">
+      <span class="talk-title">{{ talk.title }}</span>
+    </a>
+    {% if talk.event %}
+    <span class="talk-event">@ {{ talk.event }}</span>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
