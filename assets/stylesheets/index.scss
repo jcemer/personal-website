@@ -12,7 +12,8 @@ body {
   margin: 0 auto;
 }
 
-.lobby {
+.lobby,
+.main {
   padding: 1em 0;
   @media screen and (min-width: 500px) {
     padding: 2.5em 0;
@@ -74,13 +75,6 @@ nav {
     @media screen and (min-width: 500px) {
       font-size: 4em;
     }
-  }
-}
-
-.main {
-  margin: 1em 0;
-  @media screen and (min-width: 500px) {
-    margin: 2.5em 0;
   }
 }
 
