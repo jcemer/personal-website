@@ -23,7 +23,7 @@ body {
   letter-spacing: -0.05em;
   color: $orange-color;
   text-decoration: none;
-  text-shadow: 2px 2px 0 rgba(black, .1);
+  text-shadow: 2px 2px 0 rgba(black, .06);
   &:hover {
     color: darken($orange-color, 10);
   }
@@ -77,10 +77,10 @@ nav {
 }
 
 hr {
-  height: 1px;
+  height: 2px;
   border: none;
-  background: $grey-color;
-  width: 60%;
+  background: $light-grey-color;
+  width: 20%;
   margin: 2em auto;
 }
 
