@@ -13,10 +13,19 @@ body {
 }
 
 .lobby,
-.main {
+.main,
+.footer {
   padding: 1em 0;
   @media screen and (min-width: 500px) {
     padding: 2.5em 0;
+  }
+}
+
+.footer {
+  background: $light-grey-color;
+  font-size: .8em;
+  @media screen and (min-width: 500px) {
+    font-size: .9em;
   }
 }
 
@@ -80,12 +89,6 @@ nav {
 
 #disqus_thread {
   margin-top: 3em;
-}
-
-.footer {
-  background: $light-grey-color;
-  padding: 2em 0;
-  font-size: .9em;
 }
 
 hr {
