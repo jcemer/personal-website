@@ -1,0 +1,72 @@
+---
+layout: default
+title: Workshops e Palestras
+talks:
+  -
+    date: 2013-09-16
+    title: Hipermídias as Avessas
+    url: https://speakerdeck.com/jcemer/hipermidia-as-avessas
+    event: Mobile Brazil Confence
+  -
+    date: 2013-08-30
+    title: "Desvendando limites do universo front-end: um panorama de ferramentas e técnicas"
+    url: https://speakerdeck.com/jcemer/desvendando-os-limites-do-universo-front-end-um-panorama-de-ferramentas-e-tecnicas
+    event: QConSP
+  -
+    date: 2013-08-23
+    title: O fantástico mundo do JavaScript
+    url: https://speakerdeck.com/jcemer/o-fantastico-mundo-do-javascript
+    event: BrazilJS Conf
+  -
+    date: 2013-08-21
+    title: Workshop node.js
+    url: https://speakerdeck.com/jcemer/workshop-node-dot-js
+  -
+    date: 2013-07-05
+    title: Javascript dos novos tempos 2.0
+    url: https://speakerdeck.com/jcemer/javascript-dos-novos-tempos-2-dot-0
+    event: Fisl 14
+  -
+    date: 2013-06-15
+    title: Close to the Edge
+    url: https://speakerdeck.com/jcemer/front-in-rio-2013
+    event: Front in Rio
+  -
+    date: 2013-05-30
+    title: A saga de recuperação de um Software de Webcidadania
+    url: https://speakerdeck.com/jcemer/a-saga-de-recuperacao-de-um-software-de-webcidadania
+    event: FLISOL DF 2013
+  -
+    date: 2013-03-23
+    title: Javascript dos novos tempos
+    url: https://speakerdeck.com/jcemer/javascript-dos-novos-tempos
+    event: RSJS
+  -
+    date: 2012-09-15
+    title: Do Javascript para o fabuloso CoffeeScript
+    url: https://speakerdeck.com/jcemer/do-javascript-para-o-fabuloso-coffeescript
+    event: RS on Rails
+  -
+    date: 2012-03-05
+    title: Eventos - do simples ao objet
+    url: https://speakerdeck.com/jcemer/eventos-do-simples-ao-objeto
+    event: RSJS
+---
+<main>
+  <ul class="talks-list">
+  {% for talk in page.talks %}
+    <li class="list-item">
+      <time class="item-date">
+        <span class="item-date-year">{{ talk.date | date_year }}
+        <span class="item-date-month">{{ talk.date | date_month }}
+      </time>
+      <a class="talk-link" href="{{ talk.url }}">
+        <span class="talk-title">{{ talk.title }}</span>
+      </a>
+      {% if talk.event %}
+      <span class="talk-event">@ {{ talk.event }}</span>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</main>

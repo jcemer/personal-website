@@ -1,0 +1,11 @@
+.posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .post-link {
+    text-decoration: none;
+    &:hover .post-title {
+      text-decoration: underline;
+    }
+  }
+}

@@ -39,7 +39,7 @@ body {
   text-decoration: none;
   text-shadow: 2px 2px 0 rgba(black, .1);
   &:hover {
-    color: lighten($orange-color, 10);
+    color: darken($orange-color, 10);
   }
 }
 
@@ -76,7 +76,7 @@ nav {
   }
 }
 
-main {
+.main {
   margin: 3em 0;
 }
 
@@ -98,4 +98,19 @@ hr {
   margin: 2em auto;
 }
 
-@import "post_list";
+// lists
+.list-item {
+  margin-bottom: 2em;
+}
+
+// item date
+.item-date {
+  display: block;
+  color: $dark-grey-color;
+}
+.item-date-month {
+  @include before-slash(4px);
+}
+
+@import "posts_list";
+@import "talks_list";
