@@ -1,7 +1,23 @@
+$dark-grey-color: #666;
+$grey-color: #EAEAEA;
+$light-grey-color: #F9F9F9;
+$blue-color: #404356;
+$orange-color: darken(#f1614b, 5);
+
+@mixin before-slash($gap) {
+  &:before {
+    content: '/ ';
+    display: inline-block;
+    margin-right: $gap;
+    font-size: .8em;
+    color: $grey-color;
+  }
+}
+
 body {
   margin: 0;
   font-family: "open sans";
-  color: #666;
+  color: $dark-grey-color;
 }
 
 .wrapper {
@@ -9,10 +25,6 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
-
-$grey-color: #EAEAEA;
-$blue-color: #404356;
-$orange-color: darken(#f1614b, 5);
 
 .lobby {
   padding: 2.8em 0;
@@ -40,20 +52,16 @@ nav {
   li {
     display: inline-block;
     margin-right: 4px;
-    + li:before {
-      content: '/ ';
-      display: inline-block;
-      margin-right: 7px;
-      font-size: .8em;
-      color: #CCC;
+    + li {
+      @include before-slash(7px);
     }
   }
   a {
     text-transform: lowercase;
     text-decoration: none;
-    color: #666;
+    color: $dark-grey-color;
     &:hover {
-      color: #333;
+      color: black;
     }
   }
 }
@@ -77,7 +85,7 @@ main {
 }
 
 .footer {
-  background: #F9F9F9;
+  background: $light-grey-color;
   padding: 2em 0;
   font-size: .9em;
 }
@@ -85,8 +93,9 @@ main {
 hr {
   height: 1px;
   border: none;
-  background: #EEE;
+  background: $grey-color;
   width: 60%;
   margin: 2em auto;
 }
 
+@import "post_list";
