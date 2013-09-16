@@ -4,3 +4,6 @@ assets/stylesheets/*.css
 
 # jekyll build
 _site
+
+# deploy
+_deploy
