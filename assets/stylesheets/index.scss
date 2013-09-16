@@ -41,6 +41,8 @@ nav {
     margin-right: .2em;
     + li:before {
       content: '/ ';
+      font-size: .8em;
+      color: #CCC;
     }
   }
   a {
@@ -81,7 +83,7 @@ hr {
   height: 1px;
   border: none;
   background: #EEE;
-  width: 30%;
+  width: 60%;
   margin: 2em auto;
 }
 
