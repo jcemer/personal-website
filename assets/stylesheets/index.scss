@@ -15,7 +15,7 @@ $blue-color: #404356;
 $orange-color: darken(#f1614b, 5);
 
 .lobby {
-  padding: 2em 0;
+  padding: 2.8em 0;
 }
 
 .brand {
@@ -25,6 +25,7 @@ $orange-color: darken(#f1614b, 5);
   letter-spacing: -0.05em;
   color: $orange-color;
   text-decoration: none;
+  text-shadow: 2px 2px 0 rgba(black, .1);
   &:hover {
     color: lighten($orange-color, 10);
   }
@@ -38,9 +39,11 @@ nav {
   }
   li {
     display: inline-block;
-    margin-right: .2em;
+    margin-right: 4px;
     + li:before {
       content: '/ ';
+      display: inline-block;
+      margin-right: 7px;
       font-size: .8em;
       color: #CCC;
     }
@@ -56,7 +59,7 @@ nav {
 }
 
 .header {
-  padding: .5em 0;
+  padding: .4em 0;
   background: $blue-color;
   color: white;
   .title {
