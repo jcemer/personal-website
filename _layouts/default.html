@@ -17,7 +17,9 @@ menu:
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} ~ Jean Carlo Emer</title>
+  <title>
+    {% unless page.home %}{{ page.title }} ~{% endunless %} Jean Carlo Emer
+  </title>
   <meta name="viewport" content="width=device-width">
 
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:700,900" rel="stylesheet" type="text/css">
