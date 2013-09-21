@@ -7,9 +7,9 @@ title: Olá, escolha sua leitura abaixo
 {% for post in site.posts %}
   <li class="list-item">
     <a class="post-link" href="{{ post.url }}">
-      <time class="item-date">
-        <span class="item-date-year">{{ post.date | date_year }}
-        <span class="item-date-month">{{ post.date | date_month }}
+      <time class="date">
+        <span class="date-year">{{ post.date | date_year }}
+        <span class="date-month">{{ post.date | date_month }}
       </time>
       <span class="post-title">{{ post.title }}</span>
     </a>

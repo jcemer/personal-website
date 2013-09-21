@@ -84,13 +84,23 @@ nav {
 .header {
   background: $blue-color;
   color: white;
+  padding: .5em 0;
+  font: 2em/1 "lato";
+  @media screen and (min-width: 500px) {
+    font-size: 4em;
+  }
   .title {
-    padding: .6em 0;
     margin: 0;
-    font: 700 2em/1 "lato";
+    font-size: 1em;
     text-shadow: 3px 3px 0 rgba(black, .3);
+  }
+  .date {
+    color: white;
+    margin: .2em 0;
+    font-size: .5em;
+    text-shadow: 2px 2px 0 rgba(black, .3);
     @media screen and (min-width: 500px) {
-      font-size: 4em;
+      font-size: .4em;
     }
   }
 }
@@ -116,11 +126,11 @@ hr {
 }
 
 // item date
-.item-date {
+.date {
   display: block;
   color: $dark-grey-color;
 }
-.item-date-month {
+.date-month {
   @include before-slash(4px);
 }
 
