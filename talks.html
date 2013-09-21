@@ -59,12 +59,12 @@ talks:
       <span class="date-year">{{ talk.date | date_year }}
       <span class="date-month">{{ talk.date | date_month }}
     </time>
+    {% if talk.event %}
+    <span class="talk-event">{{ talk.event }}</span>
+    {% endif %}
     <a class="talk-link" href="{{ talk.url }}">
       <span class="talk-title">{{ talk.title }}</span>
     </a>
-    {% if talk.event %}
-    <span class="talk-event">@ {{ talk.event }}</span>
-    {% endif %}
   </li>
 {% endfor %}
 </ul>

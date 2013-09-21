@@ -4,9 +4,9 @@ $light-grey-color: #F9F9F9;
 $blue-color: #404356;
 $orange-color: darken(red, 3);
 
-@mixin before-slash($gap) {
+@mixin before($gap, $content) {
   &:before {
-    content: '/ ';
+    content: $content + ' ';
     display: inline-block;
     margin-right: $gap;
     font-size: .8em;

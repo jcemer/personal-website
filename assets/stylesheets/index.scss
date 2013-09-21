@@ -60,7 +60,7 @@ nav {
     display: inline-block;
     margin-right: 4px;
     + li {
-      @include before-slash(7px);
+      @include before(4px, '/');
     }
   }
   a {
@@ -82,7 +82,7 @@ nav {
   @media screen and (min-width: 500px) {
     font-size: 4.05em;
   }
-  .title {
+  .header-title {
     margin: 0;
     font-size: 1em;
     text-shadow: 3px 3px 0 rgba(black, .3);
@@ -118,7 +118,7 @@ hr {
   color: $dark-grey-color;
 }
 .date-month {
-  @include before-slash(4px);
+  @include before(4px, '/');
 }
 
 @import "posts_list";
