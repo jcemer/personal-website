@@ -32,17 +32,15 @@ a {
 
 .footer {
   background: $light-grey-color;
-  font-size: .8em;
-  @media screen and (min-width: 500px) {
-    font-size: .9em;
-  }
+  font-size: .9em;
 }
 
 .brand {
   display: inline-block;
-  font: 900 1.8em/1 "lato";
+  font: 900 1.4em/1 "lato";
+  margin-bottom: .1em;
   @media screen and (min-width: 500px) {
-    font-size: 2.2em;
+    font-size: 2.1em;
   }
   letter-spacing: -0.05em;
   text-shadow: 2px 2px 0 rgba(black, .06);
@@ -53,11 +51,6 @@ a {
 }
 
 nav {
-  font-size: .9em;
-  @media screen and (min-width: 500px) {
-    font-size: 1em;
-  }
-  margin: .2em 0 0 0;
   ul {
     list-style: none;
     margin: 0;
@@ -85,9 +78,9 @@ nav {
   background: $blue-color;
   color: white;
   padding: .5em 0;
-  font: 2em/1 "lato";
+  font: 2.7em/1 "lato";
   @media screen and (min-width: 500px) {
-    font-size: 4em;
+    font-size: 4.05em;
   }
   .title {
     margin: 0;
@@ -97,11 +90,8 @@ nav {
   .date {
     color: white;
     margin: .2em 0;
-    font-size: .5em;
+    font-size: .4em;
     text-shadow: 2px 2px 0 rgba(black, .3);
-    @media screen and (min-width: 500px) {
-      font-size: .4em;
-    }
   }
 }
 
@@ -120,9 +110,6 @@ hr {
 // lists
 .list-item {
   margin-bottom: 1.5em;
-  @media screen and (min-width: 500px) {
-    margin-bottom: 2em;
-  }
 }
 
 // item date
