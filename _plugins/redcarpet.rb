@@ -2,6 +2,24 @@ module Jekyll
   module Converters
     class Markdown
       class RedcarpetParser
+        module CommonMethods
+          def header(title, level)
+            @headers ||= []
+            permalink = title.gsub(/([[:space:]]|[[:punct:]])+/, '-')
+
+            if @headers.include? permalink
+              permalink += '_1'
+              permalink = permalink.succ while @headers.include? permalink
+            end
+            @headers << permalink
+            %(
+              <h#{level} id=\"#{permalink}\">
+                <a name="#{permalink}" class="anchor" href="##{permalink}"></a>#{title}
+              </h#{level}>
+            )
+          end
+        end
+
         module WithPygments
           include CommonMethods
           def block_code(code, lang)
