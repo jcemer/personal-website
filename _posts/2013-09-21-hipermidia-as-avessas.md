@@ -1,14 +1,16 @@
 ---
 layout: post
-title: 'Hipermídias as Avessas'
+title: 'Hipermídia as Avessas'
 tags:
   - HTML5
   - mobile
 ---
 
-Tive o prazer de palestrar no primeiro [Mobile Brazil Conference](http://mobilebrazilconference.com.br) junto com o [Marcelo Oliveira](https://twitter.com/askoth). Quando do convite, logo soube que o assunto deveria ser desenvolvimento web mobile e com base na definição de [Hipermídia](http://pt.wikipedia.org/wiki/Hiperm%C3%ADdia) logo chegamos no título: **Hipermídia as avessas** são os desafios, meios e técnicas de se entregar uma única mídia para diferentes suportes computacionais.
+Tive o prazer de palestrar no primeiro [Mobile Brazil Conference](http://mobilebrazilconference.com.br) junto com o [Marcelo Oliveira](https://twitter.com/askoth). Quando do convite, logo soube que o assunto deveria ser desenvolvimento web mobile e com base na definição de [Hipermídia](http://pt.wikipedia.org/wiki/Hiperm%C3%ADdia) logo chegamos no título. **Hipermídia as avessas** são os desafios, meios e técnicas de se entregar uma única mídia para diferentes suportes computacionais.
 
-Existem vários dispositivos que podem ser alcançados por uma hipermídia: desktops, laptops, impressoras, TVs, smartphones e tablets só para citar alguns. Além disto, não são apenas os browsers o meio, aplicativos como Apple Store, Netflix e o Steam são escritos em HTML5. Mas a maior revolução da nossa era, sem ter como negar, é o mobile: dispositivos pequenos e de fácil locomoção. Eles é que serão foco principal do nosso estudo.
+Existem vários dispositivos que podem ser alcançados por uma hipermídia: desktops, laptops, impressoras, TVs, smartphones e tablets só para citar alguns. Além disto, não são apenas os browsers o meio: aplicativos como Apple Store, Netflix e o Steam são escritos em HTML5. Mas a maior revolução da nossa era, sem ter como negar, é o mobile: dispositivos pequenos e de fácil locomoção. Eles é que serão foco principal do nosso estudo.
+
+Os slides da palestra você encontra [aqui](https://speakerdeck.com/jcemer/hipermidia-as-avessas) e o vídeo [aqui](https://www.eventials.com/pt-br/mobilebrazilconference/hipermidia-as-avessas-seu-conteudo-na-web-por-diferentes-formas).
 
 ## Advento do mobile
 
