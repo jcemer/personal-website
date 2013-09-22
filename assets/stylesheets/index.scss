@@ -16,41 +16,6 @@ a {
   }
 }
 
-.wrapper {
-  max-width: 600px;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
-.lobby,
-.main,
-.footer {
-  padding: 1em 0;
-  @media screen and (min-width: 500px) {
-    padding: 2.5em 0;
-  }
-}
-
-.footer {
-  background: $light-grey-color;
-  font-size: .9em;
-}
-
-.brand {
-  display: inline-block;
-  font: 900 1.4em/1 "lato";
-  margin-bottom: .1em;
-  @media screen and (min-width: 500px) {
-    font-size: 2.1em;
-  }
-  letter-spacing: -0.05em;
-  text-shadow: 2px 2px 0 rgba(black, .06);
-  text-transform: uppercase;
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 nav {
   ul {
     list-style: none;
@@ -75,6 +40,34 @@ nav {
   }
 }
 
+.wrapper {
+  max-width: 600px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.lobby, .main, .footer {
+  padding: 1em 0;
+  @media screen and (min-width: 500px) {
+    padding: 2.5em 0;
+  }
+}
+
+.brand {
+  display: inline-block;
+  font: 900 1.4em/1 "lato";
+  margin-bottom: .1em;
+  @media screen and (min-width: 500px) {
+    font-size: 2.1em;
+  }
+  letter-spacing: -0.05em;
+  text-shadow: 2px 2px 0 rgba(black, .06);
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .header {
   background: $blue-color;
   color: white;
@@ -96,18 +89,6 @@ nav {
   }
 }
 
-#disqus_thread {
-  margin-top: 3em;
-}
-
-hr {
-  height: 2px;
-  border: none;
-  background: $light-grey-color;
-  width: 20%;
-  margin: 1.5em auto;
-}
-
 // lists
 .list-item {
   margin-bottom: 1.5em;
@@ -122,5 +103,10 @@ hr {
   @include before(4px, '/');
 }
 
-@import "posts_list";
-@import "talks_list";
+@import "main";
+@import "lists";
+
+.footer {
+  background: $light-grey-color;
+  font-size: .9em;
+}
