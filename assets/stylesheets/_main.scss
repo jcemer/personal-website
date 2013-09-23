@@ -36,6 +36,62 @@
     margin: 1.5em auto;
   }
 
+  code {
+    display: inline-block;
+    padding: 0 .2em;
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: .9em;
+    border: solid 2px $grey-color;
+    color: ligthen($dark-grey-color, 15);
+    border-radius: 4px;
+  }
+
+  pre {
+    counter-reset: line-numbering;
+    border: solid 2px $grey-color;
+    border-radius: 4px;
+    background: white;
+    line-height: 1.5;
+    white-space: pre;
+    overflow-x: auto;
+    word-break: inherit;
+    word-wrap: inherit;
+
+    code {
+      border: none;
+      padding: 0;
+    }
+
+    a[name]:before {
+      content: counter(line-numbering);
+      counter-increment: line-numbering;
+      display: inline-block;
+      width: 2em;
+      padding-right: .5em;
+      margin-right: .5em;
+      text-align: right;
+      color: darken($grey-color, 15);
+      border-right: 1px solid $grey-color;
+
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    a:first-of-type::before,
+    a:only-of-type::before {
+        padding-top: .2em;
+    }
+
+    a:last-of-type::before,
+    a:only-of-type::before {
+        padding-bottom: .2em;
+    }
+  }
+
   // disqus
   #disqus_thread {
     margin-top: 3em;
