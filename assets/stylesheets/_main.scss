@@ -1,4 +1,19 @@
 .main {
+  h2, h3, h4 {
+    position: relative;
+    a[name] {
+      width: 1em;
+      height: 1.4em;
+      position: absolute;
+      top: 0;
+      left: -.9em;
+    }
+    &:hover a[name] {
+      background: url("/assets/images/anchor.svg") left center no-repeat;
+      background-size: 80%;
+    }
+  }
+
   h2 {
     margin-top: 1.5em;
   }

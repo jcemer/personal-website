@@ -14,7 +14,7 @@ module Jekyll
             @headers << permalink
             %(
               <h#{level} id=\"#{permalink}\">
-                <a name="#{permalink}" class="anchor" href="##{permalink}"></a>#{title}
+                <a name="#{permalink}" href="##{permalink}"></a>#{title}
               </h#{level}>
             )
           end
