@@ -38,11 +38,11 @@
 
   code {
     display: inline-block;
-    padding: 0 .2em;
+    padding: .1em .35em;
     font-family: 'Droid Sans Mono', monospace;
     font-size: .9em;
-    border: solid 2px $grey-color;
-    color: ligthen($dark-grey-color, 15);
+    background: $light-grey-color;
+    color: darken(#93a1a1, 10);
     border-radius: 4px;
   }
 
@@ -58,7 +58,7 @@
     word-wrap: inherit;
 
     code {
-      border: none;
+      background: none;
       padding: 0;
     }
 
