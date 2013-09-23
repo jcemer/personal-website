@@ -10,12 +10,22 @@
     }
     &:hover a[name] {
       background: url("/assets/images/anchor.svg") left center no-repeat;
-      background-size: 80%;
+      background-size: 80% auto;
     }
   }
 
   h2 {
     margin-top: 1.5em;
+  }
+
+  a[href][target=_blank]:after {
+    content: '';
+    display: inline-block;
+    height: .5em;
+    width: .6em;
+    vertical-align: .2em;
+    background: url("/assets/images/external_link.svg") right center no-repeat;
+    background-size: auto 100%;
   }
 
   hr {
