@@ -6,7 +6,7 @@ tags:
   - mobile
 ---
 
-Aquilo que denominamos [Hipermídia as avessas](/hipermidia-as-avessas.html) tem um de seus principais calcados nas famigeradas imagens. Na onda do [design responsivo](/hipermidia-as-avessas-responsive-design.html), temos algumas propostas para lidar com elas. Antes de mais nada, é importante conhecer supercificialmente os diferentes formatos de imagens, vamos a eles.
+O que denominamos [Hipermídia as avessas](/hipermidia-as-avessas.html) e aprendemos sobre [design responsivo](/hipermidia-as-avessas-responsive-design.html) nos obriga a dar uma atenção especial às imagens. Temos algumas propostas para lidar com elas. Antes de mais nada, é importante conhecer basicamente os diferentes formatos de imagens, vamos a eles.
 
 ## Formatos de imagens
 
@@ -66,6 +66,8 @@ A epecificação de [srcset attribute](http://www.w3.org/html/wg/drafts/srcset/w
 O elemento [picture](http://www.w3.org/TR/html-picture-element) viabiliza o poder total das *media queries* para selecionar a imagem mais adequada.
 
 Saiba que as especificações são desenhadas de maneira a manter a compatibilidade com navegadores antigos, tanto por isto a primeira mantem o `src` e a segunda possui uma `<img>` embutida. A questão é que são ainda rascunho e o suporte em navegadores é nulo. Existe bastante discussão em torno do assunto e um [grupo exclusivo de imagens responsivas](http://www.w3.org/community/respimg/) para fomentar o debate.
+
+#### Soluções possíveis
 
 Por enquanto, nos restam algumas poucas técnicas possíveis:
 
