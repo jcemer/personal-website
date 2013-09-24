@@ -30,7 +30,7 @@ A solução para que o usuário tivesse uma visão completa do website à primei
 
 ### Pinch Zoom
 
-O *pinch zoom* (ou *pinch to zoom*) é a principal ferramenta do usuário para driblar os pequenos displays aproximando a visualização para porções da página. A ferramenta, ativada por gesto, já vem habilitada por padrão e desabilitá-la não é uma boa prática pois os usuários já estão bastante acostumando e esperam poder utilizá-la.
+O *pinch zoom* (ou *pinch to zoom*) é a principal ferramenta do usuário para driblar os pequenos displays aproximando a visualização para porções da página. A ferramenta, ativada por gesto, já vem habilitada por padrão e desabilitá-la não é uma boa prática pois os usuários já estão bastante acostumados e esperam poder utilizá-la.
 
 Apenas desabilite o *pinch zoom* em jogos ou *webapps* que permitem interações com dois ou mais dedos através da `meta tag` a seguir.
 

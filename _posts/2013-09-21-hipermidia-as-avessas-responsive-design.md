@@ -10,7 +10,7 @@ tags:
 
 ----------
 
-Antes de mais nada, saiba que este texto é a continuação [deste outro](/hipermidia-as-avessas.html). Lá são apresentados alguns [desafios](/hipermidia-as-avessas.html#Desafios-da-web-plural) que, a partir daqui, aprenderemos a enfrentar.
+Antes de mais nada, saiba que este texto é a continuação de [Hipermídias as avessas](/hipermidia-as-avessas.html). Lá são apresentados alguns [desafios](/hipermidia-as-avessas.html#Desafios-da-web-plural) que, a partir daqui, aprenderemos a enfrentar.
 
 ----------
 

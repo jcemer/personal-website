@@ -34,9 +34,7 @@ Uma forma tangível aos navegadores atuais é o uso de alguma inteligência no s
 
 Mesmo sendo óbvio, acho importante destacar que estas soluções vão depender de configurações específicas nas máquinas que são servidoras do seu projeto. Além disto, a solução mais comum opera com a criação de um *cookie* com as informações do dispositivo e não há garantia que este seja criado antes da requisição das imagens.
 
-Outro detalhe é que tais soluções podem enfrentar problemas em servidores [proxy](http://pt.wikipedia.org/wiki/Proxy) mal configurados e quebrar o princípio de [REST](http://pt.wikipedia.org/wiki/REST), o que pode ser contornado com o cabecalho de `Vary` [como destacado pelo Sério Lopes](https://twitter.com/sergio_caelum/statuses/379684187600482304).
-
-Particularmente não concordo com nenhuma solução deste tipo e não encorajo seu uso.
+Outro detalhe é que tais soluções podem enfrentar problemas em servidores [proxy](http://pt.wikipedia.org/wiki/Proxy) mal configurados além de quebrar o princípio de [REST](http://pt.wikipedia.org/wiki/REST), o que pode ser contornado com o cabecalho de `Vary` [como destacado pelo Sério Lopes](https://twitter.com/sergio_caelum/statuses/379684187600482304).
 
 ### Soluções no navegador
 
@@ -78,7 +76,3 @@ Por enquanto, nos restam algumas poucas técnicas possíveis:
 - Outra técnica interessante é criar uma imagem de dimensão maior que a utilizada e de muita pouca qualidade que, depois de reescalada, terá uma nitidez bastante aceitável sem pesar muito para a banda. O detalhe é que a imagem gigantesca ficará ocupando memória do navegador.
 
 Enfim, não temos nada muito adequado para resolver este problema. É preciso torcer para que as especificações amadureçam logo e que os fabricantes de navegadores as adotem.
-
-
-
-
