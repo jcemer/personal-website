@@ -63,6 +63,6 @@ Tente achar um tamanho que fique com nitidez razoável na maior parte dos dispos
 
 ## Por fim
 
-Obrigado ao [Marcelo](https://twitter.com/askoth) por ter montado e apresentado comigo. Muitas das ideias desta série partiram da experiência e conhecimento dele. Outro salve à [Morvana](https://twitter.com/morvanabonin) e [Cynthia](https://twitter.com/cynthia_zanoni) por terem organizado o [primeiro evento de mobile do sul do país](http://mobilebrazilconference.com.br), o nível estava altíssimo.
+Obrigado ao [Marcelo](https://twitter.com/askoth) por ter ajudado e apresentado comigo. Muitas das ideias desta série partiram da experiência e conhecimento dele. Outro salve à [Morvana](https://twitter.com/morvanabonin) e [Cynthia](https://twitter.com/cynthia_zanoni) por terem organizado o [primeiro evento de mobile do sul do país](http://mobilebrazilconference.com.br), o nível estava altíssimo.
 
 A você, respeite e fique antenado a era mobile, ela está por aqui para ficar e a tendência é que teremos mais e mais dispositivos conectados. É nossa responsabilidade como desenvolvedores fazer uma web melhor e adequada a todos estes dispositivos.
