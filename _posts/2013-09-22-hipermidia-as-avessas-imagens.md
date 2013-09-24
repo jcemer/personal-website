@@ -71,8 +71,8 @@ Por enquanto, nos restam algumas poucas técnicas possíveis:
 
 - **Não faça nada**, inclua uma imagem com nitidez mediana que esta ficará aceitável para uma vasta gama de dispositivo. Esta é a solução mais adotada, sem dúvidas.
 
-- Entregue uma imagem de nitidez inferior e depois, via JavaScript, substitua por uma mais adequada. A desvantagem é que o usuário precisará fazer o *download* de duas imagens e terá sua experiência visual afetada por enxergar esta diferentes imagens.
+- Entregue uma imagem de nitidez inferior e depois, via JavaScript, **substitua por uma mais adequada**. A desvantagem é que o usuário precisará fazer o *download* de duas imagens e terá sua experiência visual afetada por enxergar estas diferentes imagens.
 
-- Outra técnica interessante é criar uma imagem de dimensão maior que a utilizada e de muita pouca qualidade que, depois de reescalada, terá uma nitidez bastante aceitável sem pesar muito para a banda. O detalhe é que a imagem gigantesca ficará ocupando memória do navegador.
+- Outra técnica interessante é criar uma **imagem de dimensão maior** que a utilizada e de muita pouca qualidade que, depois de reescalada, terá uma nitidez bastante aceitável sem pesar muito para a banda. O detalhe é que a imagem gigantesca ficará ocupando memória do navegador.
 
 Enfim, não temos nada muito adequado para resolver este problema. É preciso torcer para que as especificações amadureçam logo e que os fabricantes de navegadores as adotem.
