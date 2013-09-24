@@ -10,7 +10,7 @@ Tive o prazer de palestrar no primeiro [Mobile Brazil Conference](http://mobileb
 
 Existem vários dispositivos que podem ser alcançados por uma hipermídia: desktops, laptops, impressoras, TVs, smartphones e tablets só para citar alguns. Além disto, não são apenas os browsers o meio: aplicativos como Apple Store, Netflix e o Steam são escritos em HTML5. Mas a maior revolução da nossa era, sem ter como negar, é o mobile: dispositivos pequenos e de fácil locomoção. Eles é que serão foco principal do nosso estudo.
 
-Os slides da palestra você encontra [aqui](https://speakerdeck.com/jcemer/hipermidia-as-avessas) e o vídeo [aqui](https://www.eventials.com/pt-br/mobilebrazilconference/hipermidia-as-avessas-seu-conteudo-na-web-por-diferentes-formas).
+Aqui estão os [slides da palestra](https://speakerdeck.com/jcemer/hipermidia-as-avessas) e o [vídeo](https://www.eventials.com/pt-br/mobilebrazilconference/hipermidia-as-avessas-seu-conteudo-na-web-por-diferentes-formas).
 
 ## Mobile
 
@@ -22,21 +22,21 @@ Uma característica bastante interessante é que o iPhone foi desenvolvido para 
 
 Na época do seu lançamento, o aparelho tinha resolução de [320x480](http://www.iphoneresolution.com) e a maioria dos websites tinha seu layout definido com base numa resolução de 1024x768.
 
-A solução para que o usuário tivesse uma visão completa do website à primeira vista foi definir uma resolução de viewport diferente do tamanho do display. Então, com base na maioria dos websites da época, a viewport do aparelho possui configuração inicial com largura de 980px. Os websites que não ficam adequados podem indicar uma diferente largura através da meta tag viewport a seguir.
+A solução para que o usuário tivesse uma visão completa do website à primeira vista foi definir uma resolução de viewport diferente do tamanho do display. Então, com base na maioria dos websites da época, a viewport do aparelho possui configuração inicial com largura de 980px. Os websites que não ficam adequados podem indicar uma diferente largura através da `meta tag viewport` a seguir.
 
-```html
-<meta name=”viewport” content=”width=1024”>
-```
+~~~ html
+<meta name="viewport" content="width=1024">
+~~~
 
 ### Pinch Zoom
 
-O pinch zoom (ou pinch to zoom) é a principal ferramenta do usuário para driblar os pequenos displays aproximando a visualização para porções da página. A ferramenta, ativada por gesto, já vem habilitada por padrão e desabilitá-la não é uma boa prática pois os usuários já estão bastante acostumando e esperam poder utilizá-la.
+O *pinch zoom* (ou *pinch to zoom*) é a principal ferramenta do usuário para driblar os pequenos displays aproximando a visualização para porções da página. A ferramenta, ativada por gesto, já vem habilitada por padrão e desabilitá-la não é uma boa prática pois os usuários já estão bastante acostumando e esperam poder utilizá-la.
 
-Apenas desabilite o pinch zoom em jogos ou webapps que permitem interações com dois ou mais dedos através da meta tag a seguir.
+Apenas desabilite o *pinch zoom* em jogos ou *webapps* que permitem interações com dois ou mais dedos através da `meta tag` a seguir.
 
-```html
-<meta name=”viewport” content=”user-scalable=no”>
-```
+~~~ html
+<meta name="viewport" content="user-scalable=no">
+~~~
 
 --------
 
@@ -44,11 +44,10 @@ Apenas desabilite o pinch zoom em jogos ou webapps que permitem interações com
 
 A tarefa de disponibilizar para uma gama de dispositivos o mesmo conteúdo traz consigo alguns desafios:
 
-- **Garantir boa legibilidade** em diferentes tamanhos e resoluções de tela. Além disto, diferentes dispositivos são geralmente utilizados a diferentes distâncias em relação a nossos olhos (pense na distância em que você assiste TV e utiliza seu smartphone).
+- **Garantir boa legibilidade** em diferentes tamanhos e resoluções de tela. Além disto, diferentes dispositivos são geralmente utilizados a diferentes distâncias em relação a nossos olhos (pense na distância em que você assiste TV e utiliza seu *smartphone*).
 
 - Mostrar sempre o conteúdo mais importante para o usuário à primeira vista considerando diferentes **aspect ratios**. Lembre-se: gráficos de calor e outras medidas provam que o usuário nem sempre utiliza a rolagem da página, não esconda conteúdo.
 
 - Permitir que o usuário **consiga interagir** com a página indiferente de dispositivo e considerando as limitações de cada um.
 
 A técnica para enfrentar estes e mais desafios você conhece em [Hipermídia as avessas: Responsive Design](hipermidia-as-avessas-responsive-design.html).
-
