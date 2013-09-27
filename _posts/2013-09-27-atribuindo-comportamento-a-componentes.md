@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Atribuindo comportamento a elementos HTML'
+title: 'Atribuindo comportamento a componentes'
 description: Atribuindo comportamento a elementos já presentes em seu DOM
 tags:
   - JavaScript
