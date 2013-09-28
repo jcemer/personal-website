@@ -39,11 +39,9 @@ Na tentativa de corrigir este problema, na minha opinião não tão significativ
 
 ## Soluções piores
 
-A primeira delas é passar todas as instanciações para um arquivo específico que é exclusivo para cada página. O que nos leva a uma requisição extra.
-
 Uma abordagem que é bastante útil para estilização é atribuir uma classe no `<body>` indicando a página, algo como: `page-home`, `page-product`. Deixando claro, nada contra utilizar classes no `<body>` para apoiar a **estilização**.
 
-Enfim, naturalmente portamos isto para o JavaScript e chegamos no código a seguir:
+Naturalmente portamos isto para o JavaScript e chegamos no código a seguir:
 
 ~~~ javascript
 $.widget("datepicker", { /* ... */ })
@@ -65,7 +63,11 @@ if (root.is('.page-product')) {
 }
 ~~~
 
-É importante salientar que ambas soluções: arquivo JavaScript exclusivo e classes no `<body>` enfrentam problemas de manutenção.
+Outra solução não apoiada em seletores é passar todas as instanciações para um arquivo específico que é exclusivo para cada página. Isto nos leva a uma requisição extra.
+
+### Problemas
+
+É importante salientar que ambas soluções: classes no `<body>` e arquivo JavaScript exclusivo enfrentam problemas de manutenção.
 
 Um componente pode ser removido de alguma página e o JavaScript precisará ser alterado para que este **não seja mais instanciado**. Pior, em muitos destes casos o JavaScript não será alterado por esquecimento, chegamos às famosas inconsistências.
 
