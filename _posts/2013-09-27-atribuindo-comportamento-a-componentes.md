@@ -114,5 +114,3 @@ O *setup* é responsável por buscar todos os elementos com `[data-pieces]` e in
 O Piecemaker, que já utilizei em alguns projetos, é apenas mais uma solução para este problema. O código é ainda imaturo e Pull Requests são bem vindos.
 
 Por fim, espero gerar uma discusão saudável sobre este tema que vejo muitas vezes ser desprezado e cercado de soluções ruins. Atrelar comportamento via JavaScript ao seu projeto não é tão trivial quanto parece.
-
-Até a próxima.
