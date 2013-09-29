@@ -16,6 +16,11 @@
 
   h2 {
     margin-top: 1.5em;
+    color: darken($dark-grey-color, 15);
+  }
+
+  h3 {
+    color: darken($dark-grey-color, 5);
   }
 
   a[href][target=_blank]:after {
