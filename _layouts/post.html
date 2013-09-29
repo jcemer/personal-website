@@ -2,6 +2,20 @@
 layout: default
 ---
 {{ content }}
+
+<aside class="post-meta">
+  <time class="date">{{ page.date | date: "%d/%m/%Y" }}</time>
+  <span class="author">por <a href="https://plus.google.com/115177659661305654561?rel=author">Jean Carlo Emer</a></span>
+  <span class="tags">
+    <strong>Tags:</strong>
+    <ul>
+      {% for tag in page.tags %}
+      <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  </span>
+</aside>
+
 <div id="disqus_thread"></div>
   <script>
     var disqus_shortname = 'jeancarloemer'

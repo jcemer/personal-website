@@ -97,6 +97,31 @@
     }
   }
 
+  // post meta
+  .post-meta {
+    margin-top: 4em;
+    text-align: right;
+    .date {
+      display: inline;
+    }
+    .tags {
+      display: block;
+    }
+    ul {
+      display: inline;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline;
+      + li:before {
+        margin-left: -4px;
+        content: ', ';
+      }
+    }
+  }
+
   // disqus
   #disqus_thread {
     margin-top: 3em;
