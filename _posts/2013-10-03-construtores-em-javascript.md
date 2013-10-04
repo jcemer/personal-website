@@ -58,7 +58,7 @@ function Carousel(container) {
   this.container = $(container);
 }
 
-Carousel.init = function (container) {
+Carousel.create = function (container) {
   var instance = new this(container);
   instance.init();
   return instance;
@@ -77,11 +77,13 @@ var productsCarousel = new Carousel('[data-carousel="products"]');
 productsCarousel.init();
 ~~~
 
-Temos outra forma de uso com o mesmo resultado. Repare que desta vez não usamos o operador `new`.
+Temos outra forma de uso com o mesmo resultado. Repare que desta vez não usamos o operador `create`.
 
 ~~~ javascript
-Carousel.init('[data-carousel="products"]');
+Carousel.create('[data-carousel="products"]');
 ~~~
+
+Adicionalmente, lembre-se sempre de tirar o máximo proveito da linguagem e definir seus métodos no `prototype`. Desta maneira, uma única função será criada e compartilhada por todas as instâncias do seu construtor.
 
 ### Vantagens
 
@@ -104,3 +106,9 @@ Viabilizar os testes é outra grande vantagem em não ter comportamento definido
 Bibliotecas como [Backbone](http://backbonejs.org), que é um dos *cases* mais fantásticos de herança em JavaScript que conheço, todos os construtores do Backbone, quando não extendidos, podem ser instanciados sem efeitos colaterais. Isto vale para `new Backbone.Model()`, `new Backbone.View()`, `new Backbone.History()`. Pode experimentar, faça estas chamadas no *console* do seu navegador quando estiver acessando o endereço http://backbonejs.org
 
 Um último detalhe é que, para as views do Backbone, a documentação incentiva o uso da propriedade `events`, que associa *listeners* na instanciação do objeto. Tem também o método `this.listenTo` geralmente usado no `initialize`, outro que é chamado na instanciação. Não digo que não devam ser utilizados, apenas aconselho que fique atento.
+
+-------------
+
+**Edição 1:** Chamar de `create` o método do construtor evita confusões e deixa mais clara qual a sua real função.
+
+**Edição 2:** Incentivo ao uso do `prototype` como essência da definição de um bom construtor.
