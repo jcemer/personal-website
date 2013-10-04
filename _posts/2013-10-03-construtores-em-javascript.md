@@ -13,7 +13,7 @@ Tive o prazer de [palestrar sobre os paradigmas do JavaScript](https://speakerde
 
 Costumo sempre ficar de olhos abertos para sugar ao máximo o que diferentes linguagens e suas comunidades tem a oferecer, este é meu maior conselho, absorva ao máximo.
 
-Aprendi Ruby há alguns anos atrás. Na época, o que mais me chamou atenção, era que quase tudo pode se comportar como um objeto, assim como no JavaScript. Mas fica tranquilo, minha intenção aqui não é fazer com que você aprenda Ruby, só precisarei dele por alguns parágrafos para defender um ponto.
+Aprendi Ruby há alguns anos atrás. Na época, o que mais me chamou atenção, era que quase tudo pode se comportar como um objeto, assim como no JavaScript. Mas fica tranquilo, minha intenção aqui não é fazer com que você aprenda Ruby, só usarei ela por alguns parágrafos para defender um ponto.
 
 Nossa inspiração será uma versão exageradamente simplificada da principal classe responsável pelos *models* no [Ruby on Rails](http://rubyonrails.org).
 
@@ -48,10 +48,6 @@ Como você deve suspeitar, `User.create(name: 'Jean')` instancia um objeto e o s
 ## Construtores ideais
 
 O construtor ideal é aquele que não adiciona *listeners* de eventos ou elementos no DOM e muito menos dispara um `alert`. E é óbvio que isto não é tão simples e a maioria dos códigos não seguem esta regra.
-
-Cuidado, bibliotecas como [Backbone](http://backbonejs.org), que é um dos *cases* mais fantásticos de herança em JavaScript que conheço, tentam inviabilizar esta abordagem para as views definidas por você. A documentação incentiva o uso da propriedade `events`, que associa *listeners* na instanciação da view. Tem também o método `this.listenTo` geralmente usado no `initialize`, outro que é chamado na instanciação.
-
-Mas repare bem, todos os construtores do Backbone, se não extendidos, podem ser instanciados sem efeitos colaterais. Isto vale para `new Backbone.Model()`, `new Backbone.View()`, `new Backbone.History()`. Pode experimentar, faça estas chamadas no *console* do seu navegador quando estiver acessando o endereço http://backbonejs.org.
 
 ### Modelo
 
@@ -91,13 +87,20 @@ Carousel.init('[data-carousel="products"]');
 
 A principal vantagem é poder **instanciar um objeto sem precisar se preocupar com efeitos colaterais**, este é o ganho.
 
-Herança de construtores em navegadores modernos, indiscutivelmente, deve ser apoiada em [Object.create](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#Classical_inheritance_with_Object.create). Uma técnica mais compatível, via *prototype*, pode ser alcançada com facilidade quando o construtor é ideal.
+Sem dúvidas, herança em navegadores modernos deve ser apoiada em [Object.create](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#Classical_inheritance_with_Object.create). Mas para uma técnica compatível com todos os navegadores, o construtor a ser herdado deve ser instanciado no *prototype* do sub construtor. A maneira mais comum de se fazer isto é [criando um construtor temporário para que o construtor herdado não seja executado](https://github.com/jashkenas/backbone/blob/f6fa0cb87e26bb3d1b7f47144fd720d1ab48e88f/backbone.js#L1552-L1556). Com construtores sem efeito colateral, esta etapa não é necessária.
 
 ~~~ javascript
 function CarouselWithLasers(container) {
   Carousel.call(this, container);
 }
 CarouselWithLasers.prototype = new Carousel();
+CarouselWithLasers.prototype.constructor = CarouselWithLasers;
 ~~~
 
 Viabilizar os testes é outra grande vantagem em não ter comportamento definido no construtor. Desta forma, fica possível aplicar [stubs](http://sinonjs.org/docs/#stubs) no método `init` para poder testar e ser feliz.
+
+-------------
+
+Bibliotecas como [Backbone](http://backbonejs.org), que é um dos *cases* mais fantásticos de herança em JavaScript que conheço, todos os construtores do Backbone, quando não extendidos, podem ser instanciados sem efeitos colaterais. Isto vale para `new Backbone.Model()`, `new Backbone.View()`, `new Backbone.History()`. Pode experimentar, faça estas chamadas no *console* do seu navegador quando estiver acessando o endereço http://backbonejs.org
+
+Um último detalhe é que, para as views do Backbone, a documentação incentiva o uso da propriedade `events`, que associa *listeners* na instanciação do objeto. Tem também o método `this.listenTo` geralmente usado no `initialize`, outro que é chamado na instanciação. Não digo que não devam ser utilizados, apenas aconselho que fique atento.
