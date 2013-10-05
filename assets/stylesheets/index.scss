@@ -3,7 +3,7 @@
 @import "pygments";
 
 body {
-  margin: 0;
+  background: inline-image("background.svg") $background-color;
   font-family: "open sans";
   color: $dark-grey-color;
 }
