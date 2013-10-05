@@ -77,7 +77,7 @@ var productsCarousel = new Carousel('[data-carousel="products"]');
 productsCarousel.init();
 ~~~
 
-Temos outra forma de uso com o mesmo resultado. Repare que desta vez não usamos o operador `create`.
+Temos outra forma de uso com o mesmo resultado. Repare que desta vez não usamos o operador `new`.
 
 ~~~ javascript
 Carousel.create('[data-carousel="products"]');
