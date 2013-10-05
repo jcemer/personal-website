@@ -11,8 +11,8 @@ task :watch do
   build_sass
 
   pids = [
-    spawn('sass --watch assets/stylesheets'),
-    spawn('jekyll serve --watch')
+    spawn("compass watch"),
+    spawn("jekyll serve --watch")
   ]
 
   trap "INT" do
@@ -30,9 +30,9 @@ task :setup_deploy, :repo, :branch do |t, args|
   mkdir deploy_dir
   p args
   cd deploy_dir do
-    system 'git init'
-    system 'git add .'
-    system 'git commit --allow-empty -m "Init"'
+    system "git init"
+    system "git add ."
+    system "git commit --allow-empty -m 'Init'"
     system "git branch -m #{args.branch}"
     system "git remote add origin #{args.repo}"
     # system "git push -f -u origin #{args.branch}"
@@ -42,19 +42,19 @@ end
 task :deploy do
   build_sass
   build_jekyll
-  cp_r '_site/.', deploy_dir
+  cp_r "_site/.", deploy_dir
   cd deploy_dir do
-    system 'git add -A'
+    system "git add -A"
     message = "Site updated at #{Time.now.utc}"
-    system "git commit --allow-empty -m \"#{message}\""
-    system 'git push -f'
+    system "git commit --allow-empty -m '#{message}'"
+    system "git push -f"
   end
 end
 
 def build_sass
-  system('sass --update assets/stylesheets')
+  system("compass compile")
 end
 
 def build_jekyll
-  system('jekyll build')
+  system("jekyll build")
 end
