@@ -3,7 +3,7 @@
 @import "pygments";
 
 body {
-  background: inline-image("background.svg") $background-color;
+  background: inline-image("background.svg") center top $background-color;
   font-family: "open sans";
   color: $dark-grey-color;
 }
@@ -55,18 +55,12 @@ nav {
 }
 
 .brand {
-  display: inline-block;
-  font: 900 1.4em/1 "lato";
-  margin-bottom: .1em;
-  @media screen and (min-width: 500px) {
-    font-size: 2.1em;
-  }
-  letter-spacing: -0.05em;
-  text-shadow: 2px 2px 0 rgba(black, .06);
-  text-transform: uppercase;
-  &:hover {
-    text-decoration: none;
-  }
+  width: 180px;
+  height: 110px;
+  display: block;
+  font: 0/0 a;
+  background: inline-image("logo.svg");
+  background-size: 100% 100%;
 }
 
 .header {
