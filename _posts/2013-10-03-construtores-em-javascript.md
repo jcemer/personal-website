@@ -11,9 +11,9 @@ Tive o prazer de [palestrar sobre os paradigmas do JavaScript](https://speakerde
 
 ## Inspiração
 
-Costumo sempre ficar de olhos abertos para sugar ao máximo o que diferentes linguagens e suas comunidades tem a oferecer, este é meu maior conselho, absorva ao máximo.
+Costumo sempre ficar de olhos abertos para sugar ao máximo o que diferentes linguagens e suas comunidades tem a oferecer. Este é meu maior conselho, absorva ao máximo.
 
-Aprendi Ruby há alguns anos atrás. Na época, o que mais me chamou atenção, era que quase tudo pode se comportar como um objeto, assim como no JavaScript. Mas fica tranquilo, minha intenção aqui não é fazer com que você aprenda Ruby, só usarei ela por alguns parágrafos para defender um ponto.
+Aprendi Ruby há alguns anos atrás. Na época, o que mais me chamou atenção, era que quase tudo pode se comportar como um objeto, assim como no JavaScript. Mas fique tranquilo, minha intenção aqui não é fazer com que você aprenda Ruby, só usarei ela por alguns parágrafos para defender um ponto.
 
 Nossa inspiração será uma versão exageradamente simplificada da principal classe responsável pelos *models* no [Ruby on Rails](http://rubyonrails.org).
 
@@ -103,7 +103,7 @@ Viabilizar os testes é outra grande vantagem em não ter comportamento definido
 
 -------------
 
-Bibliotecas como [Backbone](http://backbonejs.org), que é um dos *cases* mais fantásticos de herança em JavaScript que conheço, todos os construtores do Backbone, quando não extendidos, podem ser instanciados sem efeitos colaterais. Isto vale para `new Backbone.Model()`, `new Backbone.View()`, `new Backbone.History()`. Pode experimentar, faça estas chamadas no *console* do seu navegador quando estiver acessando o endereço http://backbonejs.org
+Na biblioteca [Backbone](http://backbonejs.org), que é um dos *cases* mais fantásticos de herança em JavaScript que conheço, todos os construtores quando não extendidos podem ser instanciados sem efeitos colaterais. Isto vale para `new Backbone.Model()`, `new Backbone.View()`, `new Backbone.History()`. Pode experimentar, faça estas chamadas no *console* do seu navegador quando estiver acessando o endereço http://backbonejs.org
 
 Um último detalhe é que, para as views do Backbone, a documentação incentiva o uso da propriedade `events`, que associa *listeners* na instanciação do objeto. Tem também o método `this.listenTo` geralmente usado no `initialize`, outro que é chamado na instanciação. Não digo que não devam ser utilizados, apenas aconselho que fique atento.
 
