@@ -1,31 +1,36 @@
 ---
 layout: default
 ---
-{{ content }}
 
-<aside class="post-meta">
-  <time class="date">{{ page.date | date: "%d/%m/%Y" }}</time>
-  <span class="author">por <a href="https://plus.google.com/115177659661305654561?rel=author">Jean Carlo Emer</a></span>
-  <span class="tags">
-    <strong>Tags:</strong>
-    <ul>
-      {% for tag in page.tags %}
-      <li>{{ tag }}</li>
-      {% endfor %}
-    </ul>
-  </span>
-</aside>
+<header class="header">
+  <div class="wrapper">
+    <h1 class="header-title">
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </h1>
+    <time class="header-date">
+      <span class="header-date-year">{{ page.date | date_year }}</span>
+      <span class="header-date-month">{{ page.date | date_month }}</span>
+    </time>
+  </div>
+</header>
 
-<div id="disqus_thread"></div>
-  <script>
-    var disqus_shortname = 'jeancarloemer'
-    var disqus_url = '{{ site.url }}{{ page.url }}';
-    ;(function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })()
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<div class="main">
+  <div class="wrapper">
+    {{ content }}
+
+    <aside class="post-meta">
+      <time class="date">{{ page.date | date: "%d/%m/%Y" }}</time>
+      <span class="author">por <a href="https://plus.google.com/115177659661305654561?rel=author">Jean Carlo Emer</a></span>
+      <span class="tags">
+        <strong>Tags:</strong>
+        <ul>
+          {% for tag in page.tags %}
+          <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </span>
+    </aside>
+
+    <div id="disqus_thread"></div>
+  </div>
 </div>

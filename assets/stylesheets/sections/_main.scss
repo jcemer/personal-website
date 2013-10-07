@@ -1,4 +1,11 @@
 .main {
+  background: white;
+  @media screen and (min-width: 600px) {
+    .wrapper {
+      padding: 3rem 0;
+    }
+  }
+
   h2, h3, h4 {
     position: relative;
     a[name] {
@@ -9,13 +16,13 @@
       left: -.9em;
     }
     &:hover a[name] {
-      background: url("/assets/images/anchor.svg") left center no-repeat;
+      background: inline-image("anchor.svg") left center no-repeat;
       background-size: 80% auto;
     }
   }
 
   h2 {
-    margin-top: 1.5em;
+    margin-top: 1.5rem;
     color: darken($dark-grey-color, 15);
   }
 
@@ -29,7 +36,7 @@
     height: .5em;
     width: .6em;
     vertical-align: .2em;
-    background: url("/assets/images/external_link.svg") right center no-repeat;
+    background: inline-image("external_link.svg") right center no-repeat;
     background-size: auto 100%;
   }
 
@@ -38,14 +45,14 @@
     border: none;
     background: $light-grey-color;
     width: 20%;
-    margin: 1.5em auto;
+    margin: 1.5rem auto;
   }
 
   code {
     display: inline-block;
-    padding: .1em .35em;
+    padding: .1rem .35rem;
     font-family: 'Droid Sans Mono', monospace;
-    font-size: .9em;
+    font-size: .9rem;
     background: $light-grey-color;
     color: darken(#93a1a1, 10);
     border-radius: 4px;
@@ -71,9 +78,9 @@
       content: counter(line-numbering);
       counter-increment: line-numbering;
       display: inline-block;
-      width: 2em;
-      padding-right: .5em;
-      margin-right: .5em;
+      width: 2rem;
+      padding-right: .5rem;
+      margin-right: .5rem;
       text-align: right;
       color: darken($grey-color, 15);
       border-right: 1px solid $grey-color;
@@ -88,22 +95,20 @@
 
     a:first-of-type::before,
     a:only-of-type::before {
-        padding-top: .2em;
+        padding-top: .2rem;
     }
 
     a:last-of-type::before,
     a:only-of-type::before {
-        padding-bottom: .2em;
+        padding-bottom: .2rem;
     }
   }
 
   // post meta
   .post-meta {
-    margin-top: 4em;
+    margin: 3rem 0;
     text-align: right;
-    .date {
-      display: inline;
-    }
+    font: 300 italic 1rem $main-font;
     .tags {
       display: block;
     }
@@ -121,9 +126,6 @@
       }
     }
   }
-
-  // disqus
-  #disqus_thread {
-    margin-top: 3em;
-  }
 }
+
+@import "main_lists";

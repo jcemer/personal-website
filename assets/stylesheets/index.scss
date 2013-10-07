@@ -2,108 +2,11 @@
 @import "normalize";
 @import "pygments";
 
-body {
-  background: inline-image("background.svg") center top $background-color;
-  font-family: "open sans";
-  color: $dark-grey-color;
-}
+@import "structure";
 
-a {
-  color: $orange-color;
-  text-decoration: none;
-  &:hover {
-    color: lighten($orange-color, 5);
-    text-decoration: underline;
-  }
-}
-
-nav {
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    display: inline-block;
-    margin-right: 4px;
-    + li {
-      @include before(4px, '/');
-    }
-  }
-  a {
-    text-transform: lowercase;
-    text-decoration: none;
-    color: $dark-grey-color;
-    &:hover {
-      color: black;
-      text-decoration: none;
-    }
-  }
-}
-
-.wrapper {
-  max-width: 600px;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
-.lobby, .main, .footer {
-  padding: 1em 0;
-  @media screen and (min-width: 500px) {
-    padding: 2.5em 0;
-  }
-}
-
-.brand {
-  width: 180px;
-  height: 110px;
-  display: block;
-  font: 0/0 a;
-  background: inline-image("logo.svg");
-  background-size: 100% 100%;
-}
-
-.header {
-  background: $blue-color;
-  color: white;
-  padding: .5em 0;
-  font: 2.7em/1 "lato";
-  @media screen and (min-width: 500px) {
-    font-size: 4.05em;
-  }
-  .header-title {
-    margin: 0;
-    font-size: 1em;
-    text-shadow: 3px 3px 0 rgba(black, .3);
-  }
-  .date {
-    color: white;
-    margin: .2em 0;
-    font-size: .4em;
-    text-shadow: 2px 2px 0 rgba(black, .3);
-  }
-}
-
-// lists
-.list-item {
-  margin-bottom: 1.5em;
-}
-
-// item date
-.date {
-  display: block;
-  color: $dark-grey-color;
-}
-.date-month {
-  @include before(4px, '/');
-}
-
-@import "main";
-@import "lists";
-
-.footer {
-  background: $light-grey-color;
-  font-size: .9em;
-}
+@import "sections/lobby";
+@import "sections/header";
+@import "sections/main";
+@import "sections/footer";
 
 @import "print";

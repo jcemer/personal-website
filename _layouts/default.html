@@ -18,12 +18,12 @@ menu:
 <head>
   <meta charset="UTF-8">
   <title>
-    {% unless page.home %}{{ page.title }} ~{% endunless %} {{ site.name }}
+    {% if page.title %}{{ page.title }} ~{% endif %} {{ site.name }}
   </title>
   <meta name="viewport" content="width=device-width">
 
   <link href="http://feeds.feedburner.com/jeancarloemer" rel="alternate" type="application/rss+xml">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:700,900|Droid+Sans+Mono:400" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700|Raleway:300,700,800|Droid+Sans+Mono:400" rel="stylesheet" type="text/css">
   <link href="/assets/stylesheets/index.css" rel="stylesheet" type="text/css">
   <script>
     window._gaq = [
@@ -35,40 +35,24 @@ menu:
 <body>
   <div class="lobby">
     <div class="wrapper">
-      <a href="/" class="brand" title="Página inicial">Jean Carlo Emer</a>
-      <nav>
+      <nav id="menu">
         <ul>
           {% for item in page.menu %}
             <li><a href="{{ item.url }}">{{ item.name }}</a></li>
           {% endfor %}
         </ul>
+        <a href="#menu" id="menu-toggle">menu</a>
       </nav>
+      <a href="/" class="brand" title="Página inicial">Jean Carlo Emer</a>
     </div>
   </div>
 
-  <header class="header">
-    <div class="wrapper">
-      <h1 class="header-title">
-        {{ page.title }}
-      </h1>
-      {% if page.date %}
-      <time class="date">
-        <span class="date-year">{{ page.date | date_year }}</span>
-        <span class="date-month">{{ page.date | date_month }}</span>
-      </time>
-      {% endif %}
-    </div>
-  </header>
-
-  <div class="main">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </div>
+  {{ content }}
 
   <footer class="footer">
     <p class="wrapper">
-      A propósito, gerado pelo <a href="http://jekyllrb.com" target="_blank">jekyll</a> e hospedado no <a href="http://github.com" target="_blank">github</a>.
+      <span class="brand">Jean Carlo Emer</span>
+      <span class="credits">Layout por <a href="http://curestudio.com.br" class="cure" target="_blank">Cure</a></span>
     </p>
   </footer>
   <script src="/scripts/main.js"></script>

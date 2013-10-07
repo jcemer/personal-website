@@ -1,0 +1,33 @@
+.header {
+  margin-bottom: .1rem;
+  color: $main-color;
+  text-transform: uppercase;
+  text-align: center;
+  .header-title-hide {
+    position: absolute;
+    left: -9999rem;
+  }
+  @media screen and (min-width: 600px) {
+    margin-bottom: 3rem;
+  }
+  .header-title {
+    margin: 0;
+    font: 300 2.5rem/.9 $empashis-font;
+    letter-spacing: -0.08rem;
+    @media screen and (min-width: 600px) {
+      font-size: 4.5rem;
+    }
+    strong {
+      font-weight: 800;
+    }
+  }
+  .header-date {
+    display: block;
+    text-transform: uppercase;
+    font: 300 italic 1rem $main-font;
+    color: $main-color;
+  }
+  .header-date-month {
+    @include before-pipe;
+  }
+}
