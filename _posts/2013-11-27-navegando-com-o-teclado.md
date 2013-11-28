@@ -6,7 +6,7 @@ tags:
   - Usabilidade
 ---
 
-Se analisarmos um pouco, na mesma época dos primórdios daquilo que se tornou a web, foi patenteado o mouse, e talvez por isto estejamos tão acostumados a navegar com cliques, são tão íntimos e de vanguarda. Mas, muito antes dos ponteiros, eram as teclas que imperavam, o teclado é um dos mais antigos dispositivos de entrada de dados em computadores e com ele conseguimos ser bastante ágeis, mais até que imaginamos.
+Se analisarmos um pouco, a mesma época dos primórdios daquilo que se tornou a web, foi patenteado o mouse. Talvez por isto, estejamos tão acostumados a navegar com os cliques. Mas, muito antes dos ponteiros, eram as teclas que imperavam. O teclado é um dos mais antigos dispositivos de entrada de dados em computadores e com ele conseguimos ser bastante ágeis, mais até do que imaginamos.
 
 Há algumas semanas, uma troca de *tweets* entre eu, [Mauricio Wolff](https://twitter.com/bitbonsai) e [Daniel Filho](https://twitter.com/danielfilho), convergiu para **quais os atalhos de teclado mais comuns** que os desenvolvedores devem dar suporte em páginas de internet, este será o principal assunto deste texto.
 
