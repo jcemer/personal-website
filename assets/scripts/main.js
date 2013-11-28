@@ -5,6 +5,27 @@
   }
 })
 
+//
+!function () {
+  var kpr = [],
+      kcw = ['38', '38', '40', '40', '37', '39', '37', '39', '66', '65'];
+
+  function fn(k) {
+    if (kcw[kpr.length] && kcw[kpr.length] == k) {
+      kpr.push(k)
+      if (kpr.length === kcw.length) {
+        document.body.classList.add('ice-cream')
+      }
+    } else {
+      kpr.length = 0
+    }
+  }
+
+  window.addEventListener('keyup', function(event) {
+    fn(event.keyCode.toString());
+  })
+}()
+
 // menu
 !function () {
   var element = document.getElementById('menu-toggle')
