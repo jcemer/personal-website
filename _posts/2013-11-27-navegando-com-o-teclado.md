@@ -128,7 +128,7 @@ $document.on('keydown', 'textarea', function (event) {
 
 ## Crie seu ecosistema
 
-Aplicações de uso massivo possuem uma gama de atalhos bastante rica. A convenção é que a tecla `?` mostre o mapa, tente pressionar no [Gmail](http://gmail.com) ou [GitHub](http://github.com). É interessante notar que alguns dos atalhos do Gmail como o `J` e `K` são baseados no [VIM](http://www.vim.org).
+Aplicações de uso massivo possuem uma gama de atalhos bastante rica. A convenção é que a tecla `?` mostre o mapa; tente pressionar no [Gmail](http://gmail.com) ou [GitHub](http://github.com). É interessante notar que alguns dos atalhos do Gmail como o `J` e `K` são baseados no [VIM](http://www.vim.org).
 
 ----------
 
