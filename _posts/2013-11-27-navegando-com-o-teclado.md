@@ -6,13 +6,13 @@ tags:
   - Usabilidade
 ---
 
-Se analisarmos um pouco, a mesma época dos primórdios daquilo que se tornou a web, foi patenteado o mouse. Talvez por isto, estejamos tão acostumados a navegar com os cliques. Mas, muito antes dos ponteiros, eram as teclas que imperavam. O teclado é um dos mais antigos dispositivos de entrada de dados em computadores e com ele conseguimos ser bastante ágeis, mais até do que imaginamos.
+Se analisarmos um pouco, à mesma época dos primórdios daquilo que se tornou a web, foi patenteado o mouse. Talvez por isto, estejamos tão acostumados a navegar com os cliques. Mas, muito antes dos ponteiros, eram as teclas que imperavam. O teclado é um dos mais antigos dispositivos de entrada de dados em computadores e com ele conseguimos ser bastante ágeis, mais até do que imaginamos.
 
-Há algumas semanas, uma troca de *tweets* entre eu, [Mauricio Wolff](https://twitter.com/bitbonsai) e [Daniel Filho](https://twitter.com/danielfilho), convergiu para **quais os atalhos de teclado mais comuns** que os desenvolvedores devem dar suporte em páginas de internet, este será o principal assunto deste texto.
+Há algumas semanas, uma troca de *tweets* entre eu, [Mauricio Wolff](https://twitter.com/bitbonsai) e [Daniel Filho](https://twitter.com/danielfilho), convergiu para **quais os atalhos de teclado mais comuns** que os desenvolvedores devem dar suporte em páginas de internet e este será o principal assunto deste texto.
 
 ## Atalhos padrões
 
-É importante conhecer os atalhos implementados pelos navegadores para tirar melhor proveito das suas funcionalidades, saiba que veremos apenas alguns deles com a intenção de justificar e servir como suporte à criação de outros atalhos.
+É importante conhecer os atalhos implementados pelos navegadores para tirar melhor proveito das suas funcionalidades. Saiba que veremos apenas alguns deles com a intenção de justificar e servir como suporte à criação de outros atalhos.
 
 ### Deslocamento da página
 
@@ -24,7 +24,7 @@ Alguns elementos da página permitem ao usuário navegar através deles com aux�
 
 ## Fluxos alternativos
 
-É bastante importante introduzir um conceito empírico (leia-se, não tenho referências) de **fluxo alternativo** de uma página de internet. Um fluxo alternativo é criado quando: abrimos um *login* flutuante, mostramos uma galeria de imagens em uma camada superior à página ou mostramos qualquer outro conteúdo de maneira semelhante.
+É bastante importante introduzir um conceito empírico (leia-se, não tenho referências) de **fluxo alternativo** de uma página de internet. Um fluxo alternativo é criado quando abrimos um *login* flutuante, mostramos uma galeria de imagens em uma camada superior à página ou mostramos qualquer outro conteúdo de maneira semelhante.
 
 Os fluxos alternativos devem ser compostos por [elementos que possam receber foco](#Navegação-por-elementos-que-podem-receber-foco), o que pode ser alcançado com o auxílio do atributo `tabindex`. Saiba que o valor igual a `-1` no atributo é usado para que este não participe da navegação por `tab`. 
 
@@ -34,7 +34,7 @@ Os fluxos alternativos devem ser compostos por [elementos que possam receber foc
 jQuery('.modal').focus();
 ~~~
 
-Definir atalhos de teclado é principalmente uma medida de usabilidade que influencia na acessibilidade do documentio. Em via de regra, os atalhos irão facilitar o uso por pessoas sem acesso a *mouse* ou *trackpad* e que possuam problemas motores. Acessibilidade é um campo vasto e você pode começar por [esta palestra do Horácio Soares](http://www.slideshare.net/horacio.soares/frontin-rio-junho2013).
+Definir atalhos de teclado é principalmente uma medida de usabilidade que influencia na acessibilidade do documento. Em via de regra, os atalhos irão facilitar o uso por pessoas sem acesso a *mouse* ou *trackpad* e que possuam problemas motores. Acessibilidade é um campo vasto e você pode começar por [esta palestra do Horácio Soares](http://www.slideshare.net/horacio.soares/frontin-rio-junho2013).
 
 ### Sair de um fluxo
 
