@@ -6,7 +6,7 @@ tags:
   - websockets
 ---
 
-Esta entrevista é uma prévia da palestra sobre [WebSockets](http://pt.wikipedia.org/wiki/WebSockets) que farei na [Conferência Web.br](http://conferenciaweb.w3c.br) de 2013. O texto foi originalmente publicado no blog do evento e se encontra abaixo na íntegra.
+Esta entrevista foi originalmente publicada no blog do evento [Conferência Web.br](http://conferenciaweb.w3c.br) de 2013 em apresentei a palestra: [Protocolos de Comunicação e o desenvolvimento front-end](https://speakerdeck.com/jcemer/protocolos-de-comunicacao).
 
 -----------
 
