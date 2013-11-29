@@ -26,7 +26,7 @@ Alguns elementos da página permitem ao usuário navegar através deles com aux�
 
 É bastante importante introduzir um conceito empírico (leia-se, não tenho referências) de **fluxo alternativo** de uma página de internet. Um fluxo alternativo é criado quando abrimos um *login* flutuante, mostramos uma galeria de imagens em uma camada superior à página ou mostramos qualquer outro conteúdo de maneira semelhante.
 
-Os fluxos alternativos devem ser compostos por [elementos que possam receber foco](#Navegação-por-elementos-que-podem-receber-foco), o que pode ser alcançado com o auxílio do atributo `tabindex`. Saiba que o valor igual a `-1` no atributo é usado para que este não participe da navegação por `tab`. 
+Os fluxos alternativos devem ser compostos por [elementos que possam receber foco](#Navegação-por-elementos-que-podem-receber-foco), o que pode ser alcançado com o auxílio do atributo `tabindex`. Saiba que o valor igual a `-1` no atributo é usado para que este não participe da navegação por `tab`.
 
 É imprescindível que quando o fluxo alternativo for ativado, o foco seja atribuído ao elemento, por exemplo:
 
@@ -40,7 +40,7 @@ Definir atalhos de teclado é principalmente uma medida de usabilidade que influ
 
 A tecla `esc` deve ser responsável por cancelar qualquer fluxo alternativo. É uma experiência bastante frustrante para o usuário ampliar uma imagem que toma toda a tela e não conseguir cancelar esta ação por meio da tecla `esc`.
 
-O [Twitter Bootstrap](getbootstrap.com), por exemplo, possui uma preocupação digna com este comportamento, o código abaixo foi extraído do componente de modal.
+O [Twitter Bootstrap](http://getbootstrap.com), por exemplo, possui uma preocupação digna com este comportamento, o código abaixo foi extraído do componente de modal.
 
 ~~~javascript
 this.$element.on('keyup.dismiss.bs.modal', $.proxy(function (e) {
