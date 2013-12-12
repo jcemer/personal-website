@@ -16,9 +16,11 @@ Antes de mais nada, saiba que este texto é a continuação de [Hipermídias as 
 
 ## Tamanho de fonte
 
-O tamanho da fonte - `font-size` - é determinante para se garantir uma boa legibilidade. Seu  tamanho básico, utilizado caso você não defina, geralmente é **16px**.
+O tamanho da fonte - `font-size` - é determinante para se garantir uma boa legibilidade. Seu tamanho básico, utilizado caso você não defina, geralmente é **16px**.
 
-Apesar deste *quase-padrão-de-16px* ser bastante disseminado, não existe especificação: cada navegador pode definir o mais adequado e permitir que o usuário altere isto através de configuração. Explore isto em seu projeto utilizando as medidas: `xx-small`, `x-small`, `small`, ` medium`, ` large`, `x-large` e `xx-large`.
+Apesar de sempre considerarmos o tamanho de 16px, não existe especificação: **cada navegador pode definir o mais adequado e permitir que o usuário configure**.
+
+Explore isto em seu projeto utilizando as medidas: `xx-small`, `x-small`, `small`, ` medium`, ` large`, `x-large` e `xx-large`.
 
 ~~~ css
 p {
@@ -28,7 +30,7 @@ p {
 
 ### Tamanho relativo
 
-Uma maneira de flexibilizar ainda mais o seu projeto (xxxxx) é utilizando medidas que são baseadas em elementos anscestrais ou outras propriedades.
+Uma maneira de flexibilizar ainda mais as variações de tamanho de fonte do seu projeto é utilizando medidas relativas. Com ela, é possível basear os tamanhos em elementos anscestrais ou outras propriedades. **Note: o tamanho do `<body>`, que é nossa primeira base, será definido pelo dispositivo ou usuário**. Esta é a justificativa para uso de **em** e **rem** em projetos.
 
 A medida **em** é relativa ao tamanho da fonte definido ou herdado no elemento pai.
 
@@ -138,3 +140,9 @@ Em suma, tome muito cuidado ao implementar novas formas de interação através 
 O próximo desafio é escolher uma imagem que tenha uma boa nitidez em diferentes dispositivos sem exagerar no tamanho.
 
 Saiba que o [HTTP Archive](http://httparchive.org) registra que 63% daquilo que compõe seu website são imagens. Os *scripts*, sempre parte do assunto de otimizações, representam apenas 17%. Fica evidente que as imagens merecem uma atenção especial, [vamos a ela](/hipermidia-as-avessas-imagens.html).
+
+
+-------------
+
+**Edição em 12/2013:** Detalhamento sobre o funcionamento e utilidade de fontes com tamanhos relativos.
+
