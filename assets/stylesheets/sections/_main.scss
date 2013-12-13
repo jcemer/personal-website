@@ -58,6 +58,12 @@
     border-radius: 4px;
   }
 
+  blockquote {
+    border-left: 5px solid $light-grey-color;
+    padding-left: 1.5em;
+    margin-left: 0;
+  }
+
   pre {
     counter-reset: line-numbering;
     border: solid 2px $grey-color;
