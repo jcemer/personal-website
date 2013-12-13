@@ -18,7 +18,7 @@ A motivação em escrever vêm de algumas conversas entre amigos, discussões no
 
 A maior aptidão do Node.js são as aplicações que demandam entrada e saída massiva de dados, em suma, para isto é que ele foi desenvolvido.
 
-Por outra lado, o Node.js tem sido adotado pela comunidade front-end como suporte para suas ferramentas há bastante tempo. A lista vai desde [transpiladores](http://coffeescript.org) e [*parsers*](http://esprima.org) de JavaScript, [pré-processadores de CSS](http://learnboost.github.io/stylus) a [automatizadores de tarefas](http://gruntjs.com).
+Por outra lado, o Node.js tem sido adotado pela comunidade front-end como suporte para suas ferramentas há bastante tempo. A lista vai desde transpiladores e *parsers* de JavaScript, pré-processadores de CSS a automatizadores de tarefas.
 
 > Node.js é a ferramenta mais importante pro desenvolvedor front end.
   <br>[Marcelo Oliveira](http://twitter.com/askoth)
