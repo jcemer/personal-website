@@ -16,7 +16,7 @@ A motivação em escrever vêm de algumas conversas entre amigos, discussões no
 
 ## A força do Node.js
 
-A maior aptidão do Node.js são as aplicações que demandam entrada e saída massiva de dados, em suma, para isto é que ele foi desenvolvido.
+Começando com um pouco de embasamento. A maior aptidão do Node.js são as aplicações que demandam entrada e saída massiva de dados, em suma, para isto é que ele foi desenvolvido.
 
 Por outra lado, o Node.js tem sido adotado pela comunidade front-end como suporte para suas ferramentas há bastante tempo. A lista vai desde transpiladores e *parsers* de JavaScript, pré-processadores de CSS a automatizadores de tarefas.
 
