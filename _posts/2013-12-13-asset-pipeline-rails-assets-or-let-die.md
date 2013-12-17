@@ -6,7 +6,7 @@ tags:
   - rails
 ---
 
-Já de início, deixe-me esclarecer duas coisas: 
+Já de início, deixe-me esclarecer duas coisas:
 
 1. Este post trata do [Asset Pipeline do Ruby on Rails](http://www.akitaonrails.com/2012/07/01/asset-pipeline-para-iniciantes)
 
@@ -18,7 +18,7 @@ A motivação em escrever vêm de algumas conversas entre amigos, discussões no
 
 Começando com um pouco de embasamento. A maior aptidão do Node.js são as aplicações que demandam entrada e saída massiva de dados, em suma, para isto é que ele foi desenvolvido.
 
-Por outra lado, o Node.js tem sido adotado pela comunidade front-end como suporte para suas ferramentas há bastante tempo. A lista vai desde transpiladores e *parsers* de JavaScript, pré-processadores de CSS a automatizadores de tarefas.
+Por outro lado, o Node.js tem sido adotado pela comunidade front-end como suporte para suas ferramentas há bastante tempo. A lista vai desde transpiladores e *parsers* de JavaScript, pré-processadores de CSS a automatizadores de tarefas.
 
 > Node.js é a ferramenta mais importante pro desenvolvedor front end.
   <br>[Marcelo Oliveira](http://twitter.com/askoth)
@@ -27,7 +27,7 @@ Por outra lado, o Node.js tem sido adotado pela comunidade front-end como suport
 
 Disponibilizar bibliotecas, frameworks ou qualquer outro tipo de código foi um dos maiores desafios do confeiteiro de HTML da era passada. Para disponibilizar código, o jeito era criar um website com uma área para download. Fizemos isto com a [Rye](http://ryejs.com) nos longínquos 2012.
 
-Nada mais óbvio que a medida que o NPM conquistasse o maior sucesso gerenciando pacotes do Node.js surgissem gerenciadores destinados a código front-end no geral. Surgiram vários: [Jam](http://jamjs.org/), [Component](http://component.io) e [Volo](http://volojs.org). 
+Nada mais óbvio que a medida que o NPM conquistasse o maior sucesso gerenciando pacotes do Node.js surgissem gerenciadores destinados a código front-end no geral. Surgiram vários: [Jam](http://jamjs.org/), [Component](http://component.io) e [Volo](http://volojs.org).
 
 Sem dúvida, o gerenciador de pacotes de maior adoção até o momento foi o Bower. **Toda a biblioteca, framework ou código front-end que se preze está no Bower**.
 
@@ -36,13 +36,13 @@ Sem dúvida, o gerenciador de pacotes de maior adoção até o momento foi o Bow
 É importante reparar que o Asset Pipeline é apenas um framework, de maneira alguma ele seria acompanhado por um gerenciador exclusivo de pacotes. Assim como o Ruby on Rails, o Asset Pipeline utiliza as gems do Ruby para empacotar dependências. Mas a discussão que surge é: **são as gems o empacotamento mais adequado para código front-end?**.
 
 
-Alguns desenvolvedores já deixaram muito claro qual a sua opinião: [caso seu pacote forneça apenas conteúdo para a interface, ele deve estar em um gerenciador específico tal como o Bower](http://simplesideias.com.br/gerenciando-dependencias-client-side-com-bower). O custo desta abordagem no Ruby on Rails implica em ter dois arquivos de configuração de dependências (sim, não temos como abandonar o Gemfile) e duas etapas de *install* e *update* de dependências. Sem contar que muita gente não quer depender do Bower para fazer o deploy. 
+Alguns desenvolvedores já deixaram muito claro qual a sua opinião: [caso seu pacote forneça apenas conteúdo para a interface, ele deve estar em um gerenciador específico tal como o Bower](http://simplesideias.com.br/gerenciando-dependencias-client-side-com-bower). O custo desta abordagem no Ruby on Rails implica em ter dois arquivos de configuração de dependências (sim, não temos como abandonar o Gemfile) e duas etapas de *install* e *update* de dependências. Sem contar que muita gente não quer depender do Bower para fazer o deploy.
 
 Uma das soluções apontadas é adicionar ao repositório de versionamento do projeto os pacotes baixados pelo Bower. Desculpe, mas se for o caso, prefiro continuar com o protocolo antigo de *download* manual das dependências, um gerenciador de pacotes tem muitas mais funções que apenas esta.
 
 ### Rails Assets
 
-O [Rails Assets](https://rails-assets.org) é uma fonte de gems que empacotam código de interface. É a solução perfeita. Uma orla de front-enders cadastra e atualiza seus pacotes no Bower e as gems se alimentam diretamente destes repositórios para criar uma **versão compatível** com o Asset Pipeline.
+O [Rails Assets](https://rails-assets.org) é uma fonte de gems que empacotam código de interface já disponíveis no Bower. É a solução perfeita. Uma orla de front-enders cadastra e atualiza seus pacotes no Bower e as gems se alimentam diretamente destes repositórios para criar uma **versão compatível** com o Asset Pipeline.
 
 Quando me refiro a versão compatível, é importante que saiba que alguns códigos precisam de adaptações para que funcionem no Asset Pipeline. Pegando como exemplo uma [folha de estilo da Fancybox](https://github.com/fancyapps/fancyBox/blob/master/source/jquery.fancybox.css#L97), todas as referências às imagens precisam de instruções especiais para preservar as estratégias de cache. O Rails Assets faz todas as conversões necessárias automaticamente.
 
