@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'O fantástico mundo do JavaScript'
+title: 'BrazilJS: O fantástico mundo do JavaScript'
 tags:
   - javascript
 ---
