@@ -15,9 +15,9 @@ Pronto, esta seria minha palestra: **um panorama sobre os paradigmas da linguage
 
 ---------------
 
-Este foi meu primeiro grande evento, o público foi em torno de mil pessoas, é óbvio que eu estava um tanto ansioso e apreensivo já no primeiro dia. Pra ajudar um pouco, logo pela manhã, conversei sobre o uso do operador `new` com o Crockford e ele foi sumariamente contra. Confesso que fiquei imbarassado, gosto muito de construtores e minha palestra falaria deles.
+Este foi meu primeiro grande evento, o público foi em torno de mil pessoas, é óbvio que eu estava um tanto ansioso e apreensivo já no primeiro dia. Pra ajudar um pouco, logo pela manhã, conversei sobre o uso do operador `new` com o Crockford e ele foi sumariamente contra. Confesso que fiquei embaraçado, gosto muito de construtores e minha palestra falaria deles.
 
-Na tarde do primeiro dia, aproveitei para conversar um pouco com um dos caras que mais respeito quando se trata de JavaScript: Angus Croll, [o quebrador de regras](https://speakerdeck.com/anguscroll/break-all-the-rulez). Mostrei e expliquei a ele todos os *slides* e ele prestou atenção a cada detalhe. No fim, comentei que eu estava um tanto preocupado por apresentar algumas abordagens que, mesmo eu acreditando cegamente, conhecia quem as repudiasse. A resposta de Angus foi curta e sábia: "Você fez a sua pesquisa e está muito bom, não se preocupe".
+Na tarde do primeiro dia, aproveitei para conversar um pouco com um dos caras que mais respeito quando se trata de JavaScript: Angus Croll, [o quebrador de regras](https://speakerdeck.com/anguscroll/break-all-the-rulez). Mostrei e expliquei a ele todos os *slides* e ele prestou atenção a cada detalhe. No fim, comentei que eu estava um tanto preocupado por apresentar algumas abordagens que, mesmo eu acreditando cegamente, conhecia quem as repudiasse. A resposta de Angus foi curta e muito boa: "Você fez a sua pesquisa e está muito bom, não se preocupe".
 
 No segundo dia, subi no palco e apresentei o melhor conteúdo que eu poderia oferecer. Sei que não foi uma palestra perfeita, nunca será e este não era o objetivo. Mas a experiência foi ótima, o *feedback* foi positivo e as críticas muito construtivas. Conheci muitos desenvolvedores desde então e tenho escrito e palestrado o máximo que posso. Tem sido um prazer.
 
