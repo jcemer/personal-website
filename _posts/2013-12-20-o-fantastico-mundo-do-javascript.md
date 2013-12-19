@@ -9,9 +9,9 @@ Foi com surpresa e grande satisfação que recebi no início deste ano o convite
 
 Concordo que já seja um pouco tarde, o evento ocorreu no mês de Agosto, mas só agora senti que seria pertinente falar sobre o assunto. Lembro que, tão logo passou a excitação do convite, dei-me conta do tamanho da responsabilidade. Eu não sabia, mas seria anunciado como [prata da casa](http://jaydson.org/valorize-a-prata-da-casa), sem palavras.
 
-Desde o início eu soube que queria apresentar conteúdo técnico. Sou formado em Ciências da Computação e muito por isto gosto de definir muito bem as ferramentas, abordagens e técnicas que utilizo. Sinto a falta desta prática no dia-a-dia do front-end. Ao mesmo tempo, eu queria que, indiferente do nível de conhecimento, todos aproveitassem.
+Desde o início eu soube que queria apresentar conteúdo técnico. Sou formado em Ciências da Computação e muito por isto gosto de definir muito bem as ferramentas, abordagens e técnicas que utilizo. Sinto a falta desta prática no dia-a-dia do front-end. 
 
-Pronto, esta seria minha palestra: **um panorama sobre os paradigmas da linguagem terminando no calcanhar da modularização**. Dei um nome bonitinho e uma introdução falando sobre a ubiquidade da linguagem só para quebrar o gelo. O desafio foi conseguir abordar todos estes temas e seus anexos em menos de quarenta minutos e considerando todas estas restrições.
+Pronto, esta seria minha palestra: **um panorama sobre os paradigmas da linguagem terminando no calcanhar da modularização**. Dei um nome bonitinho e uma introdução falando sobre a ubiquidade da linguagem só para quebrar o gelo. Ao mesmo tempo, eu queria que, indiferente do nível de conhecimento, todos aproveitassem. Além do desafio de conseguir abordar o tema em quarenta minutos, eu consideraria também mais esta restrição.
 
 ---------------
 
