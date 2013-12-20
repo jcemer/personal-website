@@ -51,6 +51,7 @@
   if (!document.getElementById('disqus_thread')) {
     return
   }
+  window.disqus_url = document.querySelector('link[rel="canonical"]').getAttribute('href')
   var disqus_shortname = 'jeancarloemer'
   var dsq = document.createElement('script')
   var s = document.getElementsByTagName('script')[0]
