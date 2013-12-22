@@ -28,12 +28,12 @@
       display: none;
     }
   }
-  .item-date, .item-event {
+  .item-date, .item-event, .item-external {
     text-transform: uppercase;
     font: 300 italic 1em $main-font;
     color: $main-color;
   }
-  .item-date-month, .item-event {
+  .item-date-month, .item-event, .item-external {
     @include before-pipe;
   }
   .item-title {

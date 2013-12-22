@@ -21,6 +21,9 @@ home: true
           <span class="item-date-year">{{ post.date | date_year }}</span>
           <span class="item-date-month">{{ post.date | date_month }}</span>
         </time>
+        {% if post.external %}
+        <span class="item-external">{{ post.external }}</span>
+        {% endif %}
         <span class="item-title">{{ post.title }}</span>
       </a>
       {{ post.excerpt }}

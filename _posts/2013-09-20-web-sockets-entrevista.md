@@ -4,9 +4,10 @@ title: 'Conheça WebSockets: Entrevista'
 tags:
   - HTML5
   - websockets
+excerpt: "<p>Entrevista que aborda a especificação de WebSockets e em como esta pode ser usada para desenvolver jogos e outros aplicações. Originalmente publicada no blog da Conferência Web.br da W3C.</p>"
 ---
 
-Esta entrevista foi originalmente publicada no blog do evento [Conferência Web.br](http://conferenciaweb.w3c.br) de 2013 em apresentei a palestra: [Protocolos de Comunicação e o desenvolvimento front-end](https://speakerdeck.com/jcemer/protocolos-de-comunicacao).
+Esta entrevista foi originalmente publicada no blog do evento [Conferência Web.br](http://conferenciaweb.w3c.br) de 2013. Neste evento apresentei a palestra: [Protocolos de Comunicação e o desenvolvimento front-end](https://speakerdeck.com/jcemer/protocolos-de-comunicacao).
 
 -----------
 
