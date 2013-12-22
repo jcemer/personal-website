@@ -1,17 +1,18 @@
 ---
 layout: post
-title: 'Atribuindo comportamento a componentes'
+title: Atribuindo comportamento a componentes
 description: Atribuindo comportamento a elementos já presentes em seu DOM
 tags:
   - JavaScript
   - Módulos
+excerpt: "<p>Tratar elementos do seu HTML como componentes é bastante útil para manter a sanidade do seu projeto. Este texto discute um assunto muitas vezes subestimado: qual o local mais adequado para iniciar seus componentes.</p>"
 ---
 
 [Plugins](http://plugins.jquery.com) e [widgets](http://jqueryui.com) de jQuery, [componentes](http://component.io) e outras muitas abstrações de organização e modularização de código são muito úteis para manter a sanidade do seu projeto.
 
 ## O problema
 
-A partir do momento que um elemento no HTML é considerado um componente e precisa ter comportamento, este precisa ser instanciado por alguma abstração (sim, seu plugin, widget ou [Flight Component](http://flightjs.github.io)). O problema é justamente este: **como e aonde fazer isto**. Lembre-se que você terá várias páginas que terão diferentes (e alguns mesmos) componentes.
+A partir do momento que um elemento no HTML é considerado um componente e precisa ter comportamento, este precisa ser instanciado por alguma abstração. O problema é justamente este: **como e aonde fazer isto**. Lembre-se que você terá várias páginas que terão diferentes (e alguns mesmos) componentes.
 
 ## Solução simplista
 

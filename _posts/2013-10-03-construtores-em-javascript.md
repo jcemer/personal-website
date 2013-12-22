@@ -3,6 +3,7 @@ layout: post
 title: 'Criando bons construtores em JavaScript'
 tags:
   - JavaScript
+excerpt: <p>Como tirar proveito do modelo de Orientação a Objetos do JavaScript e criar construtores que não tenham efeitos colaterais e utilizem o <code>prototype</code>.</p>
 ---
 
 Este texto não se trata de uma introdução a Orientação a Objetos, para isto, [este artigo da MDN serve melhor](https://developer.mozilla.org/pt-PT/docs/Javascript_orientado_a_objetos).
@@ -11,11 +12,11 @@ Tive o prazer de [palestrar sobre os paradigmas do JavaScript](https://speakerde
 
 ## Inspiração
 
-Costumo sempre ficar de olhos abertos para sugar ao máximo o que diferentes linguagens e suas comunidades tem a oferecer. Este é meu maior conselho, absorva ao máximo.
+Costumo sempre ficar de olhos abertos para sugar ao máximo o que diferentes linguagens e suas comunidades tem a oferecer.
 
-Aprendi Ruby há alguns anos atrás. Na época, o que mais me chamou atenção, era que quase tudo pode se comportar como um objeto, assim como no JavaScript. Mas fique tranquilo, minha intenção aqui não é fazer com que você aprenda Ruby, só usarei ela por alguns parágrafos para defender um ponto.
+Aprendi Ruby há alguns anos atrás. Na época, o que mais me chamou atenção era que quase tudo pode se comportar como um objeto, assim como no JavaScript. Fique tranquilo, minha intenção aqui não é fazer com que você aprenda Ruby, só usarei a linguagem por alguns parágrafos para defender um ponto.
 
-Nossa inspiração será uma versão exageradamente simplificada da principal classe responsável pelos *models* no [Ruby on Rails](http://rubyonrails.org).
+Nossa inspiração será uma versão simplificada da principal classe responsável pelos *models* no [Ruby on Rails](http://rubyonrails.org).
 
 ~~~ ruby
 class ActiveRecord::Base
@@ -83,7 +84,7 @@ Temos outra forma de uso com o mesmo resultado. Repare que desta vez não usamos
 Carousel.create('[data-carousel="products"]');
 ~~~
 
-Adicionalmente, lembre-se sempre de tirar o máximo proveito da linguagem e definir seus métodos no `prototype`. Desta maneira, uma única função será criada e compartilhada por todas as instâncias do seu construtor.
+Lembre-se sempre de tirar o máximo proveito da linguagem e definir seus métodos no `prototype`. Desta maneira, uma única função será criada e compartilhada por todas as instâncias do seu construtor.
 
 ### Vantagens
 

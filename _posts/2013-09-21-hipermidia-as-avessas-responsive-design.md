@@ -6,7 +6,7 @@ tags:
   - mobile
 ---
 
-[Responsive Design](http://alistapart.com/article/responsive-web-design), no contexto de hipermídias, é a entrega de uma experiência ótima de leitura e navegação independente de dispositivo.
+[Responsive Design](http://alistapart.com/article/responsive-web-design), no contexto de hipermídias, é a entrega de uma experiência ótima de leitura e navegação independente de dispositivo sem que para isto seja preciso criar duas mídias totalmente distintas.
 
 ----------
 

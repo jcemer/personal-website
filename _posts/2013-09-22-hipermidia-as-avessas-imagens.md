@@ -6,7 +6,7 @@ tags:
   - mobile
 ---
 
-O que denominamos [Hipermídia as avessas](/hipermidia-as-avessas.html) e aprendemos sobre [design responsivo](/hipermidia-as-avessas-responsive-design.html) nos obriga a dar uma atenção especial às imagens. Temos algumas propostas para lidar com elas. Antes de mais nada, é importante conhecer basicamente os diferentes formatos de imagens, vamos a eles.
+O que denominamos [Hipermídia as avessas](/hipermidia-as-avessas.html) e aprendemos sobre [design responsivo](/hipermidia-as-avessas-responsive-design.html) nos obriga a dar uma atenção especial às imagens. Temos algumas propostas para lidar com elas.
 
 ## Formatos de imagens
 

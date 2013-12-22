@@ -4,6 +4,7 @@ title: Navegando com o teclado
 tags:
   - JavaScript
   - Usabilidade
+excerpt: <p>Sobre quais os benefícios de pensar a navegação da sua aplicação além dos cliques do mouse. Aprenda a definir atalhos de teclados e conheça alguns mapa de atalhos de aplicações populares.<p>
 ---
 
 Se analisarmos um pouco, à mesma época dos primórdios daquilo que se tornou a web, foi patenteado o mouse. Talvez por isto, estejamos tão acostumados a navegar com os cliques. Mas, muito antes dos ponteiros, eram as teclas que imperavam. O teclado é um dos mais antigos dispositivos de entrada de dados em computadores e com ele conseguimos ser bastante ágeis, mais até do que imaginamos.
@@ -57,7 +58,7 @@ var KEYBOARD = {
 
 $(document).on('keyup.modal', function (event) {
     if (event.which == KEYBOARD.esc) {
-        // handle action	
+        // handle action
     }
 })
 ~~~
@@ -76,7 +77,7 @@ $(document).on('keyup.modal', function (event) {
     if (event.which == KEYBOARD.left) {
        // handle action
     } else if (event.which == KEYBOARD.right) {
-       // handle action	
+       // handle action
     }
 })
 ~~~
@@ -124,11 +125,11 @@ $document.on('keydown', 'textarea', function (event) {
 })
 ~~~
 
-[Experimente o funcionamento](http://jsfiddle.net/rPWhv/), tenho certeza que se ainda não conhecia, passará a tentar a combinação em todos os próximos formulários que preencher, vicia.
+[Experimente o funcionamento](http://jsfiddle.net/rPWhv/). Tenho certeza que se ainda não conhecia, passará a tentar a combinação em todos os próximos formulários que preencher, vicia.
 
 ## Crie seu ecosistema
 
-Aplicações de uso massivo possuem uma gama de atalhos bastante rica. A convenção é que a tecla `?` mostre o mapa; tente pressionar no [Gmail](http://gmail.com) ou [GitHub](http://github.com). É interessante notar que alguns dos atalhos do Gmail como o `J` e `K` são baseados no [VIM](http://www.vim.org).
+Aplicações de uso massivo possuem uma gama de atalhos bastante rica. A convenção é que a tecla `?` mostre o mapa; tente pressionar no Gmail ou GitHub. É interessante notar que alguns dos atalhos do Gmail como o `J` e `K` são baseados no [VIM](http://www.vim.org).
 
 ----------
 

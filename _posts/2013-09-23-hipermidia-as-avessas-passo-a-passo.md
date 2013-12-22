@@ -4,9 +4,10 @@ title: 'Hipermídia as Avessas: Passo a passo'
 tags:
   - HTML5
   - mobile
+excerpt: <p>Reunião dos pontos e técnicas mais importantes que você deve lembrar enquanto estiver desenvolvendo um projeto para diferentes suportes computacionais.</p>
 ---
 
-Espero que já tenha lido as outras postagens da série, comece pela [introdução](/hipermidia-as-avessas.html) caso não o tenha, recomendo. Conheceremos a partir de agora os pontos e técnicas mais importantes para lembrar enquanto estiver desenvolvendo.
+Espero que já tenha lido as outras postagens da série, comece pela [introdução](/hipermidia-as-avessas.html) caso não o tenha, recomendo. Conheceremos a partir de agora os pontos e técnicas mais importantes para lembrar enquanto estiver desenvolvendo um projeto para diferentes suportes computacionais.
 
 A dica mais importante é que você deve começar a desenvolver para os dispositivos que oferecem menor performance e nos quais você tem menos experiência como desenvolvedor:  os dispositivos mobile. Nunca se esqueça de testar desde as fases iniciais e principalmente na de homologação como seu projeto se comporta em mobile.
 

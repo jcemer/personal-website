@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Construíndo uma Mobile Web App
+external: grifo
 tags:
   - mobile
   - webapp

@@ -4,6 +4,7 @@ title: 'Asset Pipeline: Rails Assets or let die'
 tags:
   - assets
   - rails
+excerpt: <p>A popularização do Bower como gerenciador de pacotes de código de interface e o dilema sobre a adoção de um workflow Node.js para gerenciar <i>assets</i> em projetos Ruby on Rails.</p>
 ---
 
 Já de início, deixe-me esclarecer duas coisas:
