@@ -19,3 +19,9 @@ Just build the site with:
 ```
 bundle exec rake build
 ```
+
+Deploy with the command:
+
+```
+bundle exec rake deploy
+```
