@@ -3,7 +3,7 @@ layout: post
 title: 'Live posting do primeiro dia da JSConfUY'
 tags:
   - javascript
-excerpt: "<p>Textp escrito \"ao-vivo\" durante a JSConf do Uruguai.</p>"
+excerpt: "<p>Texto escrito \"ao-vivo\" durante a JSConf do Uruguai.</p>"
 ---
 
 Cobertura do primeiro dia da JSConfUY 2014.
@@ -20,7 +20,7 @@ O projeto http://weplay.io, título da sua palestra, é um ótimo exemplo do tra
 
 -------
 
-Guillermo foi muito aplaudido por ser um nome importantes da comunidade JavaScript. WebSockets é uma tecnologia incrível que infelizmente possui muitas implementações e problemas de suporte. Socket.io é um dos poucos projetos que efetivamente simplificou e popularizou a tecnologia. Foi uma honra assistir a apresentação de um dos seus criadores.
+Guillermo foi muito aplaudido por ser um nome importante da comunidade JavaScript. WebSockets é uma tecnologia incrível que infelizmente possui muitas implementações e problemas de suporte. Socket.io é um dos poucos projetos que efetivamente simplificou e popularizou a tecnologia. Foi uma honra assistir a apresentação de um dos seus criadores.
 
 
 ## Jade: A templating language - Forbes Lindesay
@@ -44,7 +44,7 @@ O Kraken teve sua infraestrutura definida em três meses e em mais quatro meses 
 
 ------
 
-O *framework* teve uma adoção absurda no PayPal e eles já mantem 20 aplicações escritas. A apresentação foi muito boa e o mais humilde dos ensinamentos foi: "Mantenha as convenções de *Open Source* ao invés de reinventar suas próprias".
+O *framework* teve uma adoção absurda no PayPal e eles já mantêm 20 aplicações escritas. A apresentação foi muito boa e o mais humilde dos ensinamentos foi: "Mantenha as convenções de *Open Source* ao invés de reinventar suas próprias".
 
 -------
 
