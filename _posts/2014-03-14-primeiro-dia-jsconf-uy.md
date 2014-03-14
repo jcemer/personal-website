@@ -10,7 +10,7 @@ Cobertura do primeiro dia da JSConfUY 2014.
 
 ## We Play - Guillermo Rauch
 
-Guillermo, conhecido pelo socket.io dentre outros vários projetos *open source*, é um dos *keynotes* do evento. Sua palestra inicia abordando um pouco da história do socket.io, que surgiu da frustração do difícil uso de outras ferramentas similares e teve como objetivo tornar simples o uso de WebSockets.
+Guillermo, conhecido pelo [socket.io](http://socket.io) dentre outros vários projetos *open source*, é um dos *keynotes* do evento. Sua palestra inicia abordando um pouco da história do socket.io, que surgiu da frustração do difícil uso de outras ferramentas similares e teve como objetivo tornar simples o uso de WebSockets.
 
 O assunto principal são as novidades da versão 1.0.0-pre do socket.io que teve seu *release* recenente. Nesta nova versão modularização foi levada a sério e todos os commits são testados automaticamente em IE6+, iPhone, iPad entre outros navegadores e dispositivos.
 
@@ -25,7 +25,7 @@ Guillermo foi muito aplaudido por ser um nome importante da comunidade JavaScrip
 
 ## Jade: A templating language - Forbes Lindesay
 
-Sem muita cerimônia, Forbes logo explora um código escrito em HTML e seu equivalente em Jade. O que segue é a apresentação completa da sintaxe e *feaures* da linguagem.
+Sem muita cerimônia, Forbes logo explora um código escrito em HTML e seu equivalente em [Jade](http://jade-lang.com). O que segue é a apresentação completa da sintaxe e *feaures* da linguagem.
 
 Um dos pontos interessantes foi a demonstração de como é possível passar conteúdo JavaScript para ser renderizado nos *templates* permitindo a geração dinâmica de HTML. Em favor do reuso, os *mixins* e *layout templates* foram apresentados. Outra funcionalidade interessante são os *filters* que permitem, por exemplo, mesclar código Jade com markdown.
 
@@ -38,13 +38,30 @@ Sou um grande admirador de linguagens que geram outras, por assim dizer. Mas apr
 
 ## Building for scale with KrakenJS - Lenny Markus
 
-O objetivo do Kraken foi o de introduzir Node.js no PayPal. O Kraken.js é *Web Application Framework** apoiado em Express e que segue suas convenções. O *framework* compreende uma série de módulos com funções específicas: Lusca, para segurança; Marara, para internacionalização; Kappa, que é um *proxy#* NPM para manter módulos privados. Os módulos podem ser utilizados individualmente em aplicações escritas em Express.
+O objetivo do Kraken foi o de introduzir Node.js no PayPal. O [Kraken.js](http://krakenjs.com) é *Web Application Framework** apoiado em Express e que segue suas convenções. O *framework* compreende uma série de módulos com funções específicas: Lusca, para segurança; Marara, para internacionalização; Kappa, que é um *proxy#* NPM para manter módulos privados. Os módulos podem ser utilizados individualmente em aplicações escritas em Express.
 
 O Kraken teve sua infraestrutura definida em três meses e em mais quatro meses um projeto piloto foi codificado para substituir outro escrito em Java. O impressionante é que a equipe que escreveu o projeto piloto possuia apenas dois desenvolvedores contra doze do projeto anterior. As diferenças de números de linhas de código também impressionam positivamente. A função do projeto piloto foi adquirir credibilidade para a tecnologia Node.js no PayPal.
 
 ------
 
 O *framework* teve uma adoção absurda no PayPal e eles já mantêm 20 aplicações escritas. A apresentação foi muito boa e o mais humilde dos ensinamentos foi: "Mantenha as convenções de *Open Source* ao invés de reinventar suas próprias".
+
+
+## Improving client-side apps' perfomance with Facebook's React - Jú Gonçalves
+
+Jú Gonçalves inicia sua palestra ilustrando um de seus tweets que demonstra sua preocupação com performance seguindo para a explanação de como *frameworks* MVW geralmente funcionam.
+
+O que faz o [React](http://facebook.github.io/react) diferente inicialmente é que ele não se trata de um MVW *framework*: não há *views*, *controllers* e similares. A chave dos ganhos de performance estão relacionados com o fato de o React evitar acessar o DOM, o que ocasionaria *repaints* e *reflows*.
+
+A biblioteca obtem informações do DOM através de uma abstração da *DOMTree*: a *ComponentTree*. Após uma série de processamentos, esta abastração pode ser consultada e atestar se é necessária alguma intervenção no DOM.
+
+Em seguida, o projeto [Om](https://github.com/swannodette/om), uma interface em ClojureScript para React foi apresentado. Om alcança peformances mais interessantes ainda devido as características de imutabilidade das linguagens funcionais.
+
+---------
+
+A palestra tem um nível técnico de tirar o fôlego. É necessário muito estudo para dominar o uso e entender o funcionamento interno de cada uma das ferramentas apresentadas.
+
+
 
 -------
 
