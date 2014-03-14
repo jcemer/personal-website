@@ -49,19 +49,52 @@ O *framework* teve uma adoção absurda no PayPal e eles já mantêm 20 aplicaç
 
 ## Improving client-side apps' perfomance with Facebook's React - Jú Gonçalves
 
-Jú Gonçalves inicia sua palestra ilustrando um de seus tweets que demonstra sua preocupação com performance seguindo para a explanação de como *frameworks* MVW geralmente funcionam.
+Jú Gonçalves inicia sua palestra com um de seus tweets que demonstra sua preocupação com performance. Em seguida, é apresentada uma explanação de como *frameworks* MVW geralmente funcionam.
 
-O que faz o [React](http://facebook.github.io/react) diferente inicialmente é que ele não se trata de um MVW *framework*: não há *views*, *controllers* e similares. A chave dos ganhos de performance estão relacionados com o fato de o React evitar acessar o DOM, o que ocasionaria *repaints* e *reflows*.
+O que faz o [React](http://facebook.github.io/react) diferente inicialmente é que ele não se trata de um MVW *framework*: não há *views*, *controllers* e similares.
 
-A biblioteca obtem informações do DOM através de uma abstração da *DOMTree*: a *ComponentTree*. Após uma série de processamentos, esta abastração pode ser consultada e atestar se é necessária alguma intervenção no DOM.
+A chave dos ganhos de performance estão relacionados com o fato de o React evitar acessar o DOM, o que ocasionaria *repaints* e *reflows*. A biblioteca obtem informações do DOM através de uma abstração da *DOMTree*: a *ComponentTree*. Após uma série de processamentos, esta abastração pode ser consultada e atestar se é necessária alguma intervenção no DOM.
 
-Em seguida, o projeto [Om](https://github.com/swannodette/om), uma interface em ClojureScript para React foi apresentado. Om alcança peformances mais interessantes ainda devido as características de imutabilidade das linguagens funcionais.
+O projeto [Om](https://github.com/swannodette/om), uma interface em ClojureScript para React também foi apresentado. Om alcança peformances mais interessantes ainda devido as características de imutabilidade das linguagens funcionais.
 
 ---------
 
 A palestra tem um nível técnico de tirar o fôlego. É necessário muito estudo para dominar o uso e entender o funcionamento interno de cada uma das ferramentas apresentadas.
 
 
+## Taking Promises Seriously - James MacAulay
+
+*Promises* surgiram de diferentes bibliotecas e propostas de especificações. O padrão mais aceito é o Promises/A+ e já há uma especificação rascunho no ES6: `function Promise() { [native code] }`. Antes das *promises*, o único jeito era usar *callbacks* aninhadas.
+
+O uso de *promises* é baseado na função `.then`: *promises* que seguem a especificação irão retornar um valor transformado em uma chamada de `.then`. Desta forma, é possível aninhar chamadas de tal maneira que sua ordem afete o resultado final. É importante notar que o `Deferred` retornado nas chamadas assíncronas da jQuery não segue esta premissa.
+
+Um uso interessante da API de *promises*, é utilizar a função `race` para definir um tempo limite de espera para que um valor fique "pronto".
+
+É essencial que biblitoecas e *frameworks* passem cada vez mais a aceitar valores de *promises*. Para ajudar com esta tarefa, bibliotecas como [kozu](http://github.com/jamesmacaulat/kozu) permite tornar qualquer função passível de ser utilizada com promises. Assim podem usar underscore com coleções cujos valores sejam *promises*, o que é muito interessante.
+
+----------
+
+A palestra é cheia de boas sacadas em diversas bibliotecas e o conteúdo foi apresentado de maneira muito clara. Além disto, dominar *promises* é essencial para todo desenvolvedor que queira evitar o `callback hell` e explorar outras características poderosas.
+
+
+## Functional JavaScript - Federico Silva
+
+Uma linguagem é baseada em expressões primitivas, meios de combinação e de abstração. Com a definição de linguagem é que Federico inicia sua palestra.
+
+> JavaScript possibilita diferentes paradigmas mas não força o uso de algum.
+> - Jeremy Ashkenas
+
+Em JavaScript, funções são cidadões de primeira classe, o que significa que funções são equivalentes a qualquer outro tipo de valor da linguagem, podendo ser atribuídas a variáveis, por exemplo. Ainda, em JavaScript, as funções são de alta ordem: uma chamada de função pode receber funções e retornar outras.
+
+Linguagens unicamente funcionais são bastante calcadas em imutabilidade. Pela caracterísica orientação a objetos do JavaScript, que tendem a manter estado e portanto são mutáveis, devemos tomar atenção.
+
+A sequência da palestra mostra uma série de conceitos e práticas de programação funcional. Muitos dos exemplos são escritos em [Underscore](http://underscorejs.org).
+
+A conclusão é que, por programação funcional ser orientado ao processamento de dados, esta pode facilitar a vida do programador em muitos casos.
+
+------
+
+Este é um assunto do qual sou muito fã. Mesmo sem uma base funcional perfeita no JavaScript, (sem [Tail call optimization](http://en.wikipedia.org/wiki/Tail_call), por exemplo) bibliotecas como Underscore podem fazer valer a pena programar no paradgima funcional. Um livro ótimo para quem quiser se aprofundar no assunto é o Functional JavaScript do Michael Fogus.
 
 -------
 
