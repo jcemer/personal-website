@@ -35,6 +35,17 @@ O compilador do Jade foi descrito e defendido por ser bem desenvolvido e conter 
 
 Sou um grande admirador de linguagens que geram outras, por assim dizer. Mas apresentar uma nova linguagem em um evento deste porte inclui destacar os problemas que esta soluciona. O uso de uma linguagem ou tecnologia precisa ser bem justificado.
 
+
+## Building for scale with KrakenJS - Lenny Markus
+
+O objetivo do Kraken foi o de introduzir Node.js no PayPal. O Kraken.js é *Web Application Framework** apoiado em Express e que segue suas convenções. O *framework* compreende uma série de módulos com funções específicas: Lusca, para segurança; Marara, para internacionalização; Kappa, que é um *proxy#* NPM para manter módulos privados. Os módulos podem ser utilizados individualmente em aplicações escritas em Express.
+
+O Kraken teve sua infraestrutura definida em três meses e em mais quatro meses um projeto piloto foi codificado para substituir outro escrito em Java. O impressionante é que a equipe que escreveu o projeto piloto possuia apenas dois desenvolvedores contra doze do projeto anterior. As diferenças de números de linhas de código também impressionam positivamente. A função do projeto piloto foi adquirir credibilidade para a tecnologia Node.js no PayPal.
+
+------
+
+O *framework* teve uma adoção absurda no PayPal e eles já mantem 20 aplicações escritas. A apresentação foi muito boa e o mais humilde dos ensinamentos foi: "Mantenha as convenções de *Open Source* ao invés de reinventar suas próprias".
+
 -------
 
 *Esta postagem ainda será atualizada.*

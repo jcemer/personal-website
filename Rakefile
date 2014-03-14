@@ -28,7 +28,6 @@ end
 task :setup_deploy, :repo, :branch do |t, args|
   rm_rf deploy_dir
   mkdir deploy_dir
-  p args
   cd deploy_dir do
     system "git init"
     system "git add ."
