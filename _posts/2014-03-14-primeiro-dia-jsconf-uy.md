@@ -6,7 +6,7 @@ tags:
 excerpt: "<p>Texto escrito \"ao-vivo\" durante a JSConf do Uruguai.</p>"
 ---
 
-Cobertura do primeiro dia da JSConfUY 2014.
+Cobertura comentada sobre o primeiro dia da JSConfUY 2014.
 
 ## We Play - Guillermo Rauch
 
@@ -98,4 +98,41 @@ Este é um assunto do qual sou muito fã. Mesmo sem uma base funcional perfeita 
 
 -------
 
-*Esta postagem ainda será atualizada.*
+## Promises and Generators: control flow utopia - Forbes Lindesay
+
+A palestra apresenta um cenário utilizando *callbacks* para tratar um processamento assíncrono. A partir de várias implementações, a dificuldade e *workarounds* para tratar erros e excessões é explicado.
+
+Além da definição de *promises*, a palestra apresenta o método `.done`. A máxima é que `.then` é para `.done` o que `.map` é para `.forEach`. Vale ressaltar que a especificação ES6 não inclui `.done` e portanto é necessário um *polyfill*. A justificativa de uso de *promises* é possibilitar uma escrita de código descomplicada que possa facilmente tratar erros.
+
+A apresentação também abordou *generators* que são funções que podem interromper o fluxo de sua execução para posteriormente seguir daquele mesmo ponto. A integração de *promises* com *generators* pode ser bastante interessante e possibilitar a escrita de códigos poderosos. Um bom exemplo são as construções possíveis quando usando bibliotecas como a [co](https://github.com/visionmedia/co).
+
+----------
+
+Forbes já havia palestrado mais cedo no evento e conseguiu convencer mais nesta segunda palestra. O assunto é interessante e foi muito bem apresentado. Em especial, [generators](http://en.wikipedia.org/wiki/Generator_(computer_programming) permitem sintaxes absurdamente expressivas.
+
+
+## Backbone.js - Jeremy Ashkenas
+
+Jeremy é criador do Backbone.js, Underscore.js e CoffeeScript, nada mais óbvio que seja um dos palestrantes mais esperados do evento.
+
+A apresenta apresenta o cenário atual de desenvolvimento. Há cinco anos atrás, um website não era tão ambicioso quanto os que estamos acostumados desenvolver. Por isto é que devemos levar a sério o uso de JavaScript, aplicações monolíticas não é a melhor maneira de se escrever código.
+
+[Backbone.js](http://backbonejs.org) nasceu de uma aplicação destinada a armazenar e compartilhar documentos de trabalho de jornalistas. A principal característica da biblioteca é não fazer do DOM a principal fonte de informações da aplicação e uma das filosofias é sempre se manter o mais minimalista possível. Toda nova funcionalidade do Backbone.js é implementada com base em casos de usos.
+
+O ponto mais fantástico é que Jeremy acredita que o código da biblioteca, mesmo que não necessariamente precise ser explorado pelo programador, deve ser simples o suficiente para ser lido sem impedimentos.
+
+Jeremy apresenta alguns dos seus *Backbone.js Patterns* preferidos:
+
+- Adicionar métodos em *Models* e *Collections*.
+- Filtrar coleções no front-end da aplicação.
+- Utilizar `listenTo` para evitar *memory leaks*.
+- Utilizar `_.debounce` para evitar múltiplos *renders* em espaços muito curtos de tempo.
+- Dividir em lotes a geração de elementos e postergar sua criação e inserção no documento para ganhos de performance.
+
+Dentre outros padrões.
+
+----------
+
+A palestra durou quase uma hora e valeu cada segundo. O Jeremy demonstra uma maturidade fora do comum no palco. E isto não é por nada. O nível de conhecimento e sua influência na comunidade JavaScript é inquestionável.
+
+Sua observação de que código se escreve para leitura e sua paciência em manter todos os seus projetos *open sources* sempre atualizados é incrível. Melhor palestra do dia.
