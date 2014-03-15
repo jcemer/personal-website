@@ -51,9 +51,9 @@ O *framework* teve uma adoção absurda no PayPal e eles já mantêm 20 aplicaç
 
 Jú Gonçalves inicia sua palestra com um de seus tweets que demonstra sua preocupação com performance. Em seguida, é apresentada uma explanação de como *frameworks* MVW geralmente funcionam.
 
-O que faz o [React](http://facebook.github.io/react) diferente inicialmente é que ele não se trata de um MVW *framework*: não há *views*, *controllers* e similares.
+O que faz o [React](http://facebook.github.io/react) diferente é que, em uma primeira análise, ele não se trata de um MVW *framework*: não há *views*, *controllers* e similares.
 
-A chave dos ganhos de performance estão relacionados com o fato de o React evitar acessar o DOM, o que ocasionaria *repaints* e *reflows*. A biblioteca obtem informações do DOM através de uma abstração da *DOMTree*: a *ComponentTree*. Após uma série de processamentos, esta abastração pode ser consultada e atestar se é necessária alguma intervenção no DOM.
+A chave do ganho de performance está relacionado com o fato de o React evitar acessar o DOM, o que ocasiona *repaints* e *reflows*. A biblioteca obtem informações do DOM através de uma abstração da *DOMTree*: a *ComponentTree*. Após uma série de processamentos, esta abstração pode ser consultada e atestar se é necessária alguma intervenção no DOM.
 
 O projeto [Om](https://github.com/swannodette/om), uma interface em ClojureScript para React também foi apresentado. Om alcança peformances mais interessantes ainda devido as características de imutabilidade das linguagens funcionais.
 
@@ -84,7 +84,7 @@ Uma linguagem é baseada em expressões primitivas, meios de combinação e de a
 > JavaScript possibilita diferentes paradigmas mas não força o uso de algum.
 > - Jeremy Ashkenas
 
-Em JavaScript, funções são cidadões de primeira classe, o que significa que funções são equivalentes a qualquer outro tipo de valor da linguagem, podendo ser atribuídas a variáveis, por exemplo. Ainda, em JavaScript, as funções são de alta ordem: uma chamada de função pode receber funções e retornar outras.
+Em JavaScript, funções são cidadãos de primeira classe, o que significa que funções são equivalentes a qualquer outro tipo de valor da linguagem, podendo ser atribuídas a variáveis, por exemplo. Ainda, em JavaScript, as funções são de alta ordem: uma chamada de função pode receber funções e retornar outras.
 
 Linguagens unicamente funcionais são bastante calcadas em imutabilidade. Pela caracterísica orientação a objetos do JavaScript, que tendem a manter estado e portanto são mutáveis, devemos tomar atenção.
 
