@@ -6,7 +6,7 @@ tags:
 excerpt: "<p>Texto escrito \"ao-vivo\" durante a JSConf do Uruguai.</p>"
 ---
 
-Cobertura comentada da manhã do segundo dia da JSConfUY 2014.
+Cobertura comentada da manhã do segundo dia da JSConfUY 2014. Não deixe de ler a [cobertura do primeiro dia](primeiro-dia-jsconf-uy.html) e a [parte 2 do segundo dia de evento](segundo-dia-jsconf-uy-parte-2.html).
 
 ## Tiny modules on the frontend - James Halliday
 
@@ -72,3 +72,7 @@ A apresentação foi recheada de exemplos enfatizando a experiência do usuário
 ------------
 
 Os conceitos e filosofias apresentados na palestra foram muito bons. Mas nada disto é novidade e se aventurar em um *framework* com uma pequena comunidade pode não ser uma boa ideia. Mesmo assim, para quem se interessar [My First MontageJS Application](http://renaun.com/blog/2013/05/my-first-montagejs-application) apresenta muito bem o *framework* e de quebra rascunha uma aplicação simples.
+
+------------
+
+Não deixe de ler a [cobertura do primeiro dia](primeiro-dia-jsconf-uy.html) e a [parte 2 do segundo dia de evento](segundo-dia-jsconf-uy-parte-2.html).

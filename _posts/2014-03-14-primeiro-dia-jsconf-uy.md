@@ -6,7 +6,7 @@ tags:
 excerpt: "<p>Texto escrito \"ao-vivo\" durante a JSConf do Uruguai.</p>"
 ---
 
-Cobertura comentada sobre o primeiro dia da JSConfUY 2014.
+Cobertura comentada sobre o primeiro dia da JSConfUY 2014. Confira também o segundo dia de evento dividido em [parte 1](segundo-dia-jsconf-uy-parte-1.html) e [parte 2](segundo-dia-jsconf-uy-parte-2.html).
 
 ## We Play - Guillermo Rauch
 
@@ -136,3 +136,7 @@ Dentre outros padrões.
 A palestra durou quase uma hora e valeu cada segundo. O Jeremy demonstra uma maturidade fora do comum no palco. E isto não é por nada. O nível de conhecimento e sua influência na comunidade JavaScript é inquestionável.
 
 Sua observação de que código se escreve para leitura e sua paciência em manter todos os seus projetos *open sources* sempre atualizados é incrível. Melhor palestra do dia.
+
+----------
+
+Confira também o segundo dia de evento dividido em [parte 1](segundo-dia-jsconf-uy-parte-1.html) e [parte 2](segundo-dia-jsconf-uy-parte-2.html).

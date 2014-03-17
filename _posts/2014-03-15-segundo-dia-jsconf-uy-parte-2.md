@@ -6,7 +6,7 @@ tags:
 excerpt: "<p>Texto escrito \"ao-vivo\" durante a JSConf do Uruguai.</p>"
 ---
 
-Cobertura comentada da tarde do segundo dia da JSConfUY 2014.
+Cobertura comentada da tarde do segundo dia da JSConfUY 2014. Saiba que também há cobertura do [primeiro dia](primeiro-dia-jsconf-uy.html) e da [primeira parte deste mesmo dia de evento](segundo-dia-jsconf-uy-parte-1.html).
 
 ## A future called Web Components - Zeno Rocha
 
@@ -77,6 +77,8 @@ Os problemas dos *cookies* são os seguintes:
 - sucessíveis a ataques de CSRF.
 
 A proposta é o uso de [JSON Web Token](http://jwt.io) ([rascunho da especificação](http://tools.ietf.org/html/draft-ietf-oauth-json-web-token-18)). Uma aplicação de exemplo escrita em Express e usando o módulo [Express-JWT](https://github.com/auth0/express-jwt) é apresentada.
+
+[Slides da palestra](https://github.com/auth0/death-to-cookies-jsconfuy)
 
 
 ## Distributed Applications in Node.js - Angel "Java" Lopez
@@ -158,11 +160,15 @@ O conselho final foi para que ninguém deixe *bugs* no código.
 
 --------
 
-Não existe outro palestrante que possa me deixar tão frustrado quanto este. Concordo com muitas das suas opiniões e reconheço a função e importância do seu livro na época em que foi escrito. Mas a sua opinião inflexível e muitas vezes grosseiras joga tudo por terra.
+Não existe outro palestrante que possa me deixar tão frustrado quanto este. Concordo com muitas das suas opiniões e reconheço a função e importância do seu livro na época em que foi escrito. Mas a sua opinião inflexível e muitas vezes grosseira joga tudo por terra.
 
 Objetos gerados por funções são órfãos. Classes são abstrações extremamente úteis para identificar e organizar código. Pegue como exemplo o padrão MVC: Jeremy fez um trabalho fantástico com Backbone.js e isto justifica completamente a necessidade de classes na linguagem.
 
 Veja, não precisamos fazer tudo com classes. O mesmo Jeremy não fez uso deste tipo de abstração para manipular coleções de dados na Underscore.js.
+
+--------
+
+Saiba que também há cobertura do [primeiro dia](primeiro-dia-jsconf-uy.html) e da [primeira parte deste mesmo dia de evento](segundo-dia-jsconf-uy-parte-1.html).
 
 --------
 
