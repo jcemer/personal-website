@@ -133,13 +133,13 @@ Autor do livro JavaScript: The Good Parts, Douglas Crockford sobe ao palco conta
 
 Se uma funcionalidade é útil e ao mesmo tempo perigosa, devemos ficar com a funcionalidade mais útil. Douglas brinca que não somos pagos por usar todas as partes de uma linguagem e que uma boa linguagem tem a capacidade de ensinar algo.
 
-> Eu já fiz todos os erros que você pode fazer escrevendo JavaScript. - Douglas Crockford
+> Eu cometi todos os erros que vocês poderão cometer escrevendo JavaScript. - Douglas Crockford
 
-Esta experiência guiou a criação do JSLint que então passou a lhe ensinar algumas coisas. Surgem então alguns argumentos contra as boas partes, dentre eles, que cada funcionalidade é útil e é um direito poder utiliza-la.
+Esta experiência foi usada na criação do JSLint que então passou a ensinar algumas coisas a seu próprio criador.
 
-Muitas das funcionalidades da linguagem estão lá unicamente para induzir ao erro. Apesar disto, é necessário poder escrever bons programas utilizando JavaScript.
+Os argumentos contra as "boas partes", incluem, que cada funcionalidade é útil e que é um direito poder utiliza-la. Mas muitas das funcionalidades da linguagem estão lá unicamente para induzir ao erro. Ainda, segundo Douglas, aqueles que não usam ponto e virgula, não passam de iniciantes. É **necessário** poder escrever bons programas utilizando JavaScript.
 
-Segundo Douglas, aqueles que não usam ponto e virgula, não passam de iniciantes. Existem dois tempos envolvidos na escrita de código: escrever e fazer o código funcionar de acordo. Sempre se leva tempo para se codificar bem.
+Existem dois tempos envolvidos na escrita de código: escrever e fazer o código funcionar de acordo. Sempre se leva tempo para se codificar bem.
 
 A parte mais esperada da apresentação são as melhores partes da ES6:
 - [*Proper Tail Calls*](http://bbenvie.com/articles/2013-01-06/JavaScript-ES6-Has-Tail-Call-Optimization)
@@ -148,9 +148,9 @@ A parte mais esperada da apresentação são as melhores partes da ES6:
 
 Douglas explica que há muitos anos deixou de usar `new` em favor de `Object.create` e que ultimamente abandonou por completo o uso de `this`.
 
-A construção de laço *for* também foi alvo do abandono em favor do uso dos métodos de *array*. Em especial no ES6, graças a *Proper Tail Calls*, o `while` pode ser deixado de lado.
+A construção de laço *for* também foi alvo do abandono em favor do uso dos métodos de *array*. Em especial, no ES6, graças a *Proper Tail Calls*, o `while` também pode ser deixado de lado.
 
-Douglas acredita que uma das piores partes da nova especificação do ES6 serão as classes. Os argumetos são baseados em que a herança clássica é dificil de manter e desnecessária em uma linguagem como JavaScript em que objetos podem ser criados seguindo a demanda. A herança por protótipos fazia todo o sentido em 1995, não são necessárias. Objetos literias devem ser criados através de funções.
+Douglas acredita que uma das piores partes da nova especificação do ES6 são as classes. Os argumetos são baseados em que a herança clássica é difícil de manter. A construção é desnecessária porque objetos literias devem ser criados através de funções de acordo com a demanda. Douglas afirma que herança por protótipos fazia todo o sentido em 1995 e que não é mais necessária.
 
 O que segue são comparações entre JavaScript e funcionalidades de outras linguagens. Uma ressalva é que alguns dos erros do JavaScript são por culpa de outros padrões adotados que continham erros, como *Binary Floating Point*.
 
@@ -164,7 +164,7 @@ Não existe outro palestrante que possa me deixar tão frustrado quanto este. Co
 
 Objetos gerados por funções são órfãos. Classes são abstrações extremamente úteis para identificar e organizar código. Pegue como exemplo o padrão MVC: Jeremy fez um trabalho fantástico com Backbone.js e isto justifica completamente a necessidade de classes na linguagem.
 
-Veja, não precisamos fazer tudo com classes. O mesmo Jeremy não fez uso deste tipo de abstração para manipular coleções de dados na Underscore.js.
+Veja, não precisamos fazer tudo com classes. Jeremy não fez uso deste tipo de abstração para manipular coleções de dados na Underscore.js, por exemplo.
 
 --------
 
@@ -172,4 +172,4 @@ Saiba que também há cobertura do [primeiro dia](primeiro-dia-jsconf-uy.html) e
 
 --------
 
-A minha opinião é que o *keynote* do evento esteve ontem, neste mesmo palco, falando sobre Backbone.js. Outros bons palestrantes foram os que abordaram *Promises* e o show de simplicidade e habilidade do substack. Por fim, os amigos do Brasil representaram muito bem nossa comunidade. O evento estava impecável e foi um prazer trocar figurinhas por aqui.
+A minha opinião é que o *keynote* do evento ocupou o palco no primeiro dia de evento falando sobre Backbone.js. Outros bons palestrantes foram os que abordaram *Promises*. Sem deixar de fora o *show* de simplicidade e habilidade do substack e os amigos do Brasil que representaram muito bem nossa comunidade. O evento estava impecável e foi um prazer trocar figurinhas por lá.
