@@ -137,8 +137,51 @@
   }
 }
 
+.list {
+  list-style: none;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @media screen and (min-width: 600px) {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .list-item {
+    margin-bottom: 1.5em;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 3em;
+    }
+  }
+  .item-link {
+    display: block;
+    text-decoration: none;
+    &:hover .item-title {
+      text-decoration: underline;
+    }
+    &[href][target=_blank]:after {
+      display: none;
+    }
+  }
+  .item-date, .item-event, .item-external {
+    text-transform: uppercase;
+    font: 300 italic 1em $main-font;
+    color: $main-color;
+  }
+  .item-date-month, .item-event, .item-external {
+    @include before-pipe;
+  }
+  .item-title {
+    display: block;
+    font: 700 1.25em/1 $empashis-font;
+    @media screen and (min-width: 600px) {
+      font-size: 2em;
+    }
+  }
+}
+
+
 body.ice-cream .main {
   background: rgba(white, .6);
 }
 
-@import "main_lists";
