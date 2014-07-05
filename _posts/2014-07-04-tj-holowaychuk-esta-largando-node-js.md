@@ -9,7 +9,7 @@ excerpt: "<p>A repercussão e as razões que levaram um dos membros mais importa
 
 A repercussão não tem como ser das melhores quando um dos membros mais ativos da comunidade Node.js [anuncia a sua despedida](https://medium.com/code-adventures/farewell-node-js-4ba9e7f3e52b). TJ Holowaychuk ([@visionmedia](https://github.com/visionmedia)) detém a autoria de quase seiscentos pacotes do NPM. Seus projetos vão desde *frameworks* para teste, pré-processadores de CSS, *template engines* para HTML a *framework* de aplicações web. Sem contar a sua iniciativa em definir [componentes para *front-end*](https://github.com/component/component.io) muito antes de falarmos em WebComponents.
 
-A primeira reação da comunidade foi agradecer todos estes projetos e a colaboração do TJ com a comunidade. Mas em seguida muitos se voltaram aos argumentos deixados no texto de despedida por de certa forma colocar em xeque o futuro do Node.js. Há algum tempo tenho pensando em escrever algo a respeito de como a plataforma é mal compreendida e o momento parece bastante oportuno.
+A primeira reação da comunidade foi agradecer todos estes projetos e a colaboração do TJ com a comunidade. Mas, em seguida, muitos se voltaram aos argumentos deixados no texto de despedida por de certa forma colocar em xeque o futuro do Node.js. Há algum tempo tenho pensando em escrever algo a respeito de como a plataforma é mal compreendida e o momento parece bastante oportuno.
 
 ## Um breve histórico
 
@@ -17,7 +17,7 @@ Ryan Dahl, criador do Node.js, iniciou seu desenvolvimento buscando a melhor man
 
 Na época, o V8 se tornava popular pela sua perfomance e não havia nenhum projeto promissor que levasse o JavaScript para o *server side* (na realidade já existiam projetos como o [Rhino](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino)). Ryan aproveitou que não existiam APIs para lidar com I/O e então pode definir a sua maneira.
 
-Esperar o *upload* de um arquivo, por exemplo, pode ser endereçado sincronamente (ficando indisponível para outras requisições), criando novos processos ou *theads* (custoso e podendo ficar complexo com facilidade). O trunfo do Node.js é conseguir lidar com várias conexões (request/response) economicamente graças ao *event-loop*, [tudo executa em paralelo exceto seu código](http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop).
+Esperar o *upload* de um arquivo, por exemplo, pode ser endereçado sincronamente (ficando indisponível para outras requisições), criando novos processos ou *threads* (custoso e podendo ficar complexo com facilidade). O trunfo do Node.js é conseguir lidar com várias conexões (request/response) economicamente graças ao *event-loop*, [tudo executa em paralelo exceto seu código](http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop).
 
 ## Usos do Node.js
 
