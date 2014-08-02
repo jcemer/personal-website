@@ -7,11 +7,14 @@ menu:
   url:  /talks.html
   name: Talks
  -
+  url:  /
+  name: Posts
+ -
   url: "http://twitter.com/jcemer"
   name: "Twitter"
  -
   url: "http://github.com/jcemer"
-  name: GitHub
+  name: Github
 ---
 <!DOCTYPE HTML>
 <html lang="pt-BR">
@@ -47,13 +50,13 @@ menu:
 <body>
   <div class="lobby">
     <div class="wrapper">
-      <nav id="menu">
-        <ul>
+      <nav id="menu" class="menu">
+        <ul class="menu-list">
           {% for item in page.menu %}
-            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+            <li><a href="{{ item.url }}" class="menu-link">{{ item.name }}</a></li>
           {% endfor %}
         </ul>
-        <a href="#menu" id="menu-toggle">menu</a>
+        <a href="#menu" class="menu-toggle" data-menu-toggle>menu</a>
       </nav>
       <a href="/" class="brand" title="Página inicial">Jean Carlo Emer</a>
     </div>
@@ -63,7 +66,6 @@ menu:
 
   <footer class="footer">
     <p class="wrapper">
-      <span class="brand">Jean Carlo Emer</span>
       <span class="credits">Layout por <a href="http://curestudio.com.br" class="cure" target="_blank">Cure</a></span>
     </p>
   </footer>

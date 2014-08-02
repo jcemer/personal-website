@@ -1,11 +1,5 @@
 .main {
   background: white;
-  @media screen and (min-width: 600px) {
-    .wrapper {
-      padding: 3rem 0;
-    }
-  }
-
   h2, h3, h4 {
     position: relative;
     a[name] {
@@ -20,12 +14,10 @@
       background-size: 80% auto;
     }
   }
-
   h2 {
     margin-top: 1.5rem;
     color: darken($dark-grey-color, 15);
   }
-
   h3 {
     color: darken($dark-grey-color, 5);
   }
@@ -47,7 +39,6 @@
     width: 20%;
     margin: 1.5rem auto;
   }
-
   code {
     display: inline-block;
     padding: .1rem .35rem;
@@ -57,13 +48,11 @@
     color: darken(#93a1a1, 10);
     border-radius: 4px;
   }
-
   blockquote {
     border-left: 5px solid $light-grey-color;
     padding-left: 1.5em;
     margin-left: 0;
   }
-
   pre {
     counter-reset: line-numbering;
     border: solid 2px $grey-color;
@@ -74,12 +63,10 @@
     overflow-x: auto;
     word-break: inherit;
     word-wrap: inherit;
-
     code {
       background: none;
       padding: 0;
     }
-
     a[name]:before {
       content: counter(line-numbering);
       counter-increment: line-numbering;
@@ -98,12 +85,10 @@
       -ms-user-select: none;
       user-select: none;
     }
-
     a:first-of-type::before,
     a:only-of-type::before {
         padding-top: .2rem;
     }
-
     a:last-of-type::before,
     a:only-of-type::before {
         padding-bottom: .2rem;
@@ -131,7 +116,6 @@
     position: absolute;
     left: -9999em;
   }
-
   #disqus_thread {
     margin-top: 4rem;
   }
@@ -139,13 +123,11 @@
 
 .list {
   list-style: none;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
   @media screen and (min-width: 600px) {
-    margin-top: 4rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .list-item {
     margin-bottom: 1.5em;
@@ -180,8 +162,6 @@
   }
 }
 
-
 body.ice-cream .main {
   background: rgba(white, .6);
 }
-
