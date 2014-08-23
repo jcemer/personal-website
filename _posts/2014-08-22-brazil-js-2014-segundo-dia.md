@@ -8,13 +8,13 @@ excerpt: "<p>Resenha do segundo dia do maior evento de JavaScript do mundo.</p>"
 
 ## From commit to prod in 5 minutes / Jacob Page
 
-Jacob inicia sua palestra mostrando como o GoDaddy utilizava *branchs* do Git para criar novas funcionalidades com um processo que envolvia colocar código em produção em nada menos que 16 etapas. O processo era maçante e tomava muito tempo. 
+Jacob inicia sua palestra mostrando como o GoDaddy utilizava *branchs* do Git para criar novas funcionalidades com um processo que envolvia colocar código em produção em nada menos que 16 etapas. O processo era maçante e tomava muito tempo.
 
 A implementação de um sistema de Continuous Integration (CI) e Continuous Delivery (CD) os levaram a um processo de 5 minutos. O primeiro passo foi a definição de um GitHub Flow baseado em *pull request*. *Pull requets* são ótimas por documentarem funcionalidades sem que seja preciso escrever comentários no código. O fluxo compreende uso de JSHint e testes de código.
 
-O *framework* [Mocha](http://visionmedia.github.io/mocha) com a biblioteca [Chai.js](http://chaijs.com) foi a escolha para testes de *front-end* que rodam em Selenium. A ferramenta [Istanbul](http://gotwarlost.github.io/istanbul) registra a cobertura de testes do código. 
+O *framework* [Mocha](http://visionmedia.github.io/mocha) com a biblioteca [Chai.js](http://chaijs.com) foi a escolha para testes de *front-end* que rodam em Selenium. A ferramenta [Istanbul](http://gotwarlost.github.io/istanbul) registra a cobertura de testes do código.
 
-A infra estrutura também é composta por Logstash para armazenar os *logs*, Elasticsearch para indexar as informações e Kibana para gerar representações dos dados. O *back-end*, que é escrito em Node.js, faz uso de New Relic para monitoramento. Ferramentas como Jira, Slack e Github Enterprise também foram utilizadas na nova infra estrutura. 
+A infra estrutura também é composta por Logstash para armazenar os *logs*, Elasticsearch para indexar as informações e Kibana para gerar representações dos dados. O *back-end*, que é escrito em Node.js, faz uso de New Relic para monitoramento. Ferramentas como Jira, Slack e Github Enterprise também foram utilizadas na nova infra estrutura.
 
 ---
 
@@ -26,7 +26,7 @@ Ricardo ingressou na Booking.com no início do ano e ao ver que não existia nen
 
 O primeiro conselho do palestrante é compartilhar código e sobretudo escrever código. É importante aprender a fazer as coisas e saber ponderar quando incluir código dos outros no seu projeto. Código é um recurso orgânico e em algum momento será substituído. De qualquer maneira, saiba que seu código deve ser lido por outros programadores e nunca será perfeito.
 
-Aprenda sempre sem abraçar tudo o que surgir, saiba escolher e focar seu aprendizado. Só não deixe de aprender Ciência da Computação. Conceitos por trás de redes de computadores são fundamentais para o desenvolvedor *front-end*. Estude também sobre algoritmos básicos, lógica, navegadores e sistemas operacionais. 
+Aprenda sempre sem abraçar tudo o que surgir, saiba escolher e focar seu aprendizado. Só não deixe de aprender Ciência da Computação. Conceitos por trás de redes de computadores são fundamentais para o desenvolvedor *front-end*. Estude também sobre algoritmos básicos, lógica, navegadores e sistemas operacionais.
 
 Não deixe de ajudar, você trabalha com outros seres humanos. Observe a competição no ambiente de trabalho como um estímulo para sua própria evolução.
 
@@ -40,7 +40,7 @@ O Ricardo tem um conhecimento extraordinário em desenvolvimento. Com toda certe
 
 A apresentação de Jonathan destacou as novas funcionalidades incluídas na ferramenta para desenvolvedores do Internet Explorer.
 
-As melhorias são várias e afetam o painel de *debug*, análise no perfil de consumo de memória e contadores de tempo de execução de porções de código. 
+As melhorias são várias e afetam o painel de *debug*, análise no perfil de consumo de memória e contadores de tempo de execução de porções de código.
 
 A palestra foi muito baseada em mostrar como os painéis da ferramenta funcionam e em como tirar proveito deles.
 
@@ -50,7 +50,7 @@ As novas versões do Internet Explorer ainda são engessadas mas muito melhores 
 
 ## The Web Component Ecosystem / Rob Dodson
 
-Muitos projetos são acompanhados de um componente de *tabs*. Cada um destes projetos, utiliza um conjunto de *tags* em quantidade e ordem arbitrária. 
+Muitos projetos são acompanhados de um componente de *tabs*. Cada um destes projetos, utiliza um conjunto de *tags* em quantidade e ordem arbitrária.
 
 Os Web Components surgem como uma alternativa para padronização e reuso. Mas as tecnologias que tornam possível a criação de componentes ainda são incipientes e não possuem um suporte adequado. Polymer trata-se de projeto que permite a criação de Web Components que operam nos navegadores que temos atualmente.
 
@@ -68,9 +68,9 @@ A palestra apresentou muito bem o projeto e os conceitos por trás dos Web Compo
 
 Data-binding é o processo que estabelece uma conexão entre a interface da aplicação e os dados. Alguns *frameworks* como Angular e Ember inclusive já emulam data-binding.
 
-A especificação do ES6 trás consigo uma especificação de *proxies*. Os *proxies* permitem receber um objeto e criando um novo objeto capaz de monitorar alterações e acessos a propriedades. 
+A especificação do ES6 trás consigo uma especificação de *proxies*. Os *proxies* permitem receber um objeto e criando um novo objeto capaz de monitorar alterações e acessos a propriedades.
 
-Os *proxies* permitem, por exemplo, validar alterações de propriedades ou reagir a elas. Outro exemplo interessante é um *proxy* que simula o comportamento do gato de Schrödinger, que gera diferentes valores ao acessar propriedades. 
+Os *proxies* permitem, por exemplo, validar alterações de propriedades ou reagir a elas. Outro exemplo interessante é um *proxy* que simula o comportamento do gato de Schrödinger, que gera diferentes valores ao acessar propriedades.
 
 No ES7 temos uma implementação ainda mais interessante que permite observar objetos. Diferente dos *proxies*, o `Object.observe` não implica na criação de um novo objeto. Um pequeno detalhe é a impossibilidade de observar propriedades de elementos do DOM. Esta e outras funcionalidades do EcmaScript podem ser conferidas neste [repositório no Github](https://github.com/tc39/ecma262).
 
@@ -78,9 +78,9 @@ Os *proxies* já estão implementados no Firefox e os *observers* apenas no Chro
 
 A palestra encerrou com a apresentação de um exemplo de rádio que arrancou apláusos utilizando *data-binding*.
 
---- 
+---
 
-Os *frameworks* já indicam há bastante tempo que *data-binding* é uma ótima funcionalidade para se ter no JavaScript. Se formos analisar, APIs dos navegadores já utilizam *observers* para operar. Um ótimo exemplo é a propriedade `window.location` que quando alterada encaminha o usuário para uma nova URL. O `<video>` e `<audio>` são bons exemplos com suas propriedades `muted`, `volume`, `currentTime` e `src`. Enfim, há outros muitos exemplos. Seria uma benção ter o mesmo poder que os navegadores já tem há bastante tempo.
+Os *frameworks* já indicam há bastante tempo que *data-binding* é uma ótima funcionalidade para se ter no JavaScript. Se formos analisar, APIs dos navegadores já utilizam *observers* para operar. Um ótimo exemplo é a propriedade `window.location` que quando alterada encaminha o usuário para uma nova URL. O `<video>` e `<audio>` também com suas propriedades `muted`, `volume`, `currentTime` e `src`. Enfim, há muitos exemplos. Seria uma benção ter o mesmo poder que algumas APIs já possuem.
 
 ## AST, CST e Ferramentas Incríveis / Miller Medeiros
 
@@ -104,7 +104,7 @@ O Miller Medeiros com certeza é um dos melhores programadores JavaScript que de
 
 Yehuda começa sua palestra com a declaração de que não irá mostrar um simples *Hello World* e sim uma aplicação em que ele trabalha no dia-a-dia.
 
-Um conceito importante para compreender o funcionamento do Ember é o de *data-binding*. Os templates no JavaScript não deixam de ser uma função que recebem dados e retornam *markup*. Com auxílio de *data-binding* é possível alterar o resultado do *template* assim que os dados sofrerem alguma alteração. Ainda, um dado pode ser ligado a um `<input>` e a informação passada pelo usuário então reflete em outras seções do *markup*. 
+Um conceito importante para compreender o funcionamento do Ember é o de *data-binding*. Os templates no JavaScript não deixam de ser uma função que recebem dados e retornam *markup*. Com auxílio de *data-binding* é possível alterar o resultado do *template* assim que os dados sofrerem alguma alteração. Ainda, um dado pode ser ligado a um `<input>` e a informação passada pelo usuário então reflete em outras seções do *markup*.
 
 Uma alternativa ao *data-binding*, adotada por bibliotecas como Backbone, é o uso de um *event bus* para notificar ações ou ocorrências que podem influenciar no estado dos dados. O *framework* Angular.js utiliza um modo diferente conhecido como *dirty cheking*. E ainda é possível utilizar Virtual DOM assim como o React.js e talvez as próximas versões do Ember.
 
