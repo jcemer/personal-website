@@ -4,24 +4,24 @@ Personal Website
 Get started!
 
     gem install bundler
-    bundle
+    bundle --binstubs
 
 
 Run (with watch) the site with:
 
-    bundle exec rake
+    bin/rake
 
 
 Just build the site with:
 
-    bundle exec rake build
+    bin/rake build
 
 
-Setupo deploy:
+Setup deploy:
 
-    bundle exec rake setup_deploy\[git@github.com:jcemer/jcemer.github.com,master\]
+    bin/rake setup_deploy\[git@github.com:jcemer/jcemer.github.com,master\]
 
 
 Deploy with the command:
 
-    bundle exec rake deploy
+    bin/rake deploy
