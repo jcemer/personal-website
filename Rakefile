@@ -34,7 +34,8 @@ task :setup_deploy, :repo, :branch do |t, args|
     system "git commit --allow-empty -m 'Init'"
     system "git branch -m #{args.branch}"
     system "git remote add origin #{args.repo}"
-    system "git push -f -u origin #{args.branch}"
+    system "git fetch"
+    system "git branch -u origin/#{args.branch}"
   end
 end
 
