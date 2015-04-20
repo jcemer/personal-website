@@ -45,25 +45,6 @@ Os CommonJS Modules são mais expressivos. Trata-se de uma grande vantagem deixa
 
 Seguiremos considerando os módulos CommonJS e apontando quais seus pontos fracos que levaram gradativamente a adoção de uma nova sintaxe.
 
-## Encapsulamento para módulos
-
-Os protocolos de rede disponíveis atualmente nos navegadores penalizam a performance para o caso de vários arquivos de módulo serem requisitados. Empacotar todos os módulos em um único arquivo para serem utilizados no navegador é uma boa prática. Esta necessidade não existe em plataformas como Node.js, que possui rápido acesso ao sistema de arquivos.
-
-Os módulos CommonJS não consideram o ambiente dos navegadores, diferentes módulos não podem fazer parte de um mesmo arquivo. A ferramenta [Browserify](http://browserify.org) viabiliza o uso de módulos *CommonJS* em navegadores. Isto somente é possível fazendo uso de funções para encapsular o código de cada um dos módulos. O resultado é de difícil leitura, [veja o arquivo bundler.js](https://gist.github.com/jcemer/b52db6503eebc42a414d).
-
-Atualmente, a **única maneira de definir escopos no JavaScript é através de funções**. Uma nova especificação permite mudar o funcionamento da linguagem. A necessária criação dos escopos poderia ser melhor resolvida que no [Node.js que ainda utiliza funções por baixo dos panos](https://github.com/joyent/node/blob/b55c9d68aa713e75ff5077cd425cbaafde010b92/src/node.js#L788-L791).
-
-A especificação ES6 traz consigo uma sintaxe exclusiva para definição de escopo de módulos. Através da sintaxe, é possível definir mais de um módulo em um mesmo arquivo sem apelar para o uso de funções que nos fizeram abrir mão do formato AMD. O resultado é um ganho significativo em expressividade, observe:
-
-```
-module 'foo' {
-    // Module code
-}
-module 'bar' {
-    // Module code
-}
-```
-
 ## Requisição de dependências (imports)
 
 Os módulos CommonJS foram concebidos para requisitar as dependências sincronamente. **A execução do script é bloqueada enquanto uma dependência é carregada**. Novamente, esta abordagem não traz nenhum inconveniente para o Node.js que possui um acesso rápido ao sistema de arquivos.
