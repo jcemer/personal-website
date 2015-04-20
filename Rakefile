@@ -1,17 +1,32 @@
 require "html/proofer"
+require "w3c_validators"
 
 deploy_dir = "_deploy"
 
 task default: [:watch]
 
 task :build do
-  build_sass
-  build_jekyll
+  fail unless system("compass compile")
+  fail unless system("jekyll build")
 end
 
-task :test do
-  build_sass
-  build_jekyll
+task :w3c_validators do
+  puts "Running W3C validators..."
+
+  files = Dir["./_site/**/*.html"]
+  puts "Scanning #{files.size} markup files."
+
+  errors = files.map do |file|
+    w3c_markup_validate(file).errors
+  end.flatten
+
+  unless errors.empty?
+    puts errors
+    fail
+  end
+end
+
+task :html_proofer do
   HTML::Proofer.new("./_site", href_ignore: [
     "http://alistapart.com/article/responsive-web-design",
     "http://blog.realstuffforabstractpeople.com/post/31753521367/classnames-for-styling-data-attributes-for-behavior",
@@ -20,8 +35,6 @@ task :test do
 end
 
 task :watch do
-  build_sass
-
   pids = [
     spawn("compass watch"),
     spawn("jekyll serve --watch")
@@ -52,8 +65,6 @@ task :setup_deploy, :repo, :branch do |t, args|
 end
 
 task :deploy do
-  build_sass
-  build_jekyll
   cp_r "_site/.", deploy_dir
   cd deploy_dir do
     system "git add -A"
@@ -63,10 +74,7 @@ task :deploy do
   end
 end
 
-def build_sass
-  fail unless system("compass compile")
-end
-
-def build_jekyll
-  fail unless system("jekyll build")
+def w3c_markup_validate(file)
+  validator = W3CValidators::MarkupValidator.new
+  validator.validate_file(file)
 end
