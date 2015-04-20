@@ -7,6 +7,12 @@ task :build do
   build_jekyll
 end
 
+task :test do
+  build_sass
+  build_jekyll
+  system("htmlproof _site/")
+end
+
 task :watch do
   build_sass
 
