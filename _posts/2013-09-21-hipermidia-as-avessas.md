@@ -11,7 +11,7 @@ Tive o prazer de palestrar no primeiro [Mobile Brazil Conference](http://mobileb
 
 Existem vários dispositivos que podem ser alcançados por uma hipermídia: desktops, laptops, impressoras, TVs, smartphones e tablets só para citar alguns. Além disto, não são apenas os browsers o meio: aplicativos como Apple Store, Netflix e o Steam são escritos em HTML5. Mas a maior revolução da nossa era, sem ter como negar, é o mobile: dispositivos pequenos e de fácil locomoção. Eles é que serão foco principal do nosso estudo.
 
-Aqui estão os [slides da palestra](https://speakerdeck.com/jcemer/hipermidia-as-avessas) e o [vídeo](https://www.eventials.com/pt-br/mobilebrazilconference/hipermidia-as-avessas-seu-conteudo-na-web-por-diferentes-formas). Pule para [responsive design](http://localhost:4000/hipermidia-as-avessas-responsive-design.html) ou vá direto para o [passo a passo final](/hipermidia-as-avessas-passo-a-passo.html) caso interessar. Continue a leitura por aqui para acompanhar o assunto na íntegra.
+Aqui estão os [slides da palestra](https://speakerdeck.com/jcemer/hipermidia-as-avessas) e o [vídeo](https://www.eventials.com/pt-br/mobilebrazilconference/hipermidia-as-avessas-seu-conteudo-na-web-por-diferentes-formas). Pule para [responsive design](/hipermidia-as-avessas-responsive-design.html) ou vá direto para o [passo a passo final](/hipermidia-as-avessas-passo-a-passo.html) caso interessar. Continue a leitura por aqui para acompanhar o assunto na íntegra.
 
 ## Mobile
 

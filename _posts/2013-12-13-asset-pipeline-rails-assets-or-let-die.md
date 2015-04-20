@@ -28,7 +28,7 @@ Por outro lado, o Node.js tem sido adotado pela comunidade front-end como suport
 
 Disponibilizar bibliotecas, frameworks ou qualquer outro tipo de código foi um dos maiores desafios do confeiteiro de HTML da era passada. Para disponibilizar código, o jeito era criar um website com uma área para download. Fizemos isto com a [Rye](http://ryejs.com) nos longínquos 2012.
 
-Nada mais óbvio que a medida que o NPM conquistasse o maior sucesso gerenciando pacotes do Node.js surgissem gerenciadores destinados a código front-end no geral. Surgiram vários: [Jam](http://jamjs.org/), [Component](http://component.io) e [Volo](http://volojs.org).
+Nada mais óbvio que a medida que o NPM conquistasse o maior sucesso gerenciando pacotes do Node.js surgissem gerenciadores destinados a código front-end no geral. Surgiram vários: [Jam](http://jamjs.org/), [Component](https://www.npmjs.com/package/component) e [Volo](http://volojs.org).
 
 Sem dúvida, o gerenciador de pacotes de maior adoção até o momento foi o Bower. **Toda a biblioteca, framework ou código front-end que se preze está no Bower**.
 

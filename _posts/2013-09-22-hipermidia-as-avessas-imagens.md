@@ -50,7 +50,7 @@ A solução para termos imagens responsivas habita em duas novas especificaçõe
      alt="The pear is juicy."
 ~~~
 
-A epecificação de [srcset attribute](http://www.w3.org/html/wg/drafts/srcset/w3c-srcset), exemplificada acima, permite definir uma série de arquivos com base em resolução e densidade de *pixels* do dispositivo em relação ao *pixel* do CSS.
+A epecificação de [srcset attribute](https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset), exemplificada acima, permite definir uma série de arquivos com base em resolução e densidade de *pixels* do dispositivo em relação ao *pixel* do CSS.
 
 ~~~ html
 <picture width="500" height="500">

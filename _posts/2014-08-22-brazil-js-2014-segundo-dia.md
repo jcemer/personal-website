@@ -12,7 +12,7 @@ Jacob inicia sua palestra mostrando como o GoDaddy utilizava *branchs* do Git pa
 
 A implementação de um sistema de Continuous Integration (CI) e Continuous Delivery (CD) os levaram a um processo de 5 minutos. O primeiro passo foi a definição de um GitHub Flow baseado em *pull request*. *Pull requets* são ótimas por documentarem funcionalidades sem que seja preciso escrever comentários no código. O fluxo compreende uso de JSHint e testes de código.
 
-O *framework* [Mocha](http://visionmedia.github.io/mocha) com a biblioteca [Chai.js](http://chaijs.com) foi a escolha para testes de *front-end* que rodam em Selenium. A ferramenta [Istanbul](http://gotwarlost.github.io/istanbul) registra a cobertura de testes do código.
+O *framework* [Mocha](http://mochajs.org) com a biblioteca [Chai.js](http://chaijs.com) foi a escolha para testes de *front-end* que rodam em Selenium. A ferramenta [Istanbul](http://gotwarlost.github.io/istanbul) registra a cobertura de testes do código.
 
 A infra estrutura também é composta por Logstash para armazenar os *logs*, Elasticsearch para indexar as informações e Kibana para gerar representações dos dados. O *back-end*, que é escrito em Node.js, faz uso de New Relic para monitoramento. Ferramentas como Jira, Slack e Github Enterprise também foram utilizadas na nova infra estrutura.
 

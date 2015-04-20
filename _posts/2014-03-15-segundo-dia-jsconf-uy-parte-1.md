@@ -10,7 +10,7 @@ Cobertura comentada da manhã do segundo dia da JSConfUY 2014. Não deixe de ler
 
 ## Tiny modules on the frontend - James Halliday
 
-Conhecido como [@substack](https://twitter.com/substack‎), Halliday tem o título de maior número de pacotes publicados no NPM, gerenciador de pacotes do Node.js.
+Conhecido como [@substack](https://twitter.com/substack), Halliday tem o título de maior número de pacotes publicados no NPM, gerenciador de pacotes do Node.js.
 
 A palestra inicia com a justificativa de que aplicações podem ser compostas por pequenos módulos e um bom exemplo daquilo que pode ser um módulo são os *polyfills*. A partir do momento que você desenvolve módulos no estilo do node.js (usando `require()`), ferramentas como [browserify](https://github.com/substack/node-browserify), criação do substack, podem ser usadas para empacotar seus módulos permitindo que sejam usados no *front-end*.
 
@@ -27,7 +27,7 @@ James mostrou alguns de seus pequenos módulos preferidos em ação, dentre eles
 
 A palestra teve muito *live conding*. Substack tem uma capacidade incrível de raciocinar e escrever, não é por nada que ele possui mais de três centenas de módulos publicados. Todos os exemplos focaram em ilustrar como uma aplicação pode ser construída com base em módulos com responsabildiades bem definidas.
 
-O desenvolvimento web já está com os dois pés na modularização, se você ainda está por fora do assunto, aconselho que confira [Modularização em JavaScript](tableless.com.br/modularizacao-em-javascript).
+O desenvolvimento web já está com os dois pés na modularização, se você ainda está por fora do assunto, aconselho que confira [Modularização em JavaScript](http://tableless.com.br/modularizacao-em-javascript).
 
 
 ## Be MEAN - Jean Carlo Nascimento

@@ -8,7 +8,7 @@ tags:
 excerpt: "<p>Tratar elementos do seu HTML como componentes é bastante útil para manter a sanidade do seu projeto. Este texto discute um assunto muitas vezes subestimado: qual o local mais adequado para iniciar seus componentes.</p>"
 ---
 
-[Plugins](http://plugins.jquery.com) e [widgets](http://jqueryui.com) de jQuery, [componentes](http://component.io) e outras muitas abstrações de organização e modularização de código são muito úteis para manter a sanidade do seu projeto.
+[Plugins](http://plugins.jquery.com) e [widgets](http://jqueryui.com) de jQuery, [componentes](https://www.npmjs.com/package/component) e outras muitas abstrações de organização e modularização de código são muito úteis para manter a sanidade do seu projeto.
 
 ## O problema
 
@@ -78,7 +78,7 @@ Alterar o JavaScript como efeito colateral da alteração de uma página não me
 
 ## Soluções melhores
 
-Frameworks como o [Angular.js](http://angularjs.org) e a biblioteca [Dojo](http://dojotoolkit.org/features/1.6/html5data-attributes) há tempo tomaram a consciência de que o próprio elemento HTML deve indicar a qual componente pertence. Caso você não esteja utilizando nenhuma destas soluções, algo como o [Piecemaker](https://github.com/jcemer/piecemaker) deve resolver bem este problema.
+Frameworks como o [Angular.js](http://angularjs.org) e a biblioteca [Dojo](http://dojotoolkit.org/blog/dojo-1-6-released) há tempo tomaram a consciência de que o próprio elemento HTML deve indicar a qual componente pertence. Caso você não esteja utilizando nenhuma destas soluções, algo como o [Piecemaker](https://github.com/jcemer/piecemaker) deve resolver bem este problema.
 
 ### Piecemaker
 

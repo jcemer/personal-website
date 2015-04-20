@@ -52,7 +52,7 @@ O construtor ideal é aquele que não adiciona *listeners* de eventos ou element
 
 ### Modelo
 
-Vamos portar nossa [inspiração](#Inspiração) para JavaScript na forma de uma das aplicações mais comuns (e detestadas) de vermos em websites: um carrossel.
+Vamos portar nossa <a href="#Inspiração">inspiração</a> para JavaScript na forma de uma das aplicações mais comuns (e detestadas) de vermos em websites: um carrossel.
 
 ~~~ javascript
 function Carousel(container) {

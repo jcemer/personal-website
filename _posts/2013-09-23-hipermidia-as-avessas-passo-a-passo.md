@@ -60,7 +60,7 @@ p { font-size: 0.8em; }
 
 ### Imagens
 
-Tente achar um tamanho que fique com nitidez razoável na maior parte dos dispositivos ou aplique uma das [soluções possíveis](/hipermidia-as-avessas-imagens.html#Soluções-possíveis) até que exista uma melhor.
+Tente achar um tamanho que fique com nitidez razoável na maior parte dos dispositivos ou aplique uma das <a href="/hipermidia-as-avessas-imagens.html#Soluções-possíveis">soluções possíveis</a> até que exista uma melhor.
 
 ## Por fim
 

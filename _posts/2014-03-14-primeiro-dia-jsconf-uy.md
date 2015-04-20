@@ -70,7 +70,7 @@ O uso de *promises* é baseado na função `.then`: *promises* que seguem a espe
 
 Um uso interessante da API de *promises*, é utilizar a função `race` para definir um tempo limite de espera para que um valor fique "pronto".
 
-É essencial que biblitoecas e *frameworks* passem cada vez mais a aceitar valores de *promises*. Para ajudar com esta tarefa, bibliotecas como [kozu](http://github.com/jamesmacaulat/kozu) permite tornar qualquer função passível de ser utilizada com promises. Assim podem usar underscore com coleções cujos valores sejam *promises*, o que é muito interessante.
+É essencial que biblitoecas e *frameworks* passem cada vez mais a aceitar valores de *promises*. Para ajudar com esta tarefa, bibliotecas como [kozu](https://github.com/jamesmacaulay/kozu) permite tornar qualquer função passível de ser utilizada com promises. Assim podem usar underscore com coleções cujos valores sejam *promises*, o que é muito interessante.
 
 ----------
 
@@ -108,7 +108,7 @@ A apresentação também abordou *generators* que são funções que podem inter
 
 ----------
 
-Forbes já havia palestrado mais cedo no evento e conseguiu convencer mais nesta segunda palestra. O assunto é interessante e foi muito bem apresentado. Em especial, [generators](http://en.wikipedia.org/wiki/Generator_(computer_programming) permitem sintaxes absurdamente expressivas.
+Forbes já havia palestrado mais cedo no evento e conseguiu convencer mais nesta segunda palestra. O assunto é interessante e foi muito bem apresentado. Em especial, <a href="http://en.wikipedia.org/wiki/Generator_(computer_programming)">generators</a> permitem sintaxes absurdamente expressivas.
 
 
 ## Backbone.js - Jeremy Ashkenas

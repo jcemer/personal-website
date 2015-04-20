@@ -93,7 +93,7 @@ Os desafios de se manter múltiplas máquinas são: comunicação, gerenciar *jo
 
 ----------
 
-Angel fez uma abordagem bastante humorada e simplificada de um tópico bastante interessante que tem raízes bastante acadêmicas. Vale a pena conferir sua postagem [Distributed Applications and Node.js](http://ajlopez.wordpress.com/2013/05/30/aplicaciones-distribuidas-y-node-js) que explica minuciosamente toda a palestra.
+Angel fez uma abordagem bastante humorada e simplificada de um tópico bastante interessante que tem raízes bastante acadêmicas. Vale a pena conferir sua postagem [Distributed Applications and Node.js](https://ajlopez.wordpress.com/2013/05/30/aplicaciones-distribuidas-y-node-js) que explica minuciosamente toda a palestra.
 
 
 ## Why Bacon is actually good for your health - Leonardo Garcia e Sergio Gianazza
@@ -142,7 +142,7 @@ Os argumentos contra as "boas partes", incluem, que cada funcionalidade é útil
 Existem dois tempos envolvidos na escrita de código: escrever e fazer o código funcionar de acordo. Sempre se leva tempo para se codificar bem.
 
 A parte mais esperada da apresentação são as melhores partes da ES6:
-- [*Proper Tail Calls*](http://bbenvie.com/articles/2013-01-06/JavaScript-ES6-Has-Tail-Call-Optimization)
+- *Proper Tail Calls*
 - *Rest* e *spread*
 - Módulos
 
