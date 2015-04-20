@@ -135,7 +135,7 @@ talks:
   <ul class="wrapper list">
   {% for talk in page.talks %}
     <li class="list-item">
-      <time class="item-date">
+      <time class="item-date" datetime="{{ talk.date | date: '%Y-%m-%d' }}">
         <span class="item-date-year">{{ talk.date | date_year }}</span>
         <span class="item-date-month">{{ talk.date | date_month }}</span>
       </time>
