@@ -51,7 +51,7 @@ Os módulos CommonJS foram concebidos para requisitar as dependências sincronam
 
 Considerando evoluções futuras nos protocolos de redes e mesmo se pensarmos nos dias atuais, um formato de módulo adequado para navegadores precisa operar com carregamento assíncrono das dependências. Para isto, os módulos precisam ser [analisados estaticamente](http://en.wikipedia.org/wiki/Static_program_analysis) a título de **identificar suas dependências antes de serem executados**. Assim é possível fazer o *download* simultâneo das dependências e condicionar a execução do módulo para quando as dependências estiverem prontas.
 
-**Os formatos de módulos que dispomos não permitem análise estática**. Pegando como exemplo o formato CommonJS, [sua especificação esclarece](http://wiki.commonjs.org/wiki/Modules/1.0) que o `require` trata-se de uma função que aceita um identificador de módulo. Assim como qualquer outra função, seu argumento pode ser calculado de diferentes maneiras. Analise o código a seguir que também sofre a influência do controle de fluxo:
+**Os formatos de módulos que dispomos não permitem análise estática**. Pegando como exemplo o formato CommonJS, o `require` trata-se de uma função que aceita um identificador de módulo. Assim como qualquer outra função, seu argumento pode ser calculado de diferentes maneiras. Analise o código a seguir que também sofre a influência do controle de fluxo:
 
 ~~~
 if (type == 'me') {
