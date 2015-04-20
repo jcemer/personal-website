@@ -3,7 +3,7 @@ layout: post
 title: 'Live posting do segundo dia da JSConfUY - parte 1'
 tags:
   - javascript
-excerpt: "<p>Texto escrito \"ao-vivo\" durante a JSConf do Uruguai.</p>"
+excerpt: "<p>Texto escrito durante a JSConf do Uruguai.</p>"
 ---
 
 Cobertura comentada da manhã do segundo dia da JSConfUY 2014. Não deixe de ler a [cobertura do primeiro dia](primeiro-dia-jsconf-uy.html) e a [parte 2 do segundo dia de evento](segundo-dia-jsconf-uy-parte-2.html).
