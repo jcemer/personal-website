@@ -10,7 +10,7 @@ end
 task :test do
   build_sass
   build_jekyll
-  system("htmlproof _site/")
+  fail unless system("htmlproof _site/")
 end
 
 task :watch do
@@ -58,9 +58,9 @@ task :deploy do
 end
 
 def build_sass
-  system("compass compile")
+  fail unless system("compass compile")
 end
 
 def build_jekyll
-  system("jekyll build")
+  fail unless system("jekyll build")
 end
