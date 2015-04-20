@@ -1,3 +1,5 @@
+require "html/proofer"
+
 deploy_dir = "_deploy"
 
 task default: [:watch]
@@ -10,7 +12,11 @@ end
 task :test do
   build_sass
   build_jekyll
-  fail unless system("htmlproof _site/")
+  HTML::Proofer.new("./_site", href_ignore: [
+    "http://alistapart.com/article/responsive-web-design",
+    "http://blog.realstuffforabstractpeople.com/post/31753521367/classnames-for-styling-data-attributes-for-behavior",
+    "https://ajlopez.wordpress.com/2013/05/30/aplicaciones-distribuidas-y-node-js"
+  ]).run
 end
 
 task :watch do
