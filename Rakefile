@@ -3,7 +3,7 @@ require "w3c_validators"
 
 deploy_dir = "_deploy"
 
-task default: [:watch]
+task default: [:build, :watch]
 
 task :build do
   fail unless system("compass compile")
