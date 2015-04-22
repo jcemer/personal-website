@@ -30,15 +30,13 @@ menu:
 
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
   <meta property="og:site_name" content="Jean Carlo Emer"/>
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:url" content="/{{ page.url }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }} ~{% endif %} {{ site.name }}">
   <meta property="og:description" content="{{ page.excerpt | strip_html }}">
   <meta property="og:image" content="{{ site.url }}/assets/images/badge.jpg">
 
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700%7CRaleway:300,700,800%7CDroid+Sans+Mono:400" rel="stylesheet" type="text/css">
   <link href="/assets/stylesheets/index.css" rel="stylesheet" type="text/css">
-
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
   <script>
     window._gaq = [
