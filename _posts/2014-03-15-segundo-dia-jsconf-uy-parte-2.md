@@ -27,7 +27,7 @@ WebComponents permitem criar novos componentes ou extender outros elementos com 
 
 É preciso ter maturidade e conhecimento para entender que, mesmo com todas estas funcionalidades, não devemos criar uma aplicação inteira utilizando uma única *tag*.
 
-Inspirado em repositórios de código e componentes como NPM e Bower, Zeno juntou uma *turma da pesada* e lançou o projeto [Custom Elements](http://customelements.io). O que segue é a apresentação de alguns destes componentes.
+Inspirado em repositórios de código e componentes como NPM e Bower, Zeno juntou uma *turma da pesada* e lançou o projeto [Custom Elements](https://customelements.io). O que segue é a apresentação de alguns destes componentes.
 
 ----------
 
