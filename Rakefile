@@ -30,7 +30,8 @@ task :html_proofer do
   HTML::Proofer.new("./_site", href_ignore: [
     "http://alistapart.com/article/responsive-web-design",
     "http://blog.realstuffforabstractpeople.com/post/31753521367/classnames-for-styling-data-attributes-for-behavior",
-    "https://ajlopez.wordpress.com/2013/05/30/aplicaciones-distribuidas-y-node-js"
+    "https://ajlopez.wordpress.com/2013/05/30/aplicaciones-distribuidas-y-node-js",
+    "https://customelements.io/"
   ]).run
 end
 
