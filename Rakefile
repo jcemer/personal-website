@@ -31,7 +31,7 @@ task :html_proofer do
     "http://alistapart.com/article/responsive-web-design",
     "http://blog.realstuffforabstractpeople.com/post/31753521367/classnames-for-styling-data-attributes-for-behavior",
     "https://ajlopez.wordpress.com/2013/05/30/aplicaciones-distribuidas-y-node-js",
-    "https://customelements.io/"
+    "https://customelements.io"
   ]).run
 end
 
