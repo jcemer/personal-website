@@ -120,7 +120,7 @@ Nick, trabalha na Mozilla no projeto do FirefoxOS, sua apresentação surge de u
 
 Nick observa o quanto de poder nossos sistema operacionais dão para aplicações que instalamos. O que pensar a respeito de uma aplicação que acessa nosso sistema de arquivos ou recursos via rede. Devíamos ter medo de fazer *download* de novas aplicações.
 
-Atualmente, é totalmente justificável pensar em aplicações escritas inteiramente em JavaScript, a linguagem se tornou cem vezes mais rápido desde 2006. Nick apresentou o asm.js também e sua aplicação em jogos como Banana Bread e Unreal Enfine 3 e [4](https://blog.mozilla.org/blog/2014/03/12/mozilla-and-epic-preview-unreal-engine-4-running-in-firefox/). Outros exemplos mais foram mostrados apoiando a performance da linguagem.
+Atualmente, é totalmente justificável pensar em aplicações escritas inteiramente em JavaScript, a linguagem se tornou cem vezes mais rápido desde 2006. Nick apresentou o asm.js também e sua aplicação em jogos como Banana Bread e Unreal Engine 3 e 4. Outros exemplos mais foram mostrados apoiando a performance da linguagem.
 
 ----------
 
