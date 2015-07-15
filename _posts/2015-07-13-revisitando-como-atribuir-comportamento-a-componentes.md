@@ -17,6 +17,6 @@ Já tem dois anos que escrevi um texto pontuando [como melhor amarrar código Ja
 
 O primeiro rascunho da DOM era bem simples e dava acesso a alguns itens da página, dentre eles: imagens, formulários e âncoras. Faça um teste e mude o *source* da primeira imagem da sua página favorita `document.images[0].src="bla.png"` ou experimente [validar um formulário à moda antiga](http://www.quirksmode.org/js/forms.html). Naquela época, nada além disto carecia de interatividade.
 
-Passaram-se três anos até que a primeira versão do
+Três anos depois surgiu a especificação [W3C DOM level 1](http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html) que contempla o modelo completo de um documento HTML. Além disto, ela permite criar, remover e alterar elementos depois mesmo depois de o documento ser carregado. As funções que melhor representam esta evolução da especificação são: `document.getElementsByTagName('P')[0].setAttribute('style', 'color:red')` e `document.createElement`.
 
 ## ReactJS
