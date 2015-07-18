@@ -2,23 +2,14 @@
   position: relative;
   z-index: 1;
 
-  @media screen and (min-width: 800px) {
-    position: absolute;
-    top: 0;
-    left: 0; right: 0;
-  }
-
   .wrapper {
     padding: 0 0.8rem;
     position: relative;
     overflow: visible;
   }
-  .brand,
-  .menu-toggle {
-    margin-top: .8rem;
-    @media screen and (min-width: 600px) {
-      margin-top: 3rem;
-    }
+
+  .brand, .menu-toggle {
+    margin-top: 3rem;
   }
 
   .brand {
@@ -29,11 +20,6 @@
     white-space: nowrap;
     overflow: hidden;
     background: inline-image("logo_slim.svg") no-repeat;
-    @media screen and (min-width: 800px) {
-      width: rem(180px);
-      height: rem(110px);
-      background: inline-image("logo.svg") no-repeat;
-    }
     background-size: 100% 100%;
   }
 
@@ -42,9 +28,6 @@
     margin: 0;
     position: absolute;
     top: 3.5rem;
-    @media screen and (min-width: 600px) {
-      top: 5.5rem;
-    }
     right: 0;
     list-style: none;
     background: linear-gradient(135deg, transparent 30px, white 30px);
@@ -67,9 +50,6 @@
   }
   .menu-link {
     font: 700 1rem $empashis-font;
-    @media screen and (min-width: 600px) {
-      font-size: 1.3rem;
-    }
     display: block;
     padding: .25rem 0;
     text-decoration: none;

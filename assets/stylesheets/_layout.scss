@@ -26,13 +26,9 @@ a {
 .wrapper {
   padding: .8rem;
   margin: 0 auto;
-  max-width: 900px;
-  overflow: hidden;
+  max-width: 760px;
   @media screen and (min-width: 600px) {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-  @media screen and (min-width: 800px) {
-    padding-left: rem(240px);
   }
 }

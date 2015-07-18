@@ -23,23 +23,10 @@
   .header-date {
     display: block;
     text-transform: uppercase;
-    font: 300 italic 1rem $main-font;
+    font: 300 1.2rem $main-font;
     color: $main-color;
   }
   .header-date-month {
     @include before-pipe;
-  }
-
-  @media screen and (min-width: 600px) {
-    &:before {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 0;
-      border: solid transparent 80px;
-      bottom: -82px;
-      right: 0;
-      border-right-color: white;
-    }
   }
 }
