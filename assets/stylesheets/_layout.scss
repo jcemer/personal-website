@@ -18,7 +18,7 @@ a {
   color: $link-color;
   text-decoration: none;
   &:hover {
-    color: lighten($link-color, 5);
+    color: darken($link-color, 10);
     text-decoration: underline;
   }
 }
