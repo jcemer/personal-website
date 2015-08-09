@@ -13,7 +13,7 @@
     vertical-align: middle;
     width: rem(40px);
     height: rem(15px);
-    background: inline-image("cure.svg");
+    background: asset_data_uri("cure.svg");
     background-size: 100% 100%;
     font: 0/0 a;
   }

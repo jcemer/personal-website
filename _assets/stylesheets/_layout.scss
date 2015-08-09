@@ -3,7 +3,7 @@
 }
 
 body {
-  background: inline-image("background.svg") center top $background-color;
+  background: asset_data_uri("background.svg") center top $background-color;
   background-attachment: fixed;
   font-family: $main-font;
   color: $dark-grey-color;

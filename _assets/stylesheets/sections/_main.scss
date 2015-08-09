@@ -14,7 +14,7 @@
       left: -.8em;
     }
     &:hover a[name] {
-      background: inline-image("anchor.svg") left center no-repeat;
+      background: asset_data_uri("anchor.svg") left center no-repeat;
       background-size: auto 100%;
     }
   }
@@ -36,7 +36,7 @@
     height: .5em;
     width: .6em;
     vertical-align: .2em;
-    background: inline-image("external_link.svg") right center no-repeat;
+    background: asset_data_uri("external_link.svg") right center no-repeat;
     background-size: auto 100%;
   }
 

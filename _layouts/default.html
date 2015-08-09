@@ -36,8 +36,9 @@ menu:
   <meta property="og:image" content="{{ site.url }}/assets/images/badge.jpg">
 
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CRaleway:300,300italic,700,800%7CDroid+Sans+Mono:400" rel="stylesheet" type="text/css">
-  <link href="/assets/stylesheets/index.css" rel="stylesheet" type="text/css">
-
+  <style>
+    {% asset index.scss %}
+  </style>
   <link rel="canonical" href="{{ page.url }}">
 
   <script>
@@ -70,7 +71,7 @@ menu:
     </p>
   </footer>
   <script>
-    {% include scripts/main.js %}
+    {% asset main.js %}
   </script>
 </body>
 </html>

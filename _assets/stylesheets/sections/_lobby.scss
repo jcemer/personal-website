@@ -20,7 +20,7 @@
     font: 0/0 a;
     white-space: nowrap;
     overflow: hidden;
-    background: inline-image("logo_slim.svg") no-repeat;
+    background: asset_data_uri("logo_slim.svg") no-repeat;
     background-size: 100% 100%;
   }
 

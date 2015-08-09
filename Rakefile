@@ -6,7 +6,6 @@ deploy_dir = "_deploy"
 task default: [:build, :watch]
 
 task :build do
-  fail unless system("compass compile")
   fail unless system("jekyll build")
 end
 

@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
 gem 'rake'
-gem 'compass'
+
+gem 'jekyll'
+
+gem 'jekyll-assets'
+gem 'uglifier'
 
 gem 'html-proofer'
 gem 'w3c_validators'
