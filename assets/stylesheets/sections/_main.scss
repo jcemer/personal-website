@@ -50,7 +50,7 @@
   code {
     display: inline-block;
     padding: .1rem .35rem;
-    font-family: 'Droid Sans Mono', monospace;
+    font-family: $code-font;
     font-size: .9rem;
     background: $light-grey-color;
     color: darken(#93a1a1, 10);
