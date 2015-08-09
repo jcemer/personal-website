@@ -1,14 +1,14 @@
 //
 [].slice.call(document.getElementsByTagName('a')).forEach(function(element) {
-  if(element.href.indexOf(document.location.host) == -1) {
-    element.target = '_blank';
+  if (element.href.indexOf(document.location.host) == -1) {
+    element.target = '_blank'
   }
 })
 
 //
 !function () {
-  var kpr = [],
-      kcw = ['38', '38', '40', '40', '37', '39', '37', '39', '66', '65'];
+  var kpr = []
+  var kcw = ['38', '38', '40', '40', '37', '39', '37', '39', '66', '65']
 
   function fn(k) {
     if (kcw[kpr.length] && kcw[kpr.length] == k) {
@@ -22,7 +22,7 @@
   }
 
   window.addEventListener('keyup', function(event) {
-    fn(event.keyCode.toString());
+    fn(event.keyCode.toString())
   })
 }()
 
@@ -56,7 +56,7 @@
   var dsq = document.createElement('script')
   var s = document.getElementsByTagName('script')[0]
   dsq.type = 'text/javascript'
-  dsq.async = true;
-  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+  dsq.async = true
+  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js'
   s.parentNode.insertBefore(dsq, s)
 }()
