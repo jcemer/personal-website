@@ -1,6 +1,5 @@
 # Sass build and cache
 .sass-cache
-assets/stylesheets/*.css
 
 # jekyll build
 _site
