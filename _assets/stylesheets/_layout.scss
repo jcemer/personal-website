@@ -8,7 +8,7 @@ body {
   font-family: $main-font;
   color: $dark-grey-color;
   &.ice-cream {
-    background: url("../images/ice_cream.jpg") center top white no-repeat;
+    background: asset_path("ice_cream.jpg") center top white no-repeat;
     background-attachment: fixed;
     background-size: contain;
   }
