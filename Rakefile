@@ -3,7 +3,7 @@ require "w3c_validators"
 
 deploy_dir = "_deploy"
 
-task default: [:build, :watch]
+task default: [:watch]
 
 task :build do
   fail unless system("jekyll build")
@@ -35,19 +35,7 @@ task :html_proofer do
 end
 
 task :watch do
-  pids = [
-    spawn("compass watch"),
-    spawn("jekyll serve --watch")
-  ]
-
-  trap "INT" do
-    Process.kill "INT", *pids
-    exit 1
-  end
-
-  pids.each do |pid|
-    Process.wait pid
-  end
+  fail unless system("jekyll serve --watch")
 end
 
 task :setup_deploy, :repo, :branch do |t, args|
