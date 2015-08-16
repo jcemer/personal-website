@@ -26,16 +26,6 @@
   })
 }()
 
-// menu
-!function () {
-  var element = document.querySelector('[data-menu-toggle]')
-  function toggle(event) {
-    element.href = (document.location.hash == '#menu') ? '#' : '#menu'
-  }
-  window.addEventListener('hashchange', toggle)
-  toggle()
-}()
-
 // google analytics
 !function () {
   var ga = document.createElement('script')

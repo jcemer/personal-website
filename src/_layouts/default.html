@@ -2,19 +2,16 @@
 menu:
  -
   url:  /sobre.html
-  name: Sobre
+  name: sobre
  -
   url:  /talks.html
-  name: Talks
- -
-  url:  /
-  name: Posts
+  name: talks
  -
   url: "http://twitter.com/jcemer"
-  name: "Twitter"
+  name: "twitter"
  -
   url: "http://github.com/jcemer"
-  name: Github
+  name: github
 ---
 <!DOCTYPE HTML>
 <html lang="pt-BR">
@@ -51,15 +48,14 @@ menu:
 <body>
   <div class="lobby">
     <div class="wrapper">
-      <nav id="menu" class="menu">
+      <a href="/" class="brand" title="Página inicial">Jean Carlo Emer</a>
+      <nav class="menu">
         <ul class="menu-list">
           {% for item in page.menu %}
-            <li><a href="{{ item.url }}" class="menu-link">{{ item.name }}</a></li>
+            <li class="menu-item"><a href="{{ item.url }}" class="menu-link">{{ item.name }}</a></li>
           {% endfor %}
         </ul>
-        <a href="#menu" class="menu-toggle" data-menu-toggle>menu</a>
       </nav>
-      <a href="/" class="brand" title="Página inicial">Jean Carlo Emer</a>
     </div>
   </div>
 
