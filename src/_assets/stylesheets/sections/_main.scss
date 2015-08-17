@@ -41,11 +41,15 @@
   }
 
   hr {
-    height: 2px;
     border: none;
-    background: $grey-color;
-    width: 20%;
-    margin: 3rem auto;
+    color: $grey-color;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.5em;
+    height: 1em;
+    &:before {
+      content: '***';
+    }
   }
   code {
     display: inline-block;
