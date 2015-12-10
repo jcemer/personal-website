@@ -125,6 +125,3 @@ DEPENDENCIES
   rake
   uglifier
   w3c_validators
-
-BUNDLED WITH
-   1.10.5
