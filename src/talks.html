@@ -3,6 +3,28 @@ layout: default
 title: Workshops e Palestras
 talks:
   -
+    date: 2015-12-05
+    title: Lapidando o Globo Play
+    url: http://www.slideshare.net/jeancarloemer/lapidando-o-globo-play
+    event: Front in Floripa
+  -
+    date: 2015-09-26
+    title: Desenvolvedor mobile precisa aprender Web
+    url: http://www.slideshare.net/jeancarloemer/desenvolvedor-mobile-precisa-aprender-web
+    event: Mobile Summit
+  -
+    date: 2015-09-22
+    title: Evolução e futuro do uso de paradigmas no JavaScript
+    url: http://www.slideshare.net/jeancarloemer/evoluo-e-futuro-do-uso-de-paradigmas-no-javascript
+    video_url: https://www.youtube.com/watch?v=uEglleenUFk
+    event: Conferência Web.br
+  -
+    date: 2015-09-18
+    title: Evolução e futuro do uso de paradigmas no JavaScript
+    url: http://www.slideshare.net/jeancarloemer/evoluo-e-futuro-do-uso-de-paradigmas-no-javascript
+    video_url: https://www.eventials.com/locaweb/evolucao-e-futuro-do-uso-de-paradigmas-no-javascript-com-jean-emer/
+    event: Ruby Conf
+  -
     date: 2015-08-08
     title: Tudo o que a web (podia ser) ainda será
     url: https://speakerdeck.com/jcemer/tudo-o-que-a-web-podia-ser-ainda-sera
@@ -11,6 +33,7 @@ talks:
     date: 2014-11-08
     title: Componentes para a web
     url: https://speakerdeck.com/jcemer/componentes-para-a-web
+    video_url: https://www.youtube.com/watch?v=KhSDReAefx0
     event: Front in POA
   -
     date: 2014-10-23
@@ -46,6 +69,7 @@ talks:
     date: 2014-05-31
     title: "Repensando aplicações WordPress com Backbone"
     url: https://speakerdeck.com/jcemer/repensando-aplicacoes-wordpress-com-backbone
+    video_url: https://www.youtube.com/watch?v=wlb9d0RbZBU
     event: InterCon WP
   -
     date: 2014-03-18
@@ -71,6 +95,7 @@ talks:
     date: 2013-10-26
     title: "Os limites do universo front-end: um panorama de ferramentas e técnicas"
     url: https://speakerdeck.com/jcemer/desvendando-os-limites-do-universo-front-end-um-panorama-de-ferramentas-e-tecnicas-revisada
+    video_url: https://www.youtube.com/watch?v=NGS-u0TcUwQ
     event: TDC
   -
     date: 2013-10-19
@@ -91,6 +116,7 @@ talks:
     date: 2013-08-23
     title: O fantástico mundo do JavaScript
     url: https://speakerdeck.com/jcemer/o-fantastico-mundo-do-javascript
+    video_url: https://www.youtube.com/watch?v=Zn7B-X0y5qs
     event: BrazilJS Conf
   -
     date: 2013-08-21
@@ -100,6 +126,7 @@ talks:
     date: 2013-07-05
     title: Javascript dos novos tempos 2.0
     url: https://speakerdeck.com/jcemer/javascript-dos-novos-tempos-2-dot-0
+    video_url: https://www.youtube.com/watch?v=YqN-c-zVl0w
     event: Fisl 14
   -
     date: 2013-06-15
@@ -125,6 +152,7 @@ talks:
     date: 2012-03-05
     title: Eventos - do simples ao objeto
     url: https://speakerdeck.com/jcemer/eventos-do-simples-ao-objeto
+    video_url: https://www.youtube.com/watch?v=rGlF5OgD_c0
     event: RSJS
 ---
 
@@ -145,11 +173,14 @@ talks:
         <span class="item-date-month">{{ talk.date | date_month }}</span>
       </time>
       {% if talk.event %}
-      <span class="item-event">{{ talk.event }}</span>
+        <span class="item-event">{{ talk.event }}</span>
       {% endif %}
       <a class="item-link" href="{{ talk.url }}">
         <span class="item-title">{{ talk.title }}</span>
       </a>
+      {% if talk.video_url %}
+        Assista ao <a href="{{ talk.video_url }}">vídeo</a> da apresentação
+      {% endif %}
     </li>
   {% endfor %}
   </ul>
