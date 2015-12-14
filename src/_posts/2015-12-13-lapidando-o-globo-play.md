@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vídeo da apresentação Lapidando o Globo Play
+title: Screencast da apresentação Lapidando o Globo Play
 tags:
   - Front-end
   - HTML
