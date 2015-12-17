@@ -9,7 +9,7 @@ tags:
 excerpt: "<p>Um pouco da concepção e desenvolvimento do projeto.</p>"
 ---
 
-A apresentação aborda os aspectos técnicos e de desenvolvimento do produto Globo Play para a Web. A palestra foi apresentada originalmente no evento [Front in Floripa](http://www.frontinfloripa.com.br) deste ano. Se preferir, os [slides também estão disponíveis](www.slideshare.net/jeancarloemer/lapidando-o-globo-play).
+A apresentação aborda os aspectos técnicos e de desenvolvimento do produto Globo Play para a Web. A palestra foi apresentada originalmente no evento [Front in Floripa](http://www.frontinfloripa.com.br) deste ano. Se preferir, os [slides também estão disponíveis](http://www.slideshare.net/jeancarloemer/lapidando-o-globo-play).
 
 <style>
 .video-wrapper {
