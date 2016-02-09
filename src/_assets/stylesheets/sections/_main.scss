@@ -140,16 +140,16 @@
 
 .list {
   list-style: none;
-  padding-top: .8rem;
-  padding-bottom: .8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   @media screen and (min-width: 600px) {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
   .list-item {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
     @media screen and (min-width: 600px) {
-      margin-bottom: 3em;
+      margin-bottom: 3rem;
     }
     p {
       margin-top: 0;

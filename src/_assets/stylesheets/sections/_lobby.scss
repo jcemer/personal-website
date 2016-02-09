@@ -1,9 +1,8 @@
 .lobby {
-  position: relative;
-  z-index: 1;
-  clear: both;
-  padding-top: 3rem;
-  overflow: hidden;
+  padding-top: 1.2rem;
+  @media screen and (min-width: 600px) {
+    padding-top: 3rem;
+  }
 
   .wrapper {
     padding: 0 0.8rem;
@@ -12,7 +11,7 @@
   }
 
   .brand {
-    float: left;
+    display: block;
     width: rem(288px);
     height: rem(37px);
     font: 0/0 a;
@@ -22,10 +21,24 @@
     background-size: 100% 100%;
   }
 
+  .menu {
+    display: block;
+    margin-bottom: -.6rem;
+  }
+
+  @media screen and (min-width: 600px) {
+    .brand {
+      float: left;
+    }
+    .menu {
+      float: right;
+      margin-bottom: 0;
+    }
+  }
+
   .menu-list {
     line-height: rem(37px);
-    float: right;
-    margin: 0;
+    margin: 0 -.4em;
     padding: 0;
     list-style: none;
   }
