@@ -43,7 +43,7 @@ A tecla `esc` deve ser responsável por cancelar qualquer fluxo alternativo. É 
 
 O [Twitter Bootstrap](http://getbootstrap.com), por exemplo, possui uma preocupação digna com este comportamento, o código abaixo foi extraído do componente de modal.
 
-~~~javascript
+~~~ javascript
 this.$element.on('keyup.dismiss.bs.modal', $.proxy(function (e) {
     e.which == 27 && this.hide()
 }, this))
@@ -51,7 +51,7 @@ this.$element.on('keyup.dismiss.bs.modal', $.proxy(function (e) {
 
 A implementação verifica se o código da tecla `esc`, identificado pelo número 27, foi pressionado por meio de um evento de `keyup`. Um exemplo mais desacoplado ainda utilizando jQuery:
 
-~~~javascript
+~~~ javascript
 var KEYBOARD = {
     esc: 27
 }
@@ -67,7 +67,7 @@ $(document).on('keyup.modal', function (event) {
 
 Galerias de fotos na forma de um fluxo alternativo são sempre acompanhadas de botões para avançar e retroceder a imagem. Nestes casos, é essencial que as setas do teclado também possam fazer este trabalho. Veja o código de exemplo com as teclas `left` e `right`:
 
-~~~javascript
+~~~ javascript
 var KEYBOARD = {
     left: 37
   , right: 39
@@ -84,7 +84,7 @@ $(document).on('keyup.modal', function (event) {
 
 Lembre-se que estes tratadores de eventos devem ser respectivamente definidos e desativados quando o fluxo ganha e perde foco. Em uma aplicação, pode ser útil a criação de eventos específicos, veja:
 
-~~~javascript
+~~~ javascript
 var $document = $(document)
 
 $document.on('keyup.observe', function (event) {
@@ -98,7 +98,7 @@ $document.on('keyup.observe', function (event) {
 
 O código dos fluxos se torna mais expressivo:
 
-~~~javascript
+~~~ javascript
 $document.on('esckeyup.modal', function (event) {
     // handle action
 })
@@ -113,7 +113,7 @@ $document.on('leftkeyup.modal', function (event) {
 
 Esta é a descrição do projeto [cmd-enter](https://github.com/dewski/cmd-enter). Diferente dos outros campos de um formulário, em que a tecla `Enter` tem a função de enviar os dados, quando em um textarea, sua função é a de quebrar a linha. Nada mais justo que exista uma maneira de enviar o formulário quando em um textarea, e esta é convencionalmente a combinação de `Ctrl+Enter` (`Cmd+Enter`).
 
-~~~javascript
+~~~ javascript
 var KEYBOARD = {
     enter: 13
 }

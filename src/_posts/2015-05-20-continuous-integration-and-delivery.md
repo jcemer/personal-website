@@ -26,8 +26,10 @@ O Snap-CI tenta a [integração de cada um dos *commits*](https://snap-ci.com/br
 
 As tarefas executadas no único passo de integração do projeto são:
 
-    npm install
-    docpad deploy-ghpages --env static
+~~~ bash
+npm install
+docpad deploy-ghpages --env static
+~~~
 
 ## Case deste site
 
@@ -45,16 +47,20 @@ As tarefas executadas em ambos os [passos do *pipeline*](https://snap-ci.com/jce
 
 A etapa de testes executa as seguintes tarefas:
 
-    bundle install
-    bin/rake build
-    bin/rake w3c_validators
-    bin/rake html_proofer
+~~~ bash
+bundle install
+bin/rake build
+bin/rake w3c_validators
+bin/rake html_proofer
+~~~
 
 Já o passo de *deploy*, é constituído por:
 
-    bundle install
-    bin/rake setup_deploy\[git@localhost:jcemer/jcemer.github.com,master\]
-    bin/rake build deploy
+~~~ bash
+bundle install
+bin/rake setup_deploy\[git@localhost:jcemer/jcemer.github.com,master\]
+bin/rake build deploy
+~~~
 
 Pelos textos deste blog apontarem para muitos *sites* externos, a qualquer momento um *link* pode quebrar. Ou seja, não é preciso haver um *commit* para que o projeto entre em um estado inconsistente. A solução trivial e prática comum em CI é agendar que o *pipeline* seja executado regularmente. Como medida inicial, agendei para que esta integração aconteça todos os dias às 12h.
 

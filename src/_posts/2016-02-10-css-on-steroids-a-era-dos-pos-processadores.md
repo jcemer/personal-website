@@ -20,7 +20,7 @@ O que é apresentado a seguir tem base em projetos que vivenciei e portanto são
 Medidas e cores normalmente são os maiores causadores de ruídos em uma folha de estilo. Interpretar as cores ou decifrar a relação entre medidas apenas batendo o olho no código não é tarefa fácil. As variáveis dos pré-processadores são de grande ajuda, veja abaixo um exemplo consolidando práticas apresentados no artigo original.
 
 
-``` sass
+~~~ sass
 $site-width: 960px;
 $site-gap: 20px;
 $speaker-list-width: 400px;
@@ -43,7 +43,7 @@ body {
 .speaker-list__item {
   width: $speaker-list-width / 2;
 }
-```
+~~~
 
 Alguns editores já possuem *plugins* para facilitar a interpretação das cores hexadecimais. Mas é importante **ponderar a necessidade de cada variação de cor** ao consolidar arquivos de *layout* vindos do Photoshop, Sketch e demais ferramentas. Um novo aliado é o utilitário de pós-processamento [CSS Colorguard](https://github.com/SlexAxton/css-colorguard) que identifica variações desnecessárias de uma mesma cor.
 
@@ -55,7 +55,7 @@ Por outro lado, variáveis são úteis quando componentes do projeto estão rela
 
 Abra mão de variáveis como `$main-color` e `$speaker-list-width` que criam indireção com pouco benefício. Abuse de variáveis como `$dark-grey`, `$soft-grey` e `$grey` que garantem identidade ao projeto e também `$width` facilitam o entendimento de algum cálculo em um escopo isolado. O exemplo acima revisado fica dividido em dois arquivos como estes:
 
-``` sass
+~~~ sass
 // file: colors.scss
 $grey: #3F4955;
 
@@ -72,7 +72,7 @@ $grey: #3F4955;
     width: $width / 2;
   }
 }
-```
+~~~
 
 ## Frameworks e mixins
 
@@ -97,7 +97,7 @@ Muitos dos argumentos que desencorajam o uso de Compass também se aplicam para 
 
 Agrupar regras de CSS na minha opinião é a *feature* mais interessante dos pré-processadores. Aplicar *media queries* localizadas e facilitar o uso do [BEM](http://getbem.com/introduction/) são atualmente meus casos de uso favoritos.
 
-``` sass
+~~~ sass
 .speaker-list {
   @media screen and (min-width: 1200px) {
     width: 50%;
@@ -107,7 +107,7 @@ Agrupar regras de CSS na minha opinião é a *feature* mais interessante dos pr�
     color: $red;
   }
 }
-```
+~~~
 
 O ponto do uso de *nesting* continua sendo tomar cuidado e sempre ter em mente a folha de estilo gerada para [não extrapolar no peso dos seletores](http://josh.github.io/css-explain/).
 

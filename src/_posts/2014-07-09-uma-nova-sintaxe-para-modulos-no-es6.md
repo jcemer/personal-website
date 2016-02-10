@@ -21,7 +21,7 @@ As bibliotecas são as que mais sofrem com a existência de diferentes formatos.
 
 Acompanhando a evolução e observando o surgimento desta unificação, o problema de modularização parece resolvido. Engano. O projeto UMD guarda mais de dez variações de abstrações e todas desviam o código do módulo do seu objetivo: resolver o problema que é responsável. Observe o exemplo fictício do módulo UMD `add2` que depende de `add`:
 
-~~~
+~~~ javascript
 (function (factory) {
   if (typeof define === 'function' && define.amd) {
     define(['add'], factory);
@@ -53,7 +53,7 @@ Considerando evoluções futuras nos protocolos de redes e mesmo se pensarmos no
 
 **Os formatos de módulos que dispomos não permitem análise estática**. Pegando como exemplo o formato CommonJS, o `require` trata-se de uma função que aceita um identificador de módulo. Assim como qualquer outra função, seu argumento pode ser calculado de diferentes maneiras. Analise o código a seguir que também sofre a influência do controle de fluxo:
 
-~~~
+~~~ javascript
 if (type == 'me') {
   var user = require('me');
 } else {
@@ -65,7 +65,7 @@ Espero que isto já sirva para atestar como não é possível identificar as dep
 
 Os módulos ES6 trazem consigo toda a flexibilidade de declaração de dependências dos módulos CommonJS permitindo a análise estática do código:
 
-~~~
+~~~ javascript
 import asap from 'asap';
 import { later } from 'asap';
 import asap, { later } from 'asap';
@@ -73,7 +73,7 @@ import asap, { later } from 'asap';
 
 Como apontado em [um comentário do Yehuda Katz](https://github.com/wycats/jsmodules/issues/8#issuecomment-47960446), não são permitidos códigos como este `if (type == 'me') { import user from 'me'; }`. Entretanto, a especificação não deixa de fora a possibilidade de executar requisições dinâmicas utilizando promessas:
 
-~~~
+~~~ javascript
 if (type == 'me') {
   this.import('me').then(function(user) {
     // do stuff here
@@ -85,7 +85,7 @@ if (type == 'me') {
 
 O formato CommonJS permite exportar código através de propriedades no objeto contido na variável `exports`. O retorno de um módulo é um objeto com propriedades. Uma variação na implementação do Node.js possibilita que módulos retornem *por padrão* outros tipos de valores, observe o módulo `foo`:
 
-~~~
+~~~ javascript
 module.exports = exports = function defaultFn() {
   return 'default';
 };
@@ -97,7 +97,7 @@ O código acima permite executar `require('foo')()` e `require('foo').another()`
 
 Utilizando a nova sintaxe, é possível declarar um retorno *padrão*. Os demais valores exportados não serão mais atribuídos na forma de propriedades na função `defaultFn`. Veja o mesmo exemplo transcrito:
 
-~~~
+~~~ javascript
 export default function defaultFn() {
   return 'default';
 };
