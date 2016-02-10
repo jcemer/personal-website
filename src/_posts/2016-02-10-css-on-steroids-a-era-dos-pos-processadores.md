@@ -66,7 +66,7 @@ $grey: #3F4955;
   $width: 400px;
 
   width: $width;
-  border: 1px solid $grey-color;
+  color: $grey;
 
   &__item {
     width: $width / 2;
