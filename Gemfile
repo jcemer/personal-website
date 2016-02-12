@@ -4,6 +4,7 @@ gem 'rake'
 
 gem 'jekyll'
 gem 'redcarpet'
+gem 'pygments.rb'
 
 gem 'jekyll-assets', '1.0.0'
 gem 'uglifier'

@@ -62,6 +62,10 @@ GEM
     nokogiri (1.6.7)
       mini_portile2 (~> 2.0.0.rc2)
     parallel (1.6.1)
+    posix-spawn (0.3.11)
+    pygments.rb (0.6.3)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.2.0)
     rack (1.6.4)
     rake (10.4.2)
     rb-fsevent (0.9.6)
@@ -93,6 +97,7 @@ GEM
     w3c_validators (1.2)
       json
       nokogiri
+    yajl-ruby (1.2.1)
     yell (2.0.5)
 
 PLATFORMS
@@ -102,7 +107,11 @@ DEPENDENCIES
   html-proofer
   jekyll
   jekyll-assets (= 1.0.0)
+  pygments.rb
   rake
   redcarpet
   uglifier
   w3c_validators
+
+BUNDLED WITH
+   1.11.2
