@@ -1,0 +1,12 @@
+-
+  url:  /sobre.html
+  name: sobre
+-
+  url:  /talks.html
+  name: talks
+-
+  url: "http://twitter.com/jcemer"
+  name: "twitter"
+-
+  url: "http://github.com/jcemer"
+  name: github
