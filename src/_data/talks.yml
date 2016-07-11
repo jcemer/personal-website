@@ -1,4 +1,15 @@
 -
+  date: 2016-04-23
+  title: Aplicações Web - um estudo sobre React
+  url: http://www.slideshare.net/jeancarloemer/aplicaes-web-um-estudo-sobre-react
+  video_url: https://www.youtube.com/watch?v=3Y3jC_AwGF8
+  event: RSJS
+-
+  date: 2016-04-07
+  title: Aplicações Web - um estudo sobre React
+  url: http://www.slideshare.net/jeancarloemer/aplicaes-web-um-estudo-sobre-react
+  event: 18º Encontro Locaweb
+-
   date: 2015-12-05
   title: Lapidando o Globo Play
   url: http://www.slideshare.net/jeancarloemer/lapidando-o-globo-play
@@ -24,7 +35,7 @@
   date: 2015-08-08
   title: Tudo o que a web (podia ser) ainda será
   url: https://speakerdeck.com/jcemer/tudo-o-que-a-web-podia-ser-ainda-sera
-  event: Encontro Locaweb
+  event: 17º Encontro Locaweb
 -
   date: 2014-11-08
   title: Componentes para a web
@@ -71,7 +82,7 @@
   date: 2014-03-18
   title: "Além do que se vê - práticas de HTML e CSS"
   url: https://speakerdeck.com/jcemer/alem-do-que-se-ve-praticas-de-html-e-css
-  event: 16º Encontro Locaweb de Profissionais de Internet
+  event: 16º Encontro Locaweb
 -
   date: 2013-11-23
   title: "Os limites do universo front-end: um panorama de ferramentas e técnicas"
