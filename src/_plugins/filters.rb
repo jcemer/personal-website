@@ -1,8 +1,7 @@
 module Jekyll
   module Filters
-    MONTHS = %w{Janeiro Fevereiro Março Abril Maio Junho Julho Agosto Setembro Outubro Novembro Dezembro}
     def date_month(input)
-      MONTHS[input.strftime('%m').to_i - 1]
+      input.strftime('%B')
     end
 
     def date_year(input)
