@@ -10,29 +10,33 @@
     overflow: visible;
   }
 
-  .brand {
+  .my-name {
+    text-transform: uppercase;
     display: block;
-    width: rem(288px);
-    height: rem(37px);
-    font: 0/0 a;
-    white-space: nowrap;
-    overflow: hidden;
-    background: asset_data_uri("logo_slim.svg") no-repeat;
-    background-size: 100% 100%;
+    font: 800 2rem/.9 $empashis-font;
+    @media screen and (min-width: 600px) {
+      font-size: 3rem;
+    }
+    .middle-name {
+      display: block;
+      font-size: .9em;
+      font-weight: 300;
+    }
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .menu {
     display: block;
-    margin-bottom: -.6rem;
   }
 
   @media screen and (min-width: 600px) {
-    .brand {
+    .my-name {
       float: left;
     }
     .menu {
       float: right;
-      margin-bottom: 0;
     }
   }
 
