@@ -4,11 +4,6 @@
 
 @mixin before-pipe {
   &:before {
-    content: '';
-    display: inline-block;
-    margin: 0 8px 0 4px;
-    width: 0;
-    height: .8em;
-    border-right: 1px solid $main-color;
+    content: ' — ';
   }
 }
