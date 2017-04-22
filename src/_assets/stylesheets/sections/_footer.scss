@@ -1,20 +1,11 @@
 .footer {
-  .brand {
-    width: rem(90px);
-    height: rem(55px);
-  }
+  text-align: center;
   .credits {
     color: $footer-color;
-    font: 300 italic 1rem/#{rem(55px)} $main-font;
-    float: right;
+    font: 300 1rem/#{rem(55px)} $main-font;
   }
-  .cure {
-    display: inline-block;
-    vertical-align: middle;
-    width: rem(40px);
-    height: rem(15px);
-    background: asset_data_uri("cure.svg");
-    background-size: 100% 100%;
-    font: 0/0 a;
+  .glasses {
+    font-size: 1.8em;
+    vertical-align: top;
   }
 }
