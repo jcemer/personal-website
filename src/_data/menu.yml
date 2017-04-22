@@ -5,8 +5,11 @@
   url:  /talks.html
   name: talks
 -
-  url: "http://twitter.com/jcemer"
-  name: "twitter"
+  url: http://twitter.com/jcemer
+  name: twitter
 -
-  url: "http://github.com/jcemer"
+  url: http://github.com/jcemer
   name: github
+-
+  url: https://www.linkedin.com/in/jcemer
+  name: linkedin
