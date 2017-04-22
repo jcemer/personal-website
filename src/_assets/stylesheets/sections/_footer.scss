@@ -1,11 +1,7 @@
 .footer {
   text-align: center;
-  .credits {
-    color: $footer-color;
-    font: 300 1rem/#{rem(55px)} $main-font;
-  }
   .glasses {
     font-size: 1.8em;
-    vertical-align: top;
+    vertical-align: middle;
   }
 }
