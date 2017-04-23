@@ -66,8 +66,7 @@
     font-family: $code-font;
     font-size: .9rem;
     background: $light-grey-color;
-    color: darken(#93a1a1, 10);
-    border-radius: 4px;
+    color: darken($grey-color, 40);
   }
   blockquote {
     padding-left: 1.5em;
@@ -81,8 +80,6 @@
   }
   pre {
     counter-reset: line-numbering;
-    border: solid 2px $grey-color;
-    border-radius: 4px;
     background: white;
     line-height: 1.5;
     white-space: pre;
@@ -102,13 +99,7 @@
       margin-right: .5rem;
       text-align: right;
       color: darken($grey-color, 15);
-      border-right: 1px solid $grey-color;
-
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
+      background: $light-grey-color;
       user-select: none;
     }
     a:first-of-type::before,
