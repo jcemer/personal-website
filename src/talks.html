@@ -15,12 +15,10 @@ title: Workshops e Palestras
   <ul class="wrapper list">
   {% for talk in site.data.talks %}
     <li class="list-item">
-      <time class="item-date" datetime="{{ talk.date | date: '%Y-%m-%d' }}">
-        <span class="item-date-year">{{ talk.date | date_year }}</span>
-        <span class="item-date-month">{{ talk.date | date_month }}</span>
-      </time>
+      <span class="empashis-item">{{ talk.date | date: '%Y' }}</span>
+      <span class="empashis-item">{{ talk.date | date: '%B' }}</span>
       {% if talk.event %}
-        <span class="item-event">{{ talk.event }}</span>
+        <span class="empashis-item">{{ talk.event }}</span>
       {% endif %}
       <a class="item-link" href="{{ talk.url }}">
         <span class="item-title">{{ talk.title }}</span>

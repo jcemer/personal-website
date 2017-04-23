@@ -165,14 +165,6 @@
       display: none;
     }
   }
-  .item-date, .item-event, .item-external {
-    text-transform: uppercase;
-    font: 300 1.2rem $empashis-font;
-    color: $main-color;
-  }
-  .item-date-month, .item-event, .item-external {
-    @include before-pipe;
-  }
   .item-title {
     display: block;
     font: 700 1.25em/1 $empashis-font;

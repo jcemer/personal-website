@@ -25,11 +25,5 @@
   }
   .header-date {
     display: block;
-    text-transform: uppercase;
-    font: 300 1.2rem $empashis-font;
-    color: $main-color;
-  }
-  .header-date-month {
-    @include before-pipe;
   }
 }

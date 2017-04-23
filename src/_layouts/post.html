@@ -8,8 +8,8 @@ layout: default
       <a href="{{ page.url }}">{{ page.title }}</a>
     </h1>
     <time class="header-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">
-      <span class="header-date-year">{{ page.date | date_year }}</span>
-      <span class="header-date-month">{{ page.date | date_month }}</span>
+      <span class="empashis-item">{{ page.date | date: '%Y' }}</span>
+      <span class="empashis-item">{{ page.date | date: '%B' }}</span>
     </time>
   </div>
 </header>
@@ -19,8 +19,8 @@ layout: default
     {{ content }}
 
     <aside class="post-meta">
-      <time class="date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d/%m/%Y" }}</time>
-      <div class="author">por <a href="https://plus.google.com/115177659661305654561?rel=author">Jean Carlo Emer</a></div>
+      <time class="date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d/%m/%Y' }}</time>
+      <div class="author">by <a href="https://plus.google.com/115177659661305654561?rel=author">Jean Carlo Emer</a></div>
       <div class="tags">
         <strong>Tags:</strong>
         <ul>

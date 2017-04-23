@@ -17,12 +17,10 @@ home: true
   {% for post in site.posts %}
     <li class="list-item">
       <a class="item-link" href="{{ post.url }}">
-        <time class="item-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">
-          <span class="item-date-year">{{ post.date | date_year }}</span>
-          <span class="item-date-month">{{ post.date | date_month }}</span>
-        </time>
+        <span class="empashis-item">{{ post.date | date: '%Y' }}</span>
+        <span class="empashis-item">{{ post.date | date: '%B' }}</span>
         {% if post.external %}
-        <span class="item-external">{{ post.external }}</span>
+        <span class="empashis-item">{{ post.external }}</span>
         {% endif %}
         <span class="item-title">{{ post.title }}</span>
       </a>
