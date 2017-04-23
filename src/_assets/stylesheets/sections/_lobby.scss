@@ -54,6 +54,9 @@
     padding: .4em;
     text-decoration: none;
     color: $red;
+    &.social {
+      font-weight: 300;
+    }
     &:hover {
       text-decoration: underline;
     }

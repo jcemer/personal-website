@@ -7,9 +7,12 @@
 -
   url: http://twitter.com/jcemer
   name: twitter
+  type: social
 -
   url: http://github.com/jcemer
   name: github
+  type: social
 -
   url: https://www.linkedin.com/in/jcemer
   name: linkedin
+  type: social
