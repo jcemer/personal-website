@@ -20,8 +20,11 @@ a {
 
 .empashis-item {
   text-transform: uppercase;
-  font: 300 1.2rem $empashis-font;
+  font: 300 1rem $empashis-font;
   color: $main-color;
+  @media screen and (min-width: 600px) {
+    font-size: 1.2rem;
+  }
   &:before {
     content: ' — ';
   }
