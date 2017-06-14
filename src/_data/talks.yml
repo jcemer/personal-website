@@ -1,13 +1,23 @@
 -
+  date: 2017-06-10
+  title: Como encarar o desenvolvimento front-end
+  url: https://www.slideshare.net/jeancarloemer/como-encarar-o-desenvolvimento-frontend
+  event: Insiter - Teresina - PI
+-
+  date: 2017-06-03
+  title: Managing and evolving JavaScript Code
+  url: https://www.slideshare.net/jeancarloemer/managing-and-evolving-javascript-code
+  event: 2º Meetup do Facebook Developer Circle Porto Alegre
+-
   date: 2017-05-18
   title: Caching on the web
   url: https://www.slideshare.net/jeancarloemer/caching-on-the-web
-  event: 19º Encontro Locaweb
+  event: 19º Encontro Locaweb - Porto Alegre - RS
 -
   date: 2016-11-19
   title: Web & Mobile
   url: http://www.slideshare.net/jeancarloemer/web-mobile-69294887
-  event: Mobile Summit
+  event: Mobile Summit - Porto Alegre - RS
 -
   date: 2016-10-27
   title: Thinking metrics on React apps 
