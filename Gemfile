@@ -10,4 +10,4 @@ gem 'jekyll-assets', '1.0.0'
 gem 'uglifier', '2.7.2'
 
 gem 'html-proofer', '2.6.4'
-gem 'w3c_validators', '1.2'
+gem 'html5_validator'

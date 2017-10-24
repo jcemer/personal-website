@@ -1,5 +1,5 @@
 require "html/proofer"
-require "w3c_validators"
+require "html5_validator/validator"
 
 task default: [:watch]
 
@@ -7,20 +7,25 @@ task :build do
   fail unless system("jekyll build")
 end
 
-task :w3c_validators do
-  puts "Running W3C validators..."
+task :html_checker do
+  failed = false
+  puts "Running HTML checker..."
 
   files = Dir["./_site/**/*.html"]
   puts "Scanning #{files.size} markup files."
 
-  errors = files.map do |file|
-    w3c_markup_validate(file).errors
-  end.flatten
-
-  unless errors.empty?
-    puts errors
-    fail
+  validator = Html5Validator::Validator.new
+  files.each do |file|
+    puts "  Checking #{file}..."
+    contents = File.read(file)
+    validator.validate_text(contents)
+    unless validator.valid?
+      puts validator.errors
+      failed = true
+    end
   end
+
+  fail if failed
 end
 
 task :html_proofer do
@@ -34,9 +39,4 @@ end
 
 task :watch do
   fail unless system("jekyll serve --watch")
-end
-
-def w3c_markup_validate(file)
-  validator = W3CValidators::MarkupValidator.new
-  validator.validate_file(file)
 end
