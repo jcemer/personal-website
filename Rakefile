@@ -1,8 +1,6 @@
 require "html/proofer"
 require "w3c_validators"
 
-deploy_dir = "_deploy"
-
 task default: [:watch]
 
 task :build do
@@ -36,30 +34,6 @@ end
 
 task :watch do
   fail unless system("jekyll serve --watch")
-end
-
-task :setup_deploy, :repo, :branch do |t, args|
-  rm_rf deploy_dir
-  mkdir deploy_dir
-  cd deploy_dir do
-    system "git init"
-    system "git add ."
-    system "git commit --allow-empty -m 'Init'"
-    system "git branch -m #{args.branch}"
-    system "git remote add origin #{args.repo}"
-    system "git fetch"
-    system "git branch -u origin/#{args.branch}"
-  end
-end
-
-task :deploy do
-  cp_r "_site/.", deploy_dir
-  cd deploy_dir do
-    system "git add -A"
-    message = "Site updated at #{Time.now.utc}"
-    system "git commit --allow-empty -m '#{message}'"
-    system "git push -f"
-  end
 end
 
 def w3c_markup_validate(file)
