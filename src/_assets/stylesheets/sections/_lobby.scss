@@ -1,20 +1,29 @@
 .lobby {
   padding-top: 1.2rem;
   @media screen and (min-width: 600px) {
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 
   .wrapper {
     padding: 0 0.8rem;
     position: relative;
+    @media screen and (min-width: 600px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   .my-name {
     text-transform: uppercase;
     display: block;
-    font: 800 2rem/.9 $empashis-font;
+    font: 800 2rem/1 $empashis-font;
     @media screen and (min-width: 600px) {
       font-size: 3rem;
+    }
+    .middle-name {
+      position: absolute;
+      left: -9999rem;
     }
     &:hover {
       text-decoration: none;
@@ -23,21 +32,6 @@
 
   .menu {
     display: block;
-  }
-
-  @media screen and (min-width: 600px) {
-    .wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .my-name {
-      .middle-name {
-        font-weight: 300;
-        display: block;
-        font-size: .9em;
-      }
-    }
   }
 
   .menu-list {
@@ -50,7 +44,8 @@
   }
   .menu-link {
     display: block;
-    font: 700 1rem $empashis-font;
+    font-weight: 700;
+    font-size: 1rem;
     padding: .4em;
     text-decoration: none;
     color: $red;

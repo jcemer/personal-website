@@ -1,6 +1,5 @@
 .header {
   color: $main-color;
-  text-transform: uppercase;
   position: relative;
   clear: both;
 
@@ -10,7 +9,8 @@
   }
   .header-title {
     margin: 0;
-    font: 800 2.5rem/.9 $empashis-font;
+    text-transform: uppercase;
+    font: 800 2.5rem/1.2 $empashis-font;
     letter-spacing: -0.08rem;
     @media screen and (min-width: 600px) {
       font-size: 5rem;

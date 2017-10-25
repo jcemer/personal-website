@@ -6,6 +6,7 @@ body {
   background: asset_data_uri('background.svg') center top $background-color;
   background-attachment: fixed;
   font-family: $main-font;
+  line-height: 1.8;
   color: $dark-grey-color;
 }
 
@@ -19,14 +20,10 @@ a {
 }
 
 .empashis-item {
-  text-transform: uppercase;
-  font: 300 1rem $empashis-font;
+  font-size: 1.2rem;
   color: $main-color;
-  @media screen and (min-width: 600px) {
-    font-size: 1.2rem;
-  }
   &:before {
-    content: ' — ';
+    content: ' - ';
   }
   &:first-of-type:before  {
     content: none;
@@ -36,9 +33,9 @@ a {
 .wrapper {
   padding: 1.2rem .8rem;
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 900px;
   @media screen and (min-width: 600px) {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }

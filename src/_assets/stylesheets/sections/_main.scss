@@ -3,9 +3,10 @@
   font-size: 1.2em;
   h2, h3, h4 {
     position: relative;
-    line-height: 1;
+    line-height: 1.4;
     font-family: $empashis-font;
-    font-weight: 700;
+    font-weight: 800;
+    text-transform: uppercase;
     a[name] {
       position: absolute;
       top: 0;
@@ -35,6 +36,9 @@
   }
   h4 {
     font-size: 1.3em;
+  }
+  p {
+    margin: 0 0 1.8em 0;
   }
 
   a[href][target=_blank] {
@@ -167,7 +171,8 @@
   }
   .item-title {
     display: block;
-    font: 700 1.25em/1 $empashis-font;
+    font: 800 1.25em/1.4 $empashis-font;
+    text-transform: uppercase;
     @media screen and (min-width: 600px) {
       font-size: 2em;
     }
