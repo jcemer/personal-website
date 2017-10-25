@@ -6,7 +6,6 @@
     line-height: 1.2;
     font-family: $empashis-font;
     font-weight: 800;
-    text-transform: uppercase;
     a[name] {
       position: absolute;
       top: 0;
@@ -144,12 +143,6 @@
 
 .list {
   list-style: none;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  @media screen and (min-width: 600px) {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
   .list-item {
     margin-bottom: 1.5rem;
     @media screen and (min-width: 600px) {
@@ -172,7 +165,6 @@
   .item-title {
     display: block;
     font: 800 1.25em/1.2 $empashis-font;
-    text-transform: uppercase;
     @media screen and (min-width: 600px) {
       font-size: 2em;
     }
