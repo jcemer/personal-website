@@ -3,7 +3,7 @@
   font-size: 1.2em;
   h2, h3, h4 {
     position: relative;
-    line-height: 1.4;
+    line-height: 1.2;
     font-family: $empashis-font;
     font-weight: 800;
     text-transform: uppercase;
@@ -171,7 +171,7 @@
   }
   .item-title {
     display: block;
-    font: 800 1.25em/1.4 $empashis-font;
+    font: 800 1.25em/1.2 $empashis-font;
     text-transform: uppercase;
     @media screen and (min-width: 600px) {
       font-size: 2em;
