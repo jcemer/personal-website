@@ -30,7 +30,10 @@ end
 
 task :html_proofer do
   HTMLProofer.check_directory("./_site", {
-    url_ignore: ["https://www.linkedin.com/in/jcemer"]
+    url_ignore: [
+      "https://www.linkedin.com/in/jcemer",
+      "https://www.html5rocks.com/en/tutorials/webcomponents/shadowdom"
+    ]
   }).run
 end
 
