@@ -29,7 +29,9 @@ task :html_checker do
 end
 
 task :html_proofer do
-  HTMLProofer.check_directory("./_site").run
+  HTMLProofer.check_directory("./_site", {
+    url_ignore: ["https://www.linkedin.com/in/jcemer"]
+  }).run
 end
 
 task :watch do

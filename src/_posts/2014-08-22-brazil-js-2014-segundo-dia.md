@@ -54,7 +54,7 @@ Muitos projetos são acompanhados de um componente de *tabs*. Cada um destes pro
 
 Os Web Components surgem como uma alternativa para padronização e reuso. Mas as tecnologias que tornam possível a criação de componentes ainda são incipientes e não possuem um suporte adequado. Polymer trata-se de projeto que permite a criação de Web Components que operam nos navegadores que temos atualmente.
 
-O projeto permitem declarar *custom elements*, definir *templates* e manipular Shadow DOM. A parte mais interessante diz respeito ao Shadow DOM, que permite encapsular CSS e *markup*. [Vale a pena conferir este artigo sobre Shadow DOM no HTML5Rocks](http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom).
+O projeto permitem declarar *custom elements*, definir *templates* e manipular Shadow DOM. A parte mais interessante diz respeito ao Shadow DOM, que permite encapsular CSS e *markup*. [Vale a pena conferir este artigo sobre Shadow DOM no HTML5Rocks](https://www.html5rocks.com/en/tutorials/webcomponents/shadowdom).
 
 Polymer inclui uma série de *core components* que podem ser utilizados para estruturar projetos. Ressaltando que, segundo o projeto, componentes não precisam necessariamente de uma interface visual.
 
