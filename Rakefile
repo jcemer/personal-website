@@ -1,4 +1,4 @@
-require "html/proofer"
+require "html-proofer"
 require "html5_validator/validator"
 
 task default: [:watch]
@@ -29,12 +29,7 @@ task :html_checker do
 end
 
 task :html_proofer do
-  HTML::Proofer.new("./_site", href_ignore: [
-    "http://alistapart.com/article/responsive-web-design",
-    "http://blog.realstuffforabstractpeople.com/post/31753521367/classnames-for-styling-data-attributes-for-behavior",
-    "https://ajlopez.wordpress.com/2013/05/30/aplicaciones-distribuidas-y-node-js",
-    "https://customelements.io"
-  ]).run
+  HTMLProofer.check_directory("./_site").run
 end
 
 task :watch do

@@ -9,5 +9,5 @@ gem 'pygments.rb', '0.6.3'
 gem 'jekyll-assets', '1.0.0'
 gem 'uglifier', '2.7.2'
 
-gem 'html-proofer', '2.6.4'
+gem 'html-proofer'
 gem 'html5_validator'
