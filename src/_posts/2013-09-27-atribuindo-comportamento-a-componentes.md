@@ -108,7 +108,7 @@ piecemaker.setup()
 
 O *setup* é responsável por buscar todos os elementos com `[data-pieces]` e instanciar as "peças" como se fossem construtores passando o *container* como parâmetro.
 
-[Veja mais exemplos de usos da ferramenta](http://jcemer.com/piecemaker/samples) que também dá suporte a [ativação de componentes sob demanda](http://jcemer.com/piecemaker/samples/namespace_reload), [AMD](http://jcemer.com/piecemaker/samples/amd) e suporte a *mediator* para disparar novos *setups*.
+[Veja mais exemplos de usos da ferramenta](http://jcemer.github.io/piecemaker/samples) que também dá suporte a [ativação de componentes sob demanda](http://jcemer.github.io/piecemaker/samples/namespace_reload), [AMD](http://jcemer.github.io/piecemaker/samples/amd) e suporte a *mediator* para disparar novos *setups*.
 
 -------
 

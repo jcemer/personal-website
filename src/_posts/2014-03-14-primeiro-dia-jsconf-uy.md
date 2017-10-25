@@ -16,7 +16,7 @@ O assunto principal são as novidades da versão 1.0.0-pre do socket.io que teve
 
 Note que a API nativa de WebSockets aceita apenas a troca de mensagens no formato de *strings*. A nova versão, além de suportar o formato JSON já presente na versão 0.x, também suporta *binary data*.
 
-O projeto http://weplay.io, título da sua palestra, é um ótimo exemplo do transporte de informações em formato binário em um jogo colaborativo. O jogo é emulado no servidor e cada *frame* é enviado para os clientes em formato binário, o que é impressionante e extremamente performático.
+O projeto weplay.io, título da sua palestra, é um ótimo exemplo do transporte de informações em formato binário em um jogo colaborativo. O jogo é emulado no servidor e cada *frame* é enviado para os clientes em formato binário, o que é impressionante e extremamente performático.
 
 -------
 

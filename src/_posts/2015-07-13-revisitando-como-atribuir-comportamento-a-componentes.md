@@ -34,7 +34,7 @@ Por outro lado, surgiram diversos *frameworks* de desenvolvimento *front-end* qu
 
 A própria documentação do AngularJS é um exemplo de desperdício de processamento no *lado do cliente* e entrega de uma página desconfigurada sem conteúdo. A solução é simples: **mostrar um belo "carregando"** enquanto se espera que sejam feitos algumas requisições a mais. Além disso, sempre pode-se usar um `ng-init` para injetar conteúdo e melhorar a *performance*.
 
-Alguns destes *frameworks* são mais modernos e possuem estratégias mais inteligentes que merecem ser conhecidas e avaliadas. O Vue.js, por exemplo, [transforma as propriedades dos objetos em getters e setters](https://github.com/yyx990803/vue/blob/dev/src/observer/index.js) e evita o *dirty checking* presente no AngularJS 1.x. Outro exemplo é o [*design* baseado em componentes e a remoção do *two-way data-binding* no AngularJS 2.0](http://blog.mgechev.com/2015/04/06/angular2-first-impressions).
+Alguns destes *frameworks* são mais modernos e possuem estratégias mais inteligentes que merecem ser conhecidas e avaliadas. O Vue.js, por exemplo, transforma as propriedades dos objetos em getters e setters e evita o *dirty checking* presente no AngularJS 1.x. Outro exemplo é o [*design* baseado em componentes e a remoção do *two-way data-binding* no AngularJS 2.0](http://blog.mgechev.com/2015/04/06/angular2-first-impressions).
 
 ## Aplicações isomórficas
 
@@ -107,4 +107,3 @@ A maneira mais eficaz de não cair neste erro, mais uma vez, é manter o *back-e
 Atribuir comportamento a uma página não é tarefa fácil. Muitas tecnologias e práticas tem surgido para preencher este abismo. A exemplo temos os [MutationObservers](http://caniuse.com/#feat=mutationobserver) e [*life cycle* dos Custom Elements](http://webcomponents.org/articles/introduction-to-custom-elements/#lifecycle-callbacks) que permitem um melhor monitoramento do documento dispensando muitas das pirotecnias atuais. **Ouso arriscar que todos estes *frameworks* serão extintos com o passar do tempo**.
 
 Aplicações isomórficas prometem ser o futuro das aplicações web. Mas quando não recorrermos a elas, por mais retrô que pareça, boas práticas de desenvolvimento aliadas a bibliotecas como jQuery, Backbone.js e pequenos outros módulos ainda serão a melhor saída para desenvolver aplicações.
-

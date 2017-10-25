@@ -8,7 +8,7 @@ excerpt: "<p>Os relatos de palestrar em um dos maiores eventos do país: a respo
 
 Foi com surpresa e grande satisfação que recebi no início deste ano o convite dos amigos [Jaydson](http://twitter.com/jaydson) e [Felipe](http://twitter.com/felipenmoura) para palestrar na maior conferência de Javascript do universo. No ano anterior, havia participado ativamente do evento, a Grifo havia colaborado desenvolvendo o website. Eu conhecia todos os bastidores do evento, faltava o palco.
 
-Concordo que já seja um pouco tarde, o evento ocorreu no mês de agosto, mas só agora senti que seria pertinente falar sobre o assunto. Lembro que, tão logo passou a excitação do convite, dei-me conta do tamanho da responsabilidade. Eu não sabia, mas seria anunciado como [prata da casa](http://jaydson.org/valorize-a-prata-da-casa), sem palavras.
+Concordo que já seja um pouco tarde, o evento ocorreu no mês de agosto, mas só agora senti que seria pertinente falar sobre o assunto. Lembro que, tão logo passou a excitação do convite, dei-me conta do tamanho da responsabilidade. Eu não sabia, mas seria anunciado como *prata da casa*, sem palavras.
 
 Desde o início eu soube que queria apresentar conteúdo técnico. Sou formado em Ciências da Computação e muito por isto gosto de definir muito bem as ferramentas, abordagens e técnicas que utilizo. Sinto a falta desta prática no dia-a-dia do front-end.
 

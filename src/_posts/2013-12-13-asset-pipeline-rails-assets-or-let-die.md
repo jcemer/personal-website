@@ -45,7 +45,7 @@ Uma das soluções apontadas é adicionar ao repositório de versionamento do pr
 
 O [Rails Assets](https://rails-assets.org) é uma fonte de gems que empacotam código de interface já disponíveis no Bower. É a solução perfeita. Uma orla de front-enders cadastra e atualiza seus pacotes no Bower e as gems se alimentam diretamente destes repositórios para criar uma **versão compatível** com o Asset Pipeline.
 
-Quando me refiro a versão compatível, é importante que saiba que alguns códigos precisam de adaptações para que funcionem no Asset Pipeline. Pegando como exemplo uma [folha de estilo da Fancybox](https://github.com/fancyapps/fancyBox/blob/master/source/jquery.fancybox.css#L97), todas as referências às imagens precisam de instruções especiais para preservar as estratégias de cache. O Rails Assets faz todas as conversões necessárias automaticamente.
+Quando me refiro a versão compatível, é importante que saiba que alguns códigos precisam de adaptações para que funcionem no Asset Pipeline. Um exemplo são as referências à imagens em uma folha de estilo que precisam de instruções especiais para preservar as estratégias de cache. O Rails Assets faz todas as conversões necessárias automaticamente.
 
 Muita biblioteca front-end já está registrada no Ruby Gems com a única função de ser usada pelo Asset Pipeline, e portanto mantendo a organização de arquivos e outros aspectos propostos pelo framework. O *core team* do Ruby on Rails já faz isto há bastante tempo com a [jQuery](https://github.com/rails/jquery-rails), por exemplo. Isto implica que **outras gems que dependam da jQuery passem a usar o mesmo pacote**, e esta é a vantagem de se ter um único gerenciador de pacotes.
 
