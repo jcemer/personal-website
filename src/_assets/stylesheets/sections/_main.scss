@@ -155,7 +155,7 @@
   .item-link {
     display: block;
     text-decoration: none;
-    &:hover .item-title {
+    &:hover .item-main-title {
       text-decoration: underline;
     }
     &[href][target=_blank]:after {

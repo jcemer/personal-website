@@ -22,12 +22,6 @@ a {
 .empashis-item {
   font-size: 1.2rem;
   color: $main-color;
-  &:before {
-    content: ' - ';
-  }
-  &:first-of-type:before  {
-    content: none;
-  }
 }
 
 .wrapper {

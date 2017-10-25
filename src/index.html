@@ -19,10 +19,12 @@ home: true
       <a class="item-link" href="{{ post.url }}">
         <span class="empashis-item">{{ post.date | date: '%Y' }}</span>
         <span class="empashis-item">{{ post.date | date: '%B' }}</span>
-        {% if post.external %}
-        <span class="empashis-item">{{ post.external }}</span>
-        {% endif %}
-        <span class="item-title">{{ post.title }}</span>
+        <span class="item-title">
+          <span class="item-main-title">{{ post.title }}</span>
+          {% if post.external %}
+            <span class="empashis-item">on {{ post.external }}</span>
+          {% endif %}
+        </span>
       </a>
       {{ post.excerpt }}
     </li>

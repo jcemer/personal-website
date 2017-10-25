@@ -18,14 +18,17 @@ permalink: talks.html
     <li class="list-item">
       <span class="empashis-item">{{ talk.date | date: '%Y' }}</span>
       <span class="empashis-item">{{ talk.date | date: '%B' }}</span>
-      {% if talk.event %}
-        <span class="empashis-item">{{ talk.event }}</span>
-      {% endif %}
+
       <a class="item-link" href="{{ talk.url }}">
-        <span class="item-title">{{ talk.title }}</span>
+        <span class="item-title">
+          <span class="item-main-title">{{ talk.title }}</span>
+        </span>
       </a>
+      {% if talk.event %}
+        Presetend at {{ talk.event }}.
+      {% endif %}
       {% if talk.video_url %}
-        Watch the <a href="{{ talk.video_url }}">video</a> recording
+        Check the <a href="{{ talk.video_url }}">video</a> recording.
       {% endif %}
     </li>
   {% endfor %}
