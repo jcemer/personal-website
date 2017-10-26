@@ -12,25 +12,39 @@ permalink: talks.html
   </div>
 </header>
 
-<div class="main main-list">
-  <ul class="wrapper list">
-  {% for talk in site.data.talks %}
-    <li class="list-item">
-      <span class="empashis-item">{{ talk.date | date: '%Y' }}</span>
-      <span class="empashis-item">{{ talk.date | date: '%B' }}</span>
+<div class="main">
+  {% assign collection = site.data.talks | group_by_exp:'item', 'item.date | date: "%Y"' %}
 
-      <a class="item-link" href="{{ talk.url }}">
-        <span class="item-title">
-          <span class="item-main-title">{{ talk.title }}</span>
-        </span>
-      </a>
-      {% if talk.event %}
-        Presetend at {{ talk.event }}.
-      {% endif %}
-      {% if talk.video_url %}
-        Check the <a href="{{ talk.video_url }}">video</a> recording.
-      {% endif %}
-    </li>
-  {% endfor %}
-  </ul>
+  <div class="wrapper wrapper--list" data-wrapper>
+    <ul class="list-menu" data-list-menu>
+      {% for group in collection %}
+      <li data-list-menu-item>
+        <a href="#{{ group.name }}">
+          {{ group.name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% for group in collection %}
+    <h2 class="list-header">{{ group.name }}</h2>
+    <ul class="list" data-list id="{{ group.name }}">
+      {% for talk in group.items %}
+      <li class="list-item">
+        <a class="item-link" href="{{ talk.url }}">
+          <span class="item-title">
+            <span class="item-main-title">{{ talk.title }}</span>
+          </span>
+        </a>
+        {% if talk.event %}
+          Presetend at {{ talk.event }}.
+        {% endif %}
+        {% if talk.video_url %}
+          Check the <a href="{{ talk.video_url }}">video</a> recording.
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
 </div>

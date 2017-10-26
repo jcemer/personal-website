@@ -27,9 +27,12 @@ a {
 .wrapper {
   padding: 1.2rem .8rem;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 850px;
   @media screen and (min-width: 600px) {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+  &--list {
+    padding-top: 0;
   }
 }

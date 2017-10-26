@@ -13,21 +13,36 @@ home: true
 </header>
 
 <div class="main">
-  <ul class="wrapper list">
-  {% for post in site.posts %}
-    <li class="list-item">
-      <a class="item-link" href="{{ post.url }}">
-        <span class="empashis-item">{{ post.date | date: '%Y' }}</span>
-        <span class="empashis-item">{{ post.date | date: '%B' }}</span>
-        <span class="item-title">
-          <span class="item-main-title">{{ post.title }}</span>
-          {% if post.external %}
-            <span class="empashis-item">on {{ post.external }}</span>
-          {% endif %}
-        </span>
-      </a>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-  </ul>
+  {% assign collection = site.posts | group_by_exp:'item', 'item.date | date: "%Y"' %}
+
+  <div class="wrapper wrapper--list" data-wrapper>
+    <ul class="list-menu" data-list-menu>
+      {% for group in collection %}
+      <li data-list-menu-item>
+        <a href="#{{ group.name }}">
+          {{ group.name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% for group in collection %}
+    <h2 class="list-header">{{ group.name }}</h2>
+    <ul class="list" data-list id="{{ group.name }}">
+      {% for post in group.items %}
+      <li class="list-item">
+        <a class="item-link" href="{{ post.url }}">
+          <span class="item-title">
+            <span class="item-main-title">{{ post.title }}</span>
+            {% if post.external %}
+              <span class="empashis-item">on {{ post.external }}</span>
+            {% endif %}
+          </span>
+        </a>
+        {{ post.excerpt }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
 </div>

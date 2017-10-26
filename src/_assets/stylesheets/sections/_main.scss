@@ -141,8 +141,71 @@
   }
 }
 
-.list {
+.list-menu {
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
   list-style: none;
+  padding: 6rem 0;
+  margin: 0;
+  position: absolute;
+  left: calc(50% - 620px);
+  transition: top 300ms ease-out;
+  width: 130px;
+  &.fixed {
+    position: fixed;
+    top: 0;
+  }
+  li {
+    display: block;
+    padding-bottom: 2rem;
+  }
+  a {
+    display: block;
+    color: $main-color;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    text-decoration: none;
+    text-align: right;
+  }
+  &.script-enable {
+    a {
+      opacity: .5;
+      transition: font-size 200ms ease-out;
+      &.active {
+        opacity: 1;
+        font-size: 3rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.main .list-header {
+  padding-top: 1.2rem;
+  margin-bottom: .6rem;
+  color: $main-color;
+  font: 700 2rem/1.2 $main-font;
+  @media screen and (min-width: 600px) {
+    padding-top: 5rem;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+  }
+  @media screen and (min-width: 1301px) {
+    position: absolute !important;
+    left: -9999em;
+  }
+}
+
+.main .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: 1301px) {
+    padding: 6rem 0 1rem 0;
+    min-height: 100vh;
+  }
   .list-item {
     margin-bottom: 1.5rem;
     @media screen and (min-width: 600px) {
@@ -164,13 +227,9 @@
   }
   .item-title {
     display: block;
-    font: 800 1.25em/1.2 $empashis-font;
+    font: 800 2rem/1.2 $empashis-font;
     @media screen and (min-width: 600px) {
-      font-size: 2em;
+      font-size: 2.5rem;
     }
   }
-}
-
-body.ice-cream .main {
-  background: rgba(white, .6);
 }
