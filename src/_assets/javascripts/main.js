@@ -19,7 +19,6 @@ document.querySelectorAll('a').forEach(function(element) {
   }
 
   function init() {
-    console.log('init')
     menu = function () {
       var el = document.querySelector('[data-list-menu]')
       var wrapper = document.querySelector('[data-wrapper]')
@@ -31,8 +30,6 @@ document.querySelectorAll('a').forEach(function(element) {
       }
     }()
 
-    menu.el.classList.add('script-enable')
-
     lists = [].map.call(document.querySelectorAll('[data-list]'), function(el) {
       return {
         el: el,
@@ -43,6 +40,9 @@ document.querySelectorAll('a').forEach(function(element) {
     })
 
     scrollChecker()
+    setTimeout(function () {
+      menu.el.classList.add('script-enable')
+    })
   }
 
   function scrollChecker(event) {

@@ -168,6 +168,10 @@
     line-height: 2.8rem;
     text-decoration: none;
     text-align: right;
+    &.active {
+      font-size: 3rem;
+      font-weight: 700;
+    }
   }
   &.script-enable {
     a {
@@ -175,8 +179,6 @@
       transition: font-size 200ms ease-out;
       &.active {
         opacity: 1;
-        font-size: 3rem;
-        font-weight: 700;
       }
     }
   }
