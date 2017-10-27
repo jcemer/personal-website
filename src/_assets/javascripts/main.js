@@ -51,7 +51,7 @@ document.querySelectorAll('a').forEach(function(element) {
     })
 
     scrollChecker()
-    setTimeout(function () {
+    requestAnimationFrame(function () {
       menu.el.classList.add('script-enable')
     })
   }
