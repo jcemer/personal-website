@@ -72,14 +72,12 @@
     color: darken($grey-color, 40);
   }
   blockquote {
-    padding-left: 1.5em;
+    padding: 0 1.5em;
     margin-left: 0;
-    font-size: 2em;
-    font-family: $empashis-font;
+    font-size: 1.5em;
+    font-family: $main-font;
     font-weight: 300;
     font-style: italic;
-    color: $main-color;
-    text-align: center;
   }
   pre {
     counter-reset: line-numbering;
