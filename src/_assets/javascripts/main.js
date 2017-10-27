@@ -8,6 +8,18 @@ document.querySelectorAll('a').forEach(function(element) {
 // list menu
 !function () {
   var prevList, menu, lists
+  var wrapper = document.querySelector('[data-list-wrapper]')
+
+  if (wrapper) {
+    window.addEventListener('scroll', debounce(scrollChecker))
+    window.addEventListener('resize', debounce(init))
+
+    try {
+      document.fonts.ready.then(init)
+    } catch (e) {
+      setTimeout(init, 1000)
+    }
+  }
 
   function getElementBounding(el) {
     var base = el.getBoundingClientRect()
@@ -21,7 +33,6 @@ document.querySelectorAll('a').forEach(function(element) {
   function init() {
     menu = function () {
       var el = document.querySelector('[data-list-menu]')
-      var wrapper = document.querySelector('[data-wrapper]')
       var item = el.querySelector('[data-list-menu-item]')
       return {
         el: el,
@@ -92,15 +103,6 @@ document.querySelectorAll('a').forEach(function(element) {
       args = arguments
       !waiting && later()
     }
-  }
-
-  window.addEventListener('scroll', debounce(scrollChecker))
-  window.addEventListener('resize', debounce(init))
-
-  try {
-    document.fonts.ready.then(init)
-  } catch (e) {
-    setTimeout(init, 1000)
   }
 }()
 

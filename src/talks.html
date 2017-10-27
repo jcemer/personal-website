@@ -15,7 +15,7 @@ permalink: talks.html
 <div class="main">
   {% assign collection = site.data.talks | group_by_exp:'item', 'item.date | date: "%Y"' %}
 
-  <div class="wrapper wrapper--list" data-wrapper>
+  <div class="wrapper wrapper--list" data-list-wrapper>
     <ul class="list-menu" data-list-menu>
       {% for group in collection %}
       <li data-list-menu-item>
