@@ -115,6 +115,6 @@ document.querySelectorAll('a').forEach(function(element) {
   var s = document.getElementsByTagName('script')[0]
   dsq.type = 'text/javascript'
   dsq.async = true
-  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js'
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js'
   s.parentNode.insertBefore(dsq, s)
 }()
