@@ -1,5 +1,5 @@
-name: Jean Carlo Emer
-description: Website e blog do desenvolvedor web Jean Carlo Emer
+name: Jean Emer
+description: Personal website and blog
 source: src
 url: http://jcemer.com
 permalink: :title.html
