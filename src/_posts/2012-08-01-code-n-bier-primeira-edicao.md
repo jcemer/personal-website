@@ -1,6 +1,7 @@
 ---
 layout: external
 title: Code n' Bier - Primeira edição
+lang: pt
 tags:
   - dojo
   - javascript

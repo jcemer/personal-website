@@ -1,6 +1,7 @@
 ---
 layout: external
 title: Fluxo de execução assíncrono em JavaScript – Generators e Async Functions
+lang: pt
 tags:
   - JavaScript
 external: Tableless

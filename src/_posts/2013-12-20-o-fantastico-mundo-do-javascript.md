@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'BrazilJS: O fantástico mundo do JavaScript'
+lang: pt
 tags:
   - javascript
 excerpt: "<p>Os relatos de palestrar em um dos maiores eventos do país: a responsabilidade, escolha do tema, pontos polêmicas e a experiência de apresentar para cerca de mil pessoas.</p>"

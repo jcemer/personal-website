@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Hipermídia as Avessas: Responsive Design'
+lang: pt
 tags:
   - HTML5
   - mobile
@@ -145,4 +146,3 @@ Saiba que o [HTTP Archive](http://httparchive.org) registra que 63% daquilo que 
 -------------
 
 **Edição em 12/2013:** Detalhamento sobre o funcionamento e utilidade de fontes com tamanhos relativos.
-

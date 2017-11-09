@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hipermídia as Avessas
+lang: pt
 tags:
   - HTML5
   - mobile

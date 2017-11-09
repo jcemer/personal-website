@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Hipermídia as Avessas: Passo a passo'
+lang: pt
 tags:
   - HTML5
   - mobile

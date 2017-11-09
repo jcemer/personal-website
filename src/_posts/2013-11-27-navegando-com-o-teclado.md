@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Navegando com o teclado
+lang: pt
 tags:
   - JavaScript
   - Usabilidade

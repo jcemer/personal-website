@@ -1,6 +1,7 @@
 ---
 layout: post
 title: O dilema do único na Web
+lang: pt
 tags:
   - Front-end
   - HTML

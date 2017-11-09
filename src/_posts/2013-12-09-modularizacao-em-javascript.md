@@ -1,6 +1,7 @@
 ---
 layout: external
 title: Modularização em JavaScript
+lang: pt
 tags:
   - JavaScript
 external: Tableless

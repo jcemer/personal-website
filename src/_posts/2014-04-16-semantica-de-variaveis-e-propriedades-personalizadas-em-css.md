@@ -1,6 +1,7 @@
 ---
 layout: external
 title: Semântica de variáveis e propriedades personalizadas em CSS
+lang: pt
 tags:
   - CSS
   - Pré-processadores de CSS

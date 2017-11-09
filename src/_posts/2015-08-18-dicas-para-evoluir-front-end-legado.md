@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dicas para evoluir um front-end legado
+lang: pt
 tags:
   - Front-end
   - HTML

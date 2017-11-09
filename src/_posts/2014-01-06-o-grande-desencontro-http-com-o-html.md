@@ -1,6 +1,7 @@
 ---
 layout: external
 title: O grande desencontro do HTTP com o HTML
+lang: pt
 tags:
   - JavaScript
 external: Tableless

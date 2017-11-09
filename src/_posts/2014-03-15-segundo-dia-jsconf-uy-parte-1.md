@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Live posting do segundo dia da JSConfUY - parte 1'
+lang: pt
 tags:
   - javascript
 excerpt: "<p>Texto escrito durante a JSConf do Uruguai.</p>"

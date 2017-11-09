@@ -1,6 +1,7 @@
 ---
 layout: external
 title: Qual a dose certa de JavaScript
+lang: pt
 tags:
   - JavaScript
 external: Tableless

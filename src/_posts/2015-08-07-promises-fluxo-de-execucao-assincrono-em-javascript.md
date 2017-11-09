@@ -1,6 +1,7 @@
 ---
 layout: external
 title: Fluxo de execução assíncrono em JavaScript – Promises
+lang: pt
 tags:
   - JavaScript
 external: Tableless

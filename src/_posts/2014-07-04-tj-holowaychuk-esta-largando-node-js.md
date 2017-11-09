@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'TJ Holowaychuk anunciou que está largando o Node.JS e você com isto?'
+lang: pt
 tags:
   - javascript
   - node.js

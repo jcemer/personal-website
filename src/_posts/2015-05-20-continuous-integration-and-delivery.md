@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Continuous Integration and Delivery: alguns estudos de caso'
+lang: pt
 tags:
   - javascript
 excerpt: "<p>Aplicando um <i>pipeline</i> de integração em projetos web.</p>"

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 2016 e o estado do desenvolvimento front-end
+lang: pt
 tags:
   - Front-end
   - HTML
@@ -20,4 +21,3 @@ Criar projetos que estejam alinhados com tamanha evolução de *hardware* e usu�
 A medida que os projetos se tornam cada vez mais complexos, é uma tremenda burrice escrever código JavaScript sem nenhum padrão ou auxílio de tecnologias modernas. Mesmo no dia-a-dia, refatorar e aprimorar código adotando uma nova biblioteca ou *framework* pode trazer grandes benefícios. As ferramentas e tecnologias utilizadas invariavelmente influenciarão na experiência do usuário. Pronto, é por isto que a cada dia alguns desenvolvedores reinventam a roda: **para que ela gire melhor**.
 
 Ir contra a adoção de tantas novas tecnologias é nadar contra a maré. Reflita se não pode ser preguiça sua ou mesmo desinformação. Saber a dose certa do uso de novas tecnologias é um grande desafio, mas antes disto é preciso entendê-las e aprendê-las. **Pra quem só conhece martelo, tudo parece prego**. Um 2016 de novos aprendizados para todos nós!
-

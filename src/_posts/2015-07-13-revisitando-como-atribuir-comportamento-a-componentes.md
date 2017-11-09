@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Revisitando como atribuir comportamento a componentes
+lang: pt
 description: Uma releitura de como atribuir comportamento a elementos da página
 tags:
   - JavaScript

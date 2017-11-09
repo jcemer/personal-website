@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Crônica de minha ida para o Front in Aracaju 2014'
+lang: pt
 tags:
   - front-end
   - eventos

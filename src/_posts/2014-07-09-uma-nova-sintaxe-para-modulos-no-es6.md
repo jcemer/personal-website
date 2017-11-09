@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Uma nova sintaxe para módulos no ES6'
+lang: pt
 tags:
   - javascript
   - ES6

@@ -30,10 +30,13 @@ home: true
     <h2 class="list-header">{{ group.name }}</h2>
     <ul class="list" data-list id="{{ group.name }}">
       {% for post in group.items %}
-      <li class="list-item">
+      <li class="list-item" lang="{{ post.lang }}">
         <a class="item-link" href="{{ post.url }}">
           <span class="item-title">
-            <span class="item-main-title">{{ post.title }}</span>
+            <span class="item-main-title">
+              {{ post.title }}
+            </span>
+
             {% if post.external %}
               <span class="empashis-item">on {{ post.external }}</span>
             {% endif %}

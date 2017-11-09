@@ -1,6 +1,7 @@
 ---
 layout: external
 title: "OOCSS, SMACSS, BEM, DRY CSS: afinal, como escrever CSS?"
+lang: pt
 tags:
   - CSS
 external: Tableless

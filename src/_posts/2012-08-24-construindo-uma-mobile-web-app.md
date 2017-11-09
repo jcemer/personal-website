@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Construíndo uma Mobile Web App
+lang: pt
 external: Blog da Grifo
 tags:
   - mobile

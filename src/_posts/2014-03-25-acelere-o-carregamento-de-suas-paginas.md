@@ -1,6 +1,7 @@
 ---
 layout: external
 title: Acelere o carregamento de suas páginas
+lang: pt
 tags:
   - JavaScript
   - Performance

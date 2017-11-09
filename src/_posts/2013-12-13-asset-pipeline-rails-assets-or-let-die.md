@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Asset Pipeline: Rails Assets or let die'
+lang: pt
 tags:
   - assets
   - rails

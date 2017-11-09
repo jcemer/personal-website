@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Live posting do segundo dia de BrazilJS 2014'
+lang: pt
 tags:
   - javascript
 excerpt: "<p>Resenha do segundo dia do maior evento de JavaScript do mundo.</p>"

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Screencast da apresentação Lapidando o Globo Play
+lang: pt
 tags:
   - Front-end
   - HTML

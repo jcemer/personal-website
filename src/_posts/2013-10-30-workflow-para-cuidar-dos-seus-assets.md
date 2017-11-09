@@ -1,6 +1,7 @@
 ---
 layout: external
 title: Workflow para cuidar dos seus assets
+lang: pt
 tags:
   - assets
   - Ruby on Rails

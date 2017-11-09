@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Criando bons construtores em JavaScript'
+lang: pt
 tags:
   - JavaScript
 excerpt: <p>Como tirar proveito do modelo de Orientação a Objetos do JavaScript e criar construtores que não tenham efeitos colaterais e utilizem o <code>prototype</code>.</p>

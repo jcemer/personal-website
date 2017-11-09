@@ -1,6 +1,7 @@
 ---
 layout: external
 title: "Aperfeiçoando o desenvolvimento"
+lang: pt
 tags:
   - CSS
 external: Medium

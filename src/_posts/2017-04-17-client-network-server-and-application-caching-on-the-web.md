@@ -1,6 +1,7 @@
 ---
 layout: external
 title: "Client, Network, Server and Application Caching on the Web"
+lang: en
 tags:
   - Front-end
   - Cache

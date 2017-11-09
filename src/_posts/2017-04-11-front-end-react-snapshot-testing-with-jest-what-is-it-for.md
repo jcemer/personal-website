@@ -1,6 +1,7 @@
 ---
 layout: external
 title: "Front-end (React) Snapshot Testing with Jest: What is it for?"
+lang: en
 tags:
   - Front-end
   - Teste

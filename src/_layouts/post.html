@@ -2,35 +2,37 @@
 layout: default
 ---
 
-<header class="header">
-  <div class="wrapper">
-    <h1 class="header-title">
-      <a href="{{ page.url }}">{{ page.title }}</a>
-    </h1>
-    <time class="header-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">
-      <span class="empashis-item">{{ page.date | date: '%Y' }}</span>
-      <span class="empashis-item">{{ page.date | date: '%B' }}</span>
-    </time>
+<main lang="{{ page.lang }}">
+  <header class="header">
+    <div class="wrapper">
+      <h1 class="header-title">
+        <a href="{{ page.url }}">{{ page.title }}</a>
+      </h1>
+      <time class="header-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+        <span class="empashis-item">{{ page.date | date: '%Y' }}</span>
+        <span class="empashis-item">{{ page.date | date: '%B' }}</span>
+      </time>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="wrapper">
+      {{ content }}
+
+      <aside class="post-meta">
+        <time class="date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d/%m/%Y' }}</time>
+        <div class="author">by <a href="https://plus.google.com/115177659661305654561?rel=author">Jean Carlo Emer</a></div>
+        <div class="tags">
+          <strong>Tags:</strong>
+          <ul>
+            {% for tag in page.tags %}
+            <li>{{ tag }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </aside>
+
+      <div id="disqus_thread"></div>
+    </div>
   </div>
-</header>
-
-<div class="main">
-  <div class="wrapper">
-    {{ content }}
-
-    <aside class="post-meta">
-      <time class="date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d/%m/%Y' }}</time>
-      <div class="author">by <a href="https://plus.google.com/115177659661305654561?rel=author">Jean Carlo Emer</a></div>
-      <div class="tags">
-        <strong>Tags:</strong>
-        <ul>
-          {% for tag in page.tags %}
-          <li>{{ tag }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </aside>
-
-    <div id="disqus_thread"></div>
-  </div>
-</div>
+</main>

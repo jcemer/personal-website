@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Conheça WebSockets: Entrevista'
+lang: pt
 tags:
   - HTML5
   - websockets

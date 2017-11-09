@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Live posting do primeiro dia de BrazilJS 2014'
+lang: pt
 tags:
   - javascript
 excerpt: "<p>Resenha do primeiro dia do maior evento de JavaScript do mundo.</p>"
@@ -8,7 +9,7 @@ excerpt: "<p>Resenha do primeiro dia do maior evento de JavaScript do mundo.</p>
 
 ## Service Workers / Renato Mangini
 
-A palestra de Renato Mangini é sobre a especificação com o maior potencial de mudar a forma que você programa para a web. 
+A palestra de Renato Mangini é sobre a especificação com o maior potencial de mudar a forma que você programa para a web.
 
 O Network Service, uma das especificaçães de Service Workers, é responsável por controlar as requisições de rede. Ao contrário da especificação de App Cache, mais destinada ao controle dos arquivos e não das requisições, os Service Workers permitem lidar facilmente com arquivos dinâmicos e responder a diferentes cabeçalhos da requisição.
 
@@ -38,9 +39,9 @@ Uma preocupação interessante é o tratamento adequado de excessões com uma *c
 
 Existe todo um mundo além de [three.js](http://threejs.org) para utilizar WebGL no navegador. O que segue é um panorama sobre computação gráfica, utilização de triângulos e transformadas que podem ser aplicadas a eles. O uso de texturas e processo de *rendering* e *shading* também foram abordados.
 
-WebGL se trata de um contexto do `<canvas>` e as mesmas práticas utilizadas para desenhos 2D podem ser utilizadas por aqui. Vários exemplos de código foram apresentados para atestar o poder e capacidade da API para escrever código 3D no navegador. 
+WebGL se trata de um contexto do `<canvas>` e as mesmas práticas utilizadas para desenhos 2D podem ser utilizadas por aqui. Vários exemplos de código foram apresentados para atestar o poder e capacidade da API para escrever código 3D no navegador.
 
-Os exemplos aplicando um vídeo e a captura da câmera em um objeto triângulo com animação de rotação em espaço 3D foram um dos ápices da apresentação. 
+Os exemplos aplicando um vídeo e a captura da câmera em um objeto triângulo com animação de rotação em espaço 3D foram um dos ápices da apresentação.
 
 ---
 
@@ -52,7 +53,7 @@ A palestra é guiada por regras e dicas em como escrever código eficiente utili
 
 Considere inicializar código em um momento mais oportuno que não seja o carregamento da página. Um *autocomplete* pode ser condicionado ao foco na caixa de texto. A mesma lógica pode ser aplicada a validação de um formulário.
 
-Seu código deve suportar mudanças no ambiente. Prefira `prevAll` ao invés de `prev`. Ao utilizar métodos mais flexíveis, caso o *markup* seja alterado, seu código não irá sofrer consequências. 
+Seu código deve suportar mudanças no ambiente. Prefira `prevAll` ao invés de `prev`. Ao utilizar métodos mais flexíveis, caso o *markup* seja alterado, seu código não irá sofrer consequências.
 
 A jQuery sempre mantém a ordem dos elementos selecionados como encontrada no DOM. Adicionar elementos a esta coleção implica acessar a árvore para identificar qual sua posição. Evite utilizar o método `add` quando `push` pode ser usado sem manter a ordem.
 
@@ -60,11 +61,11 @@ Animações CSS em alguns casos são mais performáticas e ainda assim podem ser
 
 ---
 
-A jQuery, mesmo com quase uma década, ainda nos permite descobrir maneiras de melhor utilizá-la. 
+A jQuery, mesmo com quase uma década, ainda nos permite descobrir maneiras de melhor utilizá-la.
 
-## Web versus native: round 1? / Chris Mills 
+## Web versus native: round 1? / Chris Mills
 
-Performance, operar *offline*, ter acesso a recursos da máquina e outros fatores podem favorecer a adoção de nativo ao invés de web? Projetos como o Firefox OS estão ai para provar o contrário. 
+Performance, operar *offline*, ter acesso a recursos da máquina e outros fatores podem favorecer a adoção de nativo ao invés de web? Projetos como o Firefox OS estão ai para provar o contrário.
 
 O Firefox OS vem acompanhado de APIs que permitem acessar recursos nativos. As APIs incluem capacidade de medir a bateria do aparelho, medir a orientação do dispositivo, disparar notificações e controlar vibração.
 
@@ -94,11 +95,11 @@ O assunto e a solução são bem interessantes. Dominar Node.js e Git cada vez m
 
 ## Single Page Applications Done Right / Eduardo Lundgren
 
-No passado, os estudos de cinema concluíram que 24 *frames* por segundo era a medida ideal para produzir um filme. Mas se colocarmos em paralelo um vídeo a 60 fps, a diferença é facilmente identificada. 
+No passado, os estudos de cinema concluíram que 24 *frames* por segundo era a medida ideal para produzir um filme. Mas se colocarmos em paralelo um vídeo a 60 fps, a diferença é facilmente identificada.
 
 Por esta ótica, performance é uma medida subjetiva e depende do contexto. Ainda, performance não é apenas sobre segundos e *bytes*, é sim sobre como o usuário percebe o impacto disto ao executar alguma ação. E neste ponto é que Single Page Applications (SPA) ganham destaque.
 
-As Single Page Applications foram introduzidas já nos anos 2000. A maneira mais primitiva de desenvolver este tipo de aplicação, antes de do advento do Ajax, era através de *iframes*. 
+As Single Page Applications foram introduzidas já nos anos 2000. A maneira mais primitiva de desenvolver este tipo de aplicação, antes de do advento do Ajax, era através de *iframes*.
 
 O que é muitas vezes negligenciado no desenvolvimento de uma aplicação é não possuir uma URL única para cada variação de conteúdo. A History API, através do comando `pushState`, permite modificar a URL *on the fly*. Desta maneira, o histórico de navegação manterá as diferentes URLs da sua aplicação.
 
@@ -112,9 +113,9 @@ A palestra mostrou muito bem todos os desafios e suas soluções. Gosto bastante
 
 ## The 7 Principles of rich web applications / Guillermo Rauch
 
-A palestra de Guillermo foi guiada por princípios que ele acredita guiar o desenvolvimento de aplicações web ricas. O ponto principal é experiência do usuário. O JavaScript deve ser usado como um meio de viabilizar uma melhor experiência para o usuário. 
+A palestra de Guillermo foi guiada por princípios que ele acredita guiar o desenvolvimento de aplicações web ricas. O ponto principal é experiência do usuário. O JavaScript deve ser usado como um meio de viabilizar uma melhor experiência para o usuário.
 
-Páginas não devem ser retornas do servidor apenas com `<scripts>`s e sem conteúdo. Novas requisições serão necessárias para capturar o conteúdo enquanto o usuário é apresentado a uma página em branco. A latência de rede irá impactar na experiência mesmo quando a requisição for respondida por um CDN. Os primeiros 4096 bytes da sua página são os mais valiosos por serem retornados no primeiro pacote de resposta a uma requisição. 
+Páginas não devem ser retornas do servidor apenas com `<scripts>`s e sem conteúdo. Novas requisições serão necessárias para capturar o conteúdo enquanto o usuário é apresentado a uma página em branco. A latência de rede irá impactar na experiência mesmo quando a requisição for respondida por um CDN. Os primeiros 4096 bytes da sua página são os mais valiosos por serem retornados no primeiro pacote de resposta a uma requisição.
 
 Algumas técnicas auxiliam a induzir o usuário de que a aplicação está pronta em um tempo mais hábil. Separar o espaço para o carregamento de uma imagem, indicar o *thumbnail* de um arquivo de *upload* são alguns dos exemplos. Tempos de resposta menores que um segundo evitam a necessidade de mostrar um *loading spinner* para indicar ao usuário de que a interface não está congelada.
 
@@ -122,10 +123,10 @@ Bibliotecas como socket.io permitem manter uma conexão permanente com o servido
 
 Reconhecer a ausência de conexão com internet e reagir a isto é outro fator importante em aplicações. A possibilidade de armazenar informações no cliente e sincronizar os dados assim que possível afeta diretamente a experiência do usuário. Service Workers permitem inclusive sincronizações depois da página ter sido fechada.
 
-Aplicações podem sofrer alterações no seu código enquanto estão sendo utilizadas. Isto pode ser endereçado notificando o *front-end* da aplicação de que é necessário um *reload* da página. Soluções mais elaboradas ainda podem alcançar a atualização do código sem a necessidade de recarregar a página por completo. 
+Aplicações podem sofrer alterações no seu código enquanto estão sendo utilizadas. Isto pode ser endereçado notificando o *front-end* da aplicação de que é necessário um *reload* da página. Soluções mais elaboradas ainda podem alcançar a atualização do código sem a necessidade de recarregar a página por completo.
 
 Prever ações do usuário para requisitar recursos é outro princípio que pode ser usado para aprimorar a aplicação.
 
 ---
 
-A palestra cumpriu muito bem seu papel e apresentou técnicas e práticas relevantes para construir aplicações ricas. É interessante observar como Service Worker foi citado de forma recorrente durante o dia. 
+A palestra cumpriu muito bem seu papel e apresentou técnicas e práticas relevantes para construir aplicações ricas. É interessante observar como Service Worker foi citado de forma recorrente durante o dia.

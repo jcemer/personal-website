@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Você é irresponsável por não escrever testes de Front-end?"
+lang: pt
 tags:
   - Front-end
   - Teste
