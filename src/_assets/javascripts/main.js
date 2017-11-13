@@ -111,12 +111,16 @@ document.querySelectorAll('a').forEach(function(element) {
   if (!document.getElementById('disqus_thread')) {
     return
   }
-  window.disqus_url = 'http://jcemer.com' + document.querySelector('link[rel="canonical"]').getAttribute('href')
-  var disqus_shortname = 'jeancarloemer'
+
+  window.disqus_config = function () {
+    this.language = 'en';
+    this.page.url = 'http://jcemer.com' + document.querySelector('link[rel="canonical"]').getAttribute('href');
+  };
+
   var dsq = document.createElement('script')
   var s = document.getElementsByTagName('script')[0]
   dsq.type = 'text/javascript'
   dsq.async = true
-  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js'
+  dsq.src = 'https://jeancarloemer.disqus.com/embed.js'
   s.parentNode.insertBefore(dsq, s)
 }()
