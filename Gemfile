@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rake', '12.3.3'
 
-gem 'jekyll', '3.6.3'
+gem 'jekyll', '4.0.0'
 gem 'redcarpet', '3.3.4'
 gem 'pygments.rb', '1.0.0'
 
