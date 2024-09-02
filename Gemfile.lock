@@ -18,7 +18,7 @@ GEM
     execjs (2.7.0)
     fastimage (1.8.1)
       addressable (~> 2.3, >= 2.3.5)
-    ffi (1.17.0)
+    ffi (1.16.3)
     forwardable-extended (2.6.0)
     html-proofer (4.4.3)
       addressable (~> 2.3)
