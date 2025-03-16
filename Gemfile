@@ -6,7 +6,7 @@ gem 'jekyll', '3.9.0'
 gem 'redcarpet', '3.5.1'
 gem 'pygments.rb', '1.1.0'
 
-gem 'jekyll-assets', '2.0.0'
+gem 'jekyll-assets', '2.2.1'
 gem 'uglifier', '2.7.2'
 
 gem 'html-proofer', '>= 3.12.0'
